@@ -1,0 +1,73 @@
+server_connect_timeout: 20000
+listeners:
+- bind_local_address: true
+  force_default_server: true
+  forced_hosts:
+    creative.netherdepths.com: creative
+    dev.netherdepths.com: dev
+    hub.netherdepths.com: hub
+    minigames.netherdepths.com: minigames
+    survival.netherdepths.com: survival
+  host: 0.0.0.0:25565
+  max_players: 60
+  motd: ''
+  ping_passthrough: false
+  priorities:
+  - hub
+  - survival
+  - creative
+  - minigames
+  proxy_protocol: false
+  query_enabled: false
+  query_port: 25565
+  tab_list: GLOBAL_PING
+  tab_size: 60
+remote_ping_cache: -1
+network_compression_threshold: 64
+permissions:
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  - slashserver.survival
+  - slashserver.hub
+  - slashserver.minigames
+  - slashserver.creative
+log_pings: true
+connection_throttle_limit: 3
+prevent_proxy_connections: false
+timeout: 30000
+player_limit: 200
+ip_forward: true
+groups:
+  md_5:
+  - admin
+remote_ping_timeout: 5000
+connection_throttle: 4000
+log_commands: false
+stats: -1
+online_mode: true
+forge_support: true
+disabled_commands:
+- disabledcommandhere
+servers:
+  Creative:
+    address: -1:53920
+    motd: ''
+    restricted: false
+  Hub:
+    address: -1:40099
+    motd: ''
+    restricted: false
+  Minigames:
+    address: -1:50831
+    motd: ''
+    restricted: false
+  Survival:
+    address: -1:51302
+    motd: ''
+    restricted: false
