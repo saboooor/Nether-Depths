@@ -24,10 +24,10 @@ settings:
   shutdown-message: Server restarting. This should only take a minute!
   minimum-api: none
 spawn-limits:
-  monsters: 30
-  animals: 5
-  water-animals: 7
-  water-ambient: 6
+  monsters: 1
+  animals: 1
+  water-animals: 1
+  water-ambient: 1
   ambient: 1
 chunk-gc:
   period-in-ticks: 400
