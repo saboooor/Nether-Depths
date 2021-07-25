@@ -30,7 +30,8 @@ spawn-limits:
   water-ambient: 6
   ambient: 1
 chunk-gc:
-  period-in-ticks: 400
+  period-in-ticks: 300
+  load-threshold: 300
 ticks-per:
   animal-spawns: 400
   monster-spawns: 10
