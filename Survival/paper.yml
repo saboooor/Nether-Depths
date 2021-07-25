@@ -261,7 +261,7 @@ world-settings:
       - stone
       - oak_planks
     viewdistances:
-      no-tick-view-distance: 7
+      no-tick-view-distance: 6
     squid-spawn-height:
       maximum: 0.0
     generator-settings:
