@@ -46,9 +46,9 @@ settings:
     page-max: 2560
     total-multiplier: 0.98
   unsupported-settings:
-    allow-headless-pistons: true
-    allow-permanent-block-break-exploits: true
-    allow-piston-duplication: true
+    allow-headless-pistons: false
+    allow-permanent-block-break-exploits: false
+    allow-piston-duplication: false
     allow-headless-pistons-readme: This setting controls if players should be able
       to create headless pistons.
     allow-permanent-block-break-exploits-readme: This setting controls if players
@@ -81,7 +81,7 @@ messages:
     authentication-servers-down: ''
     connection-throttle: W A I T
 timings:
-  really-enabled: true
+  really-enabled: false
   enabled: true
   verbose: true
   server-name-privacy: false
@@ -97,7 +97,7 @@ timings:
   - settings.seed.geode
   history-interval: 300
   history-length: 3600
-  server-name: Nether Depths Creative
+  server-name: Nether Depths
 world-settings:
   default:
     allow-player-cramming-damage: false
@@ -114,9 +114,9 @@ world-settings:
     max-leash-distance: 10.0
     portal-search-vanilla-dimension-scaling: true
     fix-climbing-bypassing-cramming-rule: true
-    piglins-guard-chests: false
+    piglins-guard-chests: true
     projectile-load-save-per-chunk-limit: 8
-    seed-based-feature-search: false
+    seed-based-feature-search: true
     delay-chunk-unloads-by: 10s
     per-player-mob-spawns: true
     max-auto-save-chunks-per-tick: 8
@@ -138,8 +138,8 @@ world-settings:
     duplicate-uuid-saferegen-delete-range: 32
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
-    enable-treasure-maps: false
-    treasure-maps-return-already-discovered: true
+    enable-treasure-maps: true
+    treasure-maps-return-already-discovered: false
     water-over-lava-flow-speed: 5
     grass-spread-tick-rate: 4
     use-faster-eigencraft-redstone: true
@@ -155,7 +155,7 @@ world-settings:
     portal-search-radius: 128
     portal-create-radius: 16
     container-update-tick-rate: 2
-    parrots-are-unaffected-by-player-movement: true
+    parrots-are-unaffected-by-player-movement: false
     disable-explosion-knockback: false
     prevent-tnt-from-moving-in-water: false
     iron-golems-can-spawn-in-air: false
@@ -173,16 +173,16 @@ world-settings:
     game-mechanics:
       disable-mob-spawner-spawn-egg-transformation: true
       fix-curing-zombie-villager-discount-exploit: true
-      scan-for-legacy-ender-dragon: false
-      disable-pillager-patrols: true
+      scan-for-legacy-ender-dragon: true
+      disable-pillager-patrols: false
       disable-chest-cat-detection: true
-      nerf-pigmen-from-nether-portals: true
-      disable-end-credits: true
+      nerf-pigmen-from-nether-portals: false
+      disable-end-credits: false
       disable-player-crits: false
-      disable-sprint-interruption-on-attack: true
+      disable-sprint-interruption-on-attack: false
       shield-blocking-delay: 5
       disable-unloaded-chunk-enderpearl-exploit: true
-      disable-relative-projectile-velocity: true
+      disable-relative-projectile-velocity: false
       pillager-patrols:
         spawn-chance: 0.2
         spawn-delay:
@@ -216,7 +216,7 @@ world-settings:
       refresh-min: 12h
       refresh-max: 2d
     alt-item-despawn-rate:
-      enabled: false
+      enabled: true
       items:
         COBBLESTONE: 600
         NETHERRACK: 600
@@ -267,8 +267,8 @@ world-settings:
     generator-settings:
       flat-bedrock: false
     mobs-can-always-pick-up-loot:
-      zombies: true
-      skeletons: true
+      zombies: false
+      skeletons: false
     door-breaking-difficulty:
       zombie:
       - NORMAL
@@ -316,3 +316,34 @@ world-settings:
       behavior:
         villager:
           validatenearbypoi: -1
+  world_nether:
+    anti-xray:
+      enabled: true
+      engine-mode: 1
+      hidden-blocks:
+      - chest
+      - ancient_debris
+      - nether_quartz_ore
+      replacement-blocks:
+      - netherrack
+      - basalt
+      - blackstone
+  world:
+    anti-xray:
+      enabled: true
+      hidden-blocks:
+      - gold_ore
+      - iron_ore
+      - coal_ore
+      - lapis_ore
+      - mossy_cobblestone
+      - obsidian
+      - chest
+      - diamond_ore
+      - redstone_ore
+      - clay
+      - emerald_ore
+      - ender_chest
+      replacement-blocks:
+      - stone
+      - oak_planks
