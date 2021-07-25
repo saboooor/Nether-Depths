@@ -85,7 +85,7 @@ world-settings:
     seed-slime: -1
     max-tnt-per-tick: 100
     mob-spawn-range: 2
-    view-distance: default
+    view-distance: 2
     enable-zombie-pigmen-portal-spawns: false
     item-despawn-rate: 3000
     arrow-despawn-rate: 200
@@ -118,7 +118,7 @@ world-settings:
     entity-activation-range:
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
-      villagers-active-for-panic: true
+      villagers-active-for-panic: false
       villagers: 16
       flying-monsters: 32
       animals: 16
