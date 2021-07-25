@@ -1,0 +1,52 @@
+showTo: all
+priority: 0
+hiddenPlayers: VISIBLE_TO_ADMINS
+playerSets:
+  all_players: all
+showHeaderFooter: true
+header: "\n&l${nd Nether Depths ${viewer server}}\n"
+footer: 
+  - "\n&cTPS: &6${viewer server tps} &cPing: ${colored_ping viewer}ms\n"
+  - "\n&cServer Time: &6${time h:mm} &c${time a}\n"
+footerAnimationUpdateInterval: 3
+type: DYNAMIC_SIZE
+playerSet: all_players
+playerOrder: "vault_primary_group_weight desc"
+playerComponent: " &#444444• ${colored_ping player} &#444444• ${server_display_name player server} &#444444•&r ${vanished}${player display_name}${afk_tag}"
+customPlaceholders:
+  nd:
+    !color_animation
+    colors: ['#fb5659', '#fdad4f']
+    speed: 10
+  afk_tag:
+    !conditional
+    condition: ${player essentials_afk}
+    true: " &8[&7AFK&8]"
+    false: ""
+  vanished:
+    !conditional
+    condition: ${player is_hidden}
+    true: "&b&lV "
+    false: ""
+  colored_ping0:
+    !conditional
+    parameters: 1
+    condition: ${%0 ping} < 200
+    true: "&a${%0 ping}"
+    false: "&e${%0 ping}"
+  colored_ping:
+    !conditional
+    parameters: 1
+    condition: ${%0 ping} < 400
+    true: ${colored_ping0 %0}
+    false: "&c${%0 ping}"
+  server_display_name:
+    !switch
+    parameters: 1
+    expression: "${%0}"
+    replacements:
+      "Creative": "&b&lC"
+      "Survival": "&c&lS"
+      "Hub": "&6&lH"
+      "Minigames": "&d&lM"
+    defaultReplacement: "${%0}"
