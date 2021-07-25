@@ -1,0 +1,203 @@
+#    _____ _           _   ____                     _ 
+#   / ____| |         | | |  _ \                   | |
+#  | |    | |__   __ _| |_| |_) |_ __ __ ___      _| |
+#  | |    | '_ \ / _` | __|  _ <| '__/ _` \ \ /\ / / |
+#  | |____| | | | (_| | |_| |_) | | | (_| |\ V  V /| |
+#   \_____|_| |_|\__,_|\__|____/|_|  \__,_| \_/\_/ |_|
+#                                                     
+#   For a detailed explanation of all settings visit:         
+#       https://github.com/woutzah/ChatBrawl/wiki    
+# 
+#   Need help? Join the Discord server: https://discord.gg/TvTUWvG 
+
+enabled: true
+chance: 12
+duration: 600
+words:
+  '1':
+    word: Hepaticocholangiogastrostomy
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '2':
+    word: Pneumonoultramicroscopicsilicovolcanoconiosis
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '3':
+    word: Hippopotomonstrosesquippedaliophobia
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '4':
+    word: Supercalifragilisticexpialidocious
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '5':
+    word: Pseudopseudohypoparathyroidism
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '6':
+    word: Floccinaucinihilipilification
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '7':
+    word: Antidisestablishmentarianism
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '8':
+    word: Honorificabilitudinitatibus
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '9':
+    word: Thyroparathyroidectomized
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '10':
+    word: Dichlorodifluoromethane
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '11':
+    word: Incomprehensibilities
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '12':
+    word: Spectrophotofluorometrically
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '13':
+    word: Psychoneuroendocrinological
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '15':
+    word: Pneumoencephalographically
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '16':
+    word: Psychophysicotherapeutics
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '17':
+    word: Immunoelectrophoretically
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '18':
+    word: Otorhinolaryngological
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '14':
+    word: Uncharacteristically
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '19':
+    word: Uncopyrightable
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '20':
+    word: Dermatoglyphics
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '21':
+    word: Chargoggagoggmanchauggagoggchaubunagungamaugg
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+enable-firework: true
+enable-actionbar: true
+broadcast:
+  center-messages: false
+  enable-start: true
+  enable-end: true
+sound:
+  enabled: true
+  begin-race: BLOCK_ANVIL_PLACE
+  end-race: BLOCK_NOTE_BLOCK_PLING
+language:
+  actionbar: ''
+  start:
+  - '&6Type the word as fast as possible!\n'
+  - '  &7&l>  &b<word>'
+  ended: '&7The &6Chat Race &7ended without a winner!'
+  winner:
+  - ''
+  winner-personal: ''

@@ -1,0 +1,266 @@
+#    _____ _           _   ____                     _ 
+#   / ____| |         | | |  _ \                   | |
+#  | |    | |__   __ _| |_| |_) |_ __ __ ___      _| |
+#  | |    | '_ \ / _` | __|  _ <| '__/ _` \ \ /\ / / |
+#  | |____| | | | (_| | |_| |_) | | | (_| |\ V  V /| |
+#   \_____|_| |_|\__,_|\__|____/|_|  \__,_| \_/\_/ |_|
+#                                                     
+#   For a detailed explanation of all settings visit:         
+#       https://github.com/woutzah/ChatBrawl/wiki    
+# 
+#   Need help? Join the Discord server: https://discord.gg/TvTUWvG 
+
+enabled: true
+chance: 12
+duration: 600
+questions:
+  '1':
+    question: What's the capital of France?
+    answer:
+    - paris
+    - Paris
+    - PARIS
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '2':
+    question: What's the capital of Canada?
+    answer:
+    - ottawa
+    - Ottawa
+    - OTTAWA
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '3':
+    question: What's the capital of The United States?
+    answer:
+    - washington
+    - Washington
+    - washington dc
+    - Washington DC
+    - Washington D.C
+    - Washington, DC
+    - Washington, D.C
+    - Washington D.C.
+    - Washington, D.C.
+    - washington, dc
+    - washington, d.c
+    - washington, d.c.
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '4':
+    question: How much is 20 + 20 × 2?
+    answer:
+    - 60
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '5':
+    question: How much is 20 × 20 + 2?
+    answer:
+    - 402
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '6':
+    question: How much is 20² × 2?
+    answer:
+    - 800
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '7':
+    question: How much is 20 × 2 + 2?
+    answer:
+    - 42
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '8':
+    question: How much is 10 + 20 × 5?
+    answer:
+    - 110
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '9':
+    question: How much is 10 × 30 + 2?
+    answer:
+    - 302
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '10':
+    question: How much is 20² × 5?
+    answer:
+    - 2000
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '11':
+    question: How much is 30 × 2 + 2?
+    answer:
+    - 62
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '12':
+    question: What''s the capital of El Salvador?
+    answer:
+    - San Salvador
+    - san salvador
+    - San salvador
+    - san Salvador
+    - SAN SALVADOR
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '13':
+    question: What's the capital of The United Kingdom?
+    answer:
+    - London
+    - london
+    - LONDON
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '14':
+    question: How much is 29 x 12 + 23?
+    answer:
+    - 371
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '15':
+    question: How much is 29² x 13 ÷ 2 x 4?
+    answer:
+    - 21866
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '16':
+    question: How much is 4² x 8 ÷ 10 x 200?
+    answer:
+    - 2560
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '17':
+    question: How much is 29 x 12 + 23?
+    answer:
+    - 371
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '18':
+    question: How much is 29² x 13 ÷ 2 x 4?
+    answer:
+    - 21866
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '19':
+    question: How much is 4 + 8?
+    answer:
+    - 12
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '20':
+    question: How much is 13 + 2?
+    answer:
+    - 15
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '21':
+    question: How much is 13 + 2 x 10²?
+    answer:
+    - 213
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+enable-firework: true
+enable-actionbar: true
+broadcast:
+  center-messages: false
+  enable-start: true
+  enable-end: true
+sound:
+  enabled: true
+  begin-race: BLOCK_ANVIL_PLACE
+  end-race: BLOCK_NOTE_BLOCK_PLING
+language:
+  actionbar: '&6&oQuiz Race &7&l>> &fAnswer &b<question>'
+  start:
+  - '&6Answer the following question as fast as possible!\n'
+  - '&7&l>  &b<question>'
+  ended: '&7The &6Quiz Race &7ended without a winner! The answer was &b<answer>'
+  winner:
+  - ''
+  winner-personal: ''

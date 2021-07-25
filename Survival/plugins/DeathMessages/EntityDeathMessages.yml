@@ -1,0 +1,2 @@
+Tamable:
+  - "%killer% killed %owner%'s %tamable%::&aCustom name: %tamable_displayname%"

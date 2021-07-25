@@ -1,0 +1,53 @@
+#    _____ _           _   ____                     _ 
+#   / ____| |         | | |  _ \                   | |
+#  | |    | |__   __ _| |_| |_) |_ __ __ ___      _| |
+#  | |    | '_ \ / _` | __|  _ <| '__/ _` \ \ /\ / / |
+#  | |____| | | | (_| | |_| |_) | | | (_| |\ V  V /| |
+#   \_____|_| |_|\__,_|\__|____/|_|  \__,_| \_/\_/ |_|
+#                                                     
+#   For a detailed explanation of all settings visit:         
+#       https://github.com/woutzah/ChatBrawl/wiki    
+# 
+#   Need help? Join the Discord server: https://discord.gg/TvTUWvG 
+
+rewards:
+  '1':
+    chance: 30
+    commands:
+    - eco give <player> 1000
+    - broadcast &6<player> won a chat race and earned &c$1000!
+    title: You won $1000!
+    subtitle: Enjoy!
+    broadcast: ''
+  '2':
+    chance: 25
+    commands:
+    - eco give <player> 1500
+    - broadcast &6<player> won a chat race and earned &c$1500!
+    title: You won $1500!
+    subtitle: Enjoy!
+    broadcast: ''
+  '3':
+    chance: 20
+    commands:
+    - eco give <player> 2000
+    - broadcast &6<player> won a chat race and earned &c$2000!
+    title: You won $2000!
+    subtitle: Enjoy!
+    broadcast: ''
+  '4':
+    chance: 15
+    commands:
+    - eco give <player> 3000
+    - broadcast &6<player> won a chat race and earned &c$3000!
+    title: You won $3000!
+    subtitle: Enjoy!
+    broadcast: ''
+  '5':
+    chance: 10
+    commands:
+    - eco give <player> 3500
+    - broadcast &6<player> won a chat race and earned &c$3500!
+    title: You won $3500!
+    subtitle: Enjoy!
+    broadcast: ''
