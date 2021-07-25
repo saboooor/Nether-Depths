@@ -96,8 +96,8 @@ world-settings:
     nerf-spawner-mobs: true
     max-entity-collisions: 2
     merge-radius:
-      exp: 3
-      item: 2.5
+      exp: 6.0
+      item: 4.5
     growth:
       cactus-modifier: 100
       cane-modifier: 100
