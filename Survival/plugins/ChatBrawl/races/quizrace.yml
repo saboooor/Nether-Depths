@@ -246,7 +246,7 @@ questions:
     - 4
     - 5
 enable-firework: true
-enable-actionbar: true
+enable-actionbar: false
 broadcast:
   center-messages: false
   enable-start: true
@@ -256,7 +256,7 @@ sound:
   begin-race: BLOCK_ANVIL_PLACE
   end-race: BLOCK_NOTE_BLOCK_PLING
 language:
-  actionbar: '&6&oQuiz Race &7&l>> &fAnswer &b<question>'
+  actionbar: ''
   start:
   - '&6Answer the following question as fast as possible!\n'
   - '&7&l>  &b<question>'

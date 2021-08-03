@@ -231,7 +231,7 @@ words:
     - 4
     - 5
 enable-firework: true
-enable-actionbar: true
+enable-actionbar: false
 broadcast:
   center-messages: false
   enable-start: true
