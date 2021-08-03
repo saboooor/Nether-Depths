@@ -16,38 +16,12 @@ world-settings:
     worldgen:
       seeds:
         populator: random
-  survival: {}
-  survival_nether: {}
-  survival_the_end: {}
-  spawn: {}
-  creative: {}
-  minigames: {}
-  buildbattle: {}
-  minigames2: {}
-  resnether: {}
-  resend: {}
-  test: {}
-  plots: {}
-  plot: {}
-  worl: {}
-  world: {}
-  testing: {}
   netehr: {}
+  world: {}
   world_nether: {}
   world_the_end: {}
-  minigame: {}
-  minigameslobby: {}
-  lms: {}
-  sandbattle: {}
-  parkour: {}
-  maze: {}
-  springspleef: {}
-  knockout: {}
-  elytrarun: {}
-  spleef: {}
-  shops: {}
-  dealership: {}
   servershops: {}
+  vehicleshop: {}
 packet-limiter:
   kick-message: '&cSent too many packets'
   limits:

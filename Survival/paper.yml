@@ -12,7 +12,7 @@
 
 use-display-name-in-quit-message: false
 verbose: false
-config-version: 20
+config-version: 21
 settings:
   log-named-entity-deaths: true
   fix-entity-position-desync: true
@@ -72,6 +72,7 @@ settings:
       page: 16384
   loggers:
     deobfuscate-stacktraces: true
+  use-display-name-in-quit-message: false
 messages:
   no-permission: '&cYou do not have the permission to perform this command. Please
     contact the server administrators if you believe that this is in error.'
@@ -98,6 +99,7 @@ timings:
   history-interval: 300
   history-length: 3600
   server-name: Nether Depths
+  url: https://timings.pl3x.net
 world-settings:
   default:
     allow-player-cramming-damage: false
@@ -240,28 +242,16 @@ world-settings:
       max-block-height: 64
       use-permission: false
       enabled: false
-      engine-mode: 2
+      engine-mode: 1
       max-chunk-section-index: 3
       update-radius: 5
       lava-obscures: false
       hidden-blocks:
-      - gold_ore
-      - iron_ore
-      - coal_ore
-      - lapis_ore
-      - mossy_cobblestone
-      - obsidian
-      - chest
-      - diamond_ore
-      - redstone_ore
-      - clay
-      - emerald_ore
-      - ender_chest
+      - dirt
       replacement-blocks:
       - stone
-      - oak_planks
     viewdistances:
-      no-tick-view-distance: 6
+      no-tick-view-distance: 8
     squid-spawn-height:
       maximum: 0.0
     generator-settings:
@@ -277,6 +267,7 @@ world-settings:
       - NORMAL
       - HARD
     entity-per-chunk-save-limit:
+      small_fireball: -1
       experience_orb: 16
       arrow: 16
       dragonfireball: 3
@@ -319,7 +310,6 @@ world-settings:
   world_nether:
     anti-xray:
       enabled: true
-      engine-mode: 1
       hidden-blocks:
       - chest
       - ancient_debris

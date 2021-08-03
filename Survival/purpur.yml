@@ -9,7 +9,7 @@
 # Wiki: https://github.com/pl3xgaming/Purpur/wiki 
 
 verbose: false
-config-version: 17
+config-version: 18
 settings:
   server-mod-name: 1.12.2 -
   use-alternate-keepalive: true
@@ -111,8 +111,7 @@ settings:
       buried_treasure: -1
       mineshaft: -1
       stronghold: -1
-  timings:
-    url: https://timings.pl3x.net
+  timings: {}
   enchantment:
     allow-unsafe-enchants: false
     allow-infinity-on-crossbow: false
@@ -152,6 +151,12 @@ settings:
         good: <gradient:#55ff55:#00aa00><text></gradient>
         medium: <gradient:#ffff55:#ffaa00><text></gradient>
         low: <gradient:#ff5555:#aa0000><text></gradient>
+    compass:
+      title: 'S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  '
+      overlay: PROGRESS
+      progress-color: BLUE
+      percent: 1.0
+      tick-interval: 5
   advancement: {}
   broadcasts:
     advancement:
@@ -374,6 +379,7 @@ world-settings:
         attributes:
           max_health: 40.0
       horse:
+        stand-with-rider: true
         ridable-in-water: false
         breeding-delay-ticks: 6000
         attributes:
@@ -825,6 +831,8 @@ world-settings:
           eat-glow-duration: 0
         shulker_box:
           drop-contents-when-destroyed: true
+        compass:
+          holding-shows-bossbar: false
       player:
         ridable-in-water: false
         should-cram-to-death: true
@@ -1229,3 +1237,5 @@ world-settings:
           minecraft:exposed_cut_copper_slab:
             into: minecraft:cut_copper_slab
             drops: {}
+timings:
+  url: https://timings.pl3x.net
