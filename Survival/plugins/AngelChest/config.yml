@@ -133,6 +133,10 @@ spawn-chance: 1
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 random-item-loss: 0
 
+# When set to true, the random-item-loss defined above will NOT apply to enchanted items!
+# That means that enchanted items will always be stored in the AngelChest regardless of random item loss chance.
+random-item-loss-ignores-enchanted-items: false
+
 # When set to true, players will receive a message telling them where the AngelChest
 # is located, including clickable links to teleport, fetch or unlock the chest if
 # the player has permission for those commands.
@@ -192,9 +196,6 @@ void-detection: true
 
 # When true, AngelChest will avoid spawning a chest inside lava seas and instead spawns it nearby
 lava-detection: true
-
-# When you are using
-dont-spawn-chest-directly-below-other-blocks: false
 
 # When false, AngelChests will not be spawned for players who died in lava
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
@@ -1588,5 +1589,5 @@ debug: false
 verbose: false
 
 # NEVER CHANGE THE VALUES BELOW!
-plugin-version: 4.1.2
-config-version: 202107161348
+plugin-version: 4.3.4
+config-version: 202107281753
