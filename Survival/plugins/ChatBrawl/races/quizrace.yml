@@ -26,6 +26,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '2':
     question: What's the capital of Canada?
     answer:
@@ -38,6 +40,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '3':
     question: What's the capital of The United States?
     answer:
@@ -59,6 +63,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '4':
     question: How much is 20 + 20 × 2?
     answer:
@@ -69,6 +75,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '5':
     question: How much is 20 × 20 + 2?
     answer:
@@ -79,6 +87,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '6':
     question: How much is 20² × 2?
     answer:
@@ -89,6 +99,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '7':
     question: How much is 20 × 2 + 2?
     answer:
@@ -99,6 +111,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '8':
     question: How much is 10 + 20 × 5?
     answer:
@@ -109,6 +123,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '9':
     question: How much is 10 × 30 + 2?
     answer:
@@ -119,6 +135,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '10':
     question: How much is 20² × 5?
     answer:
@@ -129,6 +147,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '11':
     question: How much is 30 × 2 + 2?
     answer:
@@ -139,8 +159,10 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '12':
-    question: What''s the capital of El Salvador?
+    question: What's the capital of El Salvador?
     answer:
     - San Salvador
     - san salvador
@@ -153,6 +175,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '13':
     question: What's the capital of The United Kingdom?
     answer:
@@ -165,6 +189,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '14':
     question: How much is 29 x 12 + 23?
     answer:
@@ -175,6 +201,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '15':
     question: How much is 29² x 13 ÷ 2 x 4?
     answer:
@@ -185,6 +213,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '16':
     question: How much is 4² x 8 ÷ 10 x 200?
     answer:
@@ -195,6 +225,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '17':
     question: How much is 29 x 12 + 23?
     answer:
@@ -205,6 +237,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '18':
     question: How much is 29² x 13 ÷ 2 x 4?
     answer:
@@ -215,6 +249,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '19':
     question: How much is 4 + 8?
     answer:
@@ -225,6 +261,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '20':
     question: How much is 13 + 2?
     answer:
@@ -235,6 +273,8 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '21':
     question: How much is 13 + 2 x 10²?
     answer:
@@ -245,6 +285,93 @@ questions:
     - 3
     - 4
     - 5
+    - 6
+    - 7
+  '22':
+    question: How much is ( 13 + 2 ) x 10²?
+    answer:
+    - 1500
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '23':
+    question: What's the capital of Russia?
+    answer:
+    - Moscow
+    - moscow
+    - MOSCOW
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '24':
+    question: What does "www" stand for?
+    answer:
+    - World Wide Web
+    - world wide web
+    - World wide Web
+    - World Wide web
+    - world Wide Web
+    - world Wide web
+    - world wide Web
+    - WORLD WIDE WEB
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '25':
+    question: Which Minecraft edition sucks the most? Bedrock or Java?
+    answer:
+    - Bedrock
+    - bedrock
+    - BEDROCK
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '26':
+    question: How many blocks does Redstone travel for?
+    answer:
+    - 15
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '27':
+    question: What's the capital of Sweden?
+    answer:
+    - Stockholm
+    - stockholm
+    - STOCKHOLM
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
 enable-firework: true
 enable-actionbar: false
 broadcast:

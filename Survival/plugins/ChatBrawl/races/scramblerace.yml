@@ -23,6 +23,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '2':
     word: Car
     difficulty: 3
@@ -32,6 +34,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '3':
     word: Hello
     difficulty: 3
@@ -41,6 +45,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '4':
     word: Mechanic
     difficulty: 2
@@ -50,6 +56,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '5':
     word: Potion
     difficulty: 2
@@ -59,6 +67,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '6':
     word: Redstone
     difficulty: 2
@@ -68,6 +78,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '7':
     word: Pickaxe
     difficulty: 2
@@ -77,6 +89,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '8':
     word: Enderman
     difficulty: 2
@@ -86,6 +100,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '9':
     word: Ghast
     difficulty: 2
@@ -95,6 +111,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '10':
     word: Hoglin
     difficulty: 2
@@ -104,6 +122,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '11':
     word: Bastion
     difficulty: 2
@@ -113,6 +133,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '12':
     word: Warden
     difficulty: 2
@@ -122,6 +144,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '13':
     word: Axolotl
     difficulty: 2
@@ -131,6 +155,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '14':
     word: Goat
     difficulty: 2
@@ -140,6 +166,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '15':
     word: Amethyst
     difficulty: 2
@@ -149,6 +177,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '16':
     word: Spine
     difficulty: 2
@@ -158,6 +188,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '17':
     word: Subtext
     difficulty: 2
@@ -176,6 +208,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '19':
     word: Dumb
     difficulty: 3
@@ -185,6 +219,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '20':
     word: Fact
     difficulty: 3
@@ -194,6 +230,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '21':
     word: Cell
     difficulty: 3
@@ -203,6 +241,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '22':
     word: Data
     difficulty: 3
@@ -212,6 +252,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '23':
     word: Glasses
     difficulty: 2
@@ -221,6 +263,8 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
   '24':
     word: Pain
     difficulty: 3
@@ -230,6 +274,239 @@ words:
     - 3
     - 4
     - 5
+    - 6
+    - 7
+  '25':
+    word: Accessible
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '26':
+    word: Application
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '27':
+    word: Continuously
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '28':
+    word: Destruction
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '29':
+    word: Disadvantage
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '30':
+    word: Encyclopedia
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '31':
+    word: Generalize
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '32':
+    word: Havoc
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '33':
+    word: Hostile
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '34':
+    word: Indefinitely
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '35':
+    word: Inventory
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '36':
+    word: Miniature
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '37':
+    word: Modification
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '38':
+    word: Nether
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '39':
+    word: Obsidian
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '40':
+    word: Output
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '41':
+    word: Prestigious
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '42':
+    word: Projectile
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '43':
+    word: Provocative
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '44':
+    word: Subsequently
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '45':
+    word: Surrounded
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
 enable-firework: true
 enable-actionbar: false
 broadcast:
