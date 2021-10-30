@@ -31,9 +31,13 @@
 #
 # Permissions Based Messages
 #
-# For players that have a specific permission set, EX: deathmessages.premium, the death message
+# For victims that have a specific permission set, EX: deathmessages.premium, the death message
 # will be sent that is formatted as followed:
 # PERMISSION[YOUR.PERM.HERE]%player% dead lol
+#
+# For killers that have a specific permission set, EX: deathmessages.premium, the death message
+# will be sent that is formatted as followed:
+# PERMISSION_KILLER[YOUR.PERM.HERE]%killer% REKT %player%
 #
 # Players that are in a region (With WorldGuard hook enabled) and is defined below, will be sending a custom
 # region messages.
@@ -60,6 +64,7 @@
 
 # Due for there being no cure for laziness, this option ignores everything in the Mobs section and makes all messages
 # appear the same.
+
 Basic-Mode:
   Enabled: false
   Solo:
@@ -1435,3 +1440,9 @@ Mobs:
     Gang:
       Melee:
       - '&c%player% &6was knocked by a bunch of &c%killer%''s'
+Custom-Mobs:
+  Mythic-Mobs:
+    SkeletalMinion:
+      Solo:
+        Projectile-Arrow:
+        - '%player% was shot by %killer%'

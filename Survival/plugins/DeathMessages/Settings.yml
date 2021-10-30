@@ -10,6 +10,11 @@ Add-Prefix-To-All-Messages: false
 
 #Settings for specific hooks the plugins interact with
 Hooks:
+  # If MythicMobs is found, enable the hook
+  # Enable/Disable MythicMobs hook
+  MythicMobs:
+    Enabled: true
+
   # If WorldGuard is found, enable the hook
   # This creates custom flags for regions. These flags are set to ALLOW by default
   # Flags:
@@ -36,39 +41,42 @@ Hooks:
       Player:
         Enabled: true
         Channels:
-          - "865519986806095902:865523681778597889"
+        - 865519986806095902:865523681778597889
       Mob:
         Enabled: true
         Channels:
-          - "865519986806095902:865523681778597889"
+        - 865519986806095902:865523681778597889
       Natural:
         Enabled: true
         Channels:
-          - "865519986806095902:865523681778597889"
-      Tameable:
+        - 865519986806095902:865523681778597889
+      Entity:
         Enabled: true
-        Channels:
-          - "865519986806095902:865523681778597889"
+        Channels: []
     # If you wish to only have certain worlds with death message broadcast to discord, define them here
     World-Whitelist:
       Enabled: false
       Worlds:
-        - test1
-        - test2
+      - test1
+      - test2
 
   # If you run a bungee server that you would like to send death messages to other servers, enable this
-  #
-  # NOT WORKING YET, NOT WORKING YET, NOT WORKING YET, NOT WORKING YET, NOT WORKING YET, NOT WORKING YET
   Bungee:
     Enabled: false
+    # The server name that other servers will see
+    Server-Name:
+      # Should the plugin set the server name from the bungee config?
+      Get-From-Bungee: false
+      # Ignored if Get-From-Bungee is enabled.
+      Display-Name: lobby
     Server-Groups:
       # If enabled, the messages will only send to specified servers you list in the Servers section.
       # If disabled, messages will send to all servers you have the plugin installed on.
       Enabled: false
       # Get the server names from your config.yml in bungee
       Servers:
-        - lobby
-        - survival
+      - lobby
+      - survival
 
 
 # If enabled, user data will be saved. (Blacklist, and /dm toggle data)
@@ -109,15 +117,17 @@ Death-Listener-Priority: HIGH
 # If enabled, if mobs that have any specified characters from If-Contains, the default mob name will be displayed.
 Rename-Mobs:
   Enabled: true
-  If-Contains: "♡♥❤■"
+  If-Contains: ♡♥❤■
 
 # If enabled, mobs will always default to their entity name. Display names will always be ignored. (Besides players)
 Disable-Named-Mobs: false
-
 Expire-Last-Damage:
   # How long until the last mob that damaged a player expires? (Becomes a natural death cause)
   # Default: 7
-  Expire-Mob: 7
+  Expire-Player: 7
+  # How long until the last player that damaged an entity expires (Cancels the deathmessage listener)
+  # Default: 7
+  Expire-Entity: 7
 
 # If enabled, death messages will only be sent to players in the same world the player died in.
 Per-World-Messages: false
@@ -128,18 +138,17 @@ Per-World-Messages: false
 # and not used in the code.
 # If a world a player dies in is not specified, it will only broadcast to the world the player died in.
 World-Groups:
-  1:
-    - world
-    - world_nether
-    - world_the_end
+  '1':
+  - world
+  - world_nether
+  - world_the_end
 
 # Worlds that death messages will never be sent to.
 # Regardless of any other settings, messages will never be sent on these worlds.
 # If a world listed below belongs in a world group. Still, the messages will never be sent to any world.
 Disabled-Worlds:
-  - someDisabledWorld1
-  - someOtherDisabledWorld
-
+- someDisabledWorld1
+- someOtherDisabledWorld
 Private-Messages:
   # All messages will still be sent to the console log no matter the setting.
   # Discord messages will be effected depending on if the below settings are changed.
@@ -160,9 +169,15 @@ Private-Messages:
 Cooldown: 0
 
 # Custom Items
+
 # Add item display names here. If an item has the display name of something you provide here. Will be counted as
-# a Weapon Kill, not a melee kill.
+# a Weapon Kill. Not a melee kill.
 # REGEX is required here.
 Custom-Item-Display-Names-Is-Weapon:
-  - '&6SUPER\sCOOL\sGOLDEN\sAPPLE'
-  - 'SICKNAME'
+- '&6SUPER\sCOOL\sGOLDEN\sAPPLE'
+- SICKNAME
+
+# Any item materials you list here will return a weapon kill. Not a melee kill
+# Material names are listed here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+Custom-Item-Material-Is-Weapon:
+- ACACIA_FENCE
