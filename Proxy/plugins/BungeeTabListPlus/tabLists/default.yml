@@ -45,8 +45,9 @@ customPlaceholders:
     parameters: 1
     expression: "${%0}"
     replacements:
-      "Creative": "&b&lC"
-      "Survival": "&c&lS"
-      "Hub": "&6&lH"
-      "Minigames": "&d&lM"
+      "Creative": "&#08FFFF&lC"
+      "Survival": "&#FF0F0F&lS"
+      "Hub": "&#FF531C&lH"
+      "Minigames": "&#FF03F5&lM"
+      "Skyblock": "&#7AC7FF&lS"
     defaultReplacement: "${%0}"

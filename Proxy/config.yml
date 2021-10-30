@@ -7,6 +7,7 @@ listeners:
     dev.netherdepths.com: dev
     hub.netherdepths.com: hub
     minigames.netherdepths.com: minigames
+    skyblock.netherdepths.com: skyblock
     survival.netherdepths.com: survival
   host: 0.0.0.0:25565
   max_players: 60
@@ -17,6 +18,7 @@ listeners:
   - survival
   - creative
   - minigames
+  - skyblock
   proxy_protocol: false
   query_enabled: false
   query_port: 25565
@@ -37,6 +39,7 @@ permissions:
   - slashserver.hub
   - slashserver.minigames
   - slashserver.creative
+  - slashserver.skyblock
 log_pings: true
 connection_throttle_limit: 3
 prevent_proxy_connections: false
@@ -48,26 +51,30 @@ groups:
   - admin
 remote_ping_timeout: 5000
 connection_throttle: 4000
-log_commands: false
+log_commands: true
 stats: -1
 online_mode: true
-forge_support: true
+forge_support: false
 disabled_commands:
 - disabledcommandhere
 servers:
   Creative:
-    address: -1:53920
+    address: 0.0.0.0:55243
     motd: ''
     restricted: false
   Hub:
-    address: -1:40099
+    address: 0.0.0.0:53323
     motd: ''
     restricted: false
   Minigames:
-    address: -1:50831
+    address: 0.0.0.0:56084
+    motd: ''
+    restricted: false
+  Skyblock:
+    address: 0.0.0.0:55244
     motd: ''
     restricted: false
   Survival:
-    address: -1:51302
+    address: 0.0.0.0:59400
     motd: ''
     restricted: false
