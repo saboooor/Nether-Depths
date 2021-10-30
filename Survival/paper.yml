@@ -12,8 +12,11 @@
 
 use-display-name-in-quit-message: false
 verbose: false
-config-version: 21
+config-version: 23
 settings:
+  log-player-ip-addresses: true
+  lag-compensate-block-breaking: true
+  send-full-pos-for-hard-colliding-entities: true
   log-named-entity-deaths: true
   fix-entity-position-desync: true
   load-permissions-yml-before-plugins: true
@@ -73,6 +76,26 @@ settings:
   loggers:
     deobfuscate-stacktraces: true
   use-display-name-in-quit-message: false
+  chunk-loading:
+    min-load-radius: 2
+    max-concurrent-sends: 2
+    autoconfig-send-distance: true
+    target-player-chunk-send-rate: 100.0
+    global-max-chunk-send-rate: -1.0
+    enable-frustum-priority: false
+    global-max-chunk-load-rate: -1.0
+    player-max-concurrent-loads: 4.0
+    global-max-concurrent-loads: 500.0
+  packet-limiter:
+    kick-message: '&cSent too many packets'
+    limits:
+      all:
+        interval: 7.0
+        max-packet-rate: 500.0
+      PacketPlayInAutoRecipe:
+        interval: 4.0
+        max-packet-rate: 5.0
+        action: DROP
 messages:
   no-permission: '&cYou do not have the permission to perform this command. Please
     contact the server administrators if you believe that this is in error.'
@@ -96,12 +119,15 @@ timings:
   - settings.velocity-support.secret
   - server-ip
   - settings.seed.geode
+  - web-services.token
   history-interval: 300
   history-length: 3600
   server-name: Nether Depths
   url: https://timings.pl3x.net
 world-settings:
   default:
+    split-overstacked-loot: true
+    map-item-frame-cursor-update-interval: 10
     allow-player-cramming-damage: false
     show-sign-click-command-failure-msgs-to-player: false
     seed-based-feature-search-loads-chunks: false
@@ -307,6 +333,8 @@ world-settings:
       behavior:
         villager:
           validatenearbypoi: -1
+    feature-seeds:
+      generate-random-seeds-for-all: false
   world_nether:
     anti-xray:
       enabled: true

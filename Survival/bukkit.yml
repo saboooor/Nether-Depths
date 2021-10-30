@@ -24,6 +24,7 @@ settings:
   shutdown-message: Server restarting. This should only take a minute!
   minimum-api: none
 spawn-limits:
+  water-underground-creature: 5
   monsters: 30
   animals: 5
   water-animals: 7
@@ -33,6 +34,7 @@ chunk-gc:
   period-in-ticks: 300
   load-threshold: 300
 ticks-per:
+  water-underground-creature-spawns: 1
   animal-spawns: 400
   monster-spawns: 10
   water-spawns: 300
