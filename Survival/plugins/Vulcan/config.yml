@@ -1,9 +1,10 @@
-##############################################
+# #############################################
 #    Vulcan Anti-Cheat Configuration File    #
-##############################################
+# #############################################
 
 # The prefix that will be used for all of the %prefix% messages throughout the plugin
 prefix: '&6&lVulcan&8 •'
+
 alerts:
   # This is the chat format that will be followed when a player fails a check.
   # Valid placeholders are %player% (player name), %max-vl% (max violations), %check% (name of check), %description% (check description),
@@ -41,8 +42,7 @@ alerts:
   # Whether or not alerts will be printed to the console.
   print-to-console: true
   # The format for printing alerts to the console
-  console-format: '&6&lVulcan&8 • %player% failed %check% %dev%(Type %type%)%dev%
-    (%vl%/%max-vl%)'
+  console-format: '[Vulcan] %player% failed %check% %dev%(Type %type%)%dev% (%vl%/%max-vl%)'
   # This is a fully customizable list of commands that will be executed each time a player flags a check, just in case
   # you want to do anything special when they flag without needing to use the API. All valid placeholders are the same
   # as listed above once again.
@@ -50,28 +50,29 @@ alerts:
   # You can use this section to color code your alerts or add chances to them depending on the violation level.
   severity:
     violations:
-      '2': 4
-      '3': 8
-      '4': 12
-      '5': 16
-      '6': 16
-      '7': 16
-      '8': 16
-      '9': 16
-      '10': 16
-    colors:
-      '1': '&a'
-      '2': '&e'
-      '3': '&6'
-      '4': '&c'
-      '5': '&4'
-      '6': '&4'
-      '7': '&4'
-      '8': '&4'
-      '9': '&4'
-      '10': '&4'
+      '2': 4 # Values less than this number will be the color '1' below. Values greater than or equal to this number and less than '3' will be the color 2
+      '3': 8 # Values greater than or equal to this number and higher than '2' will be the color '3' below
+      '4': 12 # Values greater than or equal to this number and higher than '3' will be the color '4' below
+      '5': 16 # Values greater than or equal to this number and higher than '4' will be the color '5' below
+      '6': 16 # Values greater than or equal to this number and higher than '5' will be the color '6' below
+      '7': 16 # Values greater than or equal to this number and higher than '6' will be the color '7' below
+      '8': 16 # Values greater than or equal to this number and higher than '7' will be the color '8' below
+      '9': 16 # Values greater than or equal to this number and higher than '8' will be the color '9' below
+      '10': 16 # Values greater than or equal to this number and higher than '9' will be the color '10' below
+    colors: # This also supports hex color codes (in 1.16!+)
+      '1': '&a' # The color that this severity should be, whatever is less than '2' in the section above
+      '2': '&e' # The color that this severity should be, whatever is less than '3' and greater than or equal to '2' in the section above
+      '3': '&6' # The color that this severity should be, whatever is less than '4' and greater than or equal to '3' in the section above
+      '4': '&c' # The color that this severity should be, whatever is less than '5' and greater than or equal to '4' in the section above
+      '5': '&4' # The color that this severity should be, whatever is less than '6' and greater than or equal to '5' in the section above
+      '6': '&4' # The color that this severity should be, whatever is less than '7' and greater than or equal to '6' in the section above
+      '7': '&4' # The color that this severity should be, whatever is less than '8' and greater than or equal to '7' in the section above
+      '8': '&4' # The color that this severity should be, whatever is less than '9' and greater than or equal to '8' in the section above
+      '9': '&4' # The color that this severity should be, whatever is less than '10' and greater than or equal to '9' in the section above
+      '10': '&4' # The color that this severity should be, whatever is less than '11' and greater than or equal to '10' in the section above
   # The symbol that will be displayed for the %dev% placeholder to denote experimental checks.
   experimental-symbol: '*'
+
 verbose:
   # Verbose notifications are sent whenever a player increases the buffer on a check. Only really here for developer
   # purposes as it is very very spammy. All of the same info from above applies here. Not really recommended to be used
@@ -87,17 +88,12 @@ verbose:
   - '&7%buffer%/%max-buffer%'
   - ''
   - '&7Click to teleport to &b%player%&7.'
-  # This is the command that will be executed when you click the alert message. Unfortunately we are limited to one
-  # command per ChatComponent so we use a little magic and make our own command that is able to execute a list of any commands.
-  # Valid placeholders
   click-commands:
   - /tp %player%
-  # The message that will be sent when you toggle on alerts. Valid placeholder are %prefix%.
   toggled-on-message: '%prefix% &7Vulcan verbose &aenabled&7!'
-  # The message that will be sent when you toggle off alerts. Valid placeholder are %prefix%.
   toggled-off-message: '%prefix% &7Vulcan verbose &cdisabled&7!'
 
-#This section deals with the log file (violations.txt)
+# This section deals with the log file (violations.txt)
 log-file:
   # Whether or not the log file is enabled
   enabled: true
@@ -107,6 +103,8 @@ log-file:
   # %ping% (the player's ping), %tps% (the server's TPS), and %type% (character denoting the type for the check, A, B, C, etc).
   alert-message: '%player% failed %check% %dev%(Type %type%)%dev% [VL: %vl%] [Ping:
     %ping%] [TPS: %tps%] [Version: %version%]'
+  # The message that is logged when a player is punished for a check. Valid placeholders are the same as listed above.
+  # Further details about the punishment will also be logged into the punishments.txt file if enabled (see next section).
   punishment-message: '%player% was punished for %check% %dev%(Type %type%)%dev% [VL:
     %vl%] [Ping: %ping%] [TPS: %tps%]'
 
@@ -154,6 +152,7 @@ client-brand-alerts:
   # The client brands that will be whitelisted This uses string comparison so it doesnt need to be exact, for example,
   # 'forge' will block Forge, 'lunar' will block lunar, etc.
   whitelisted-client-brands: []
+
 connection:
   transaction:
     kick-enabled: true
@@ -181,7 +180,7 @@ connection:
     console-message: '&6&lVulcan&8 • &c%player% &7kicked for having too high ping!
       &7(&c%ping%ms&7)'
 
-# This section deals with punishment.s
+# This section deals with punishments
 punishments:
   # The message that is sent when a player is punished (only sent to staff with /alerts enabled)
   message: '%prefix% &c%player% &7was punished for &f%check% &7(&fType %type%&7) &7[&4x%vl%&7]'
@@ -192,7 +191,7 @@ punishments:
     the network.'
   - '&7&m---»--*-------------------------------------*--«---'
 
-#Judgement Day options
+# Judgement Day options
 judgement-days:
   # The message that wil be broadcast to the server when someone has executed /jday start
   started-broadcast:
@@ -210,7 +209,7 @@ judgement-days:
   # The broadcast that will be sent to the server when someone is punished in a judgement day.
   broadcast:
   - '&7&m---»--*-------------------------------------*--«---'
-  - '&c%player% &7was banned for &c\ Judgement Day v1&7.'
+  - '&c%player% &7was banned for &c[Vulcan] Judgement Day v1&7.'
   - '&7&m---»--*-------------------------------------*--«---'
   # How long we should wait in between players who are queued in judgement days
   cooldown: 1000
@@ -218,6 +217,7 @@ judgement-days:
   run-at-interval: false
   # If the above is true, the interval at which they should run (in ticks, 20 ticks = 1 second. default = 36000 ticks = 30mins)
   interval: 36000
+
 freeze:
   # A customizable list of commands that will be executed when a player logs out while frozen
   logged-out-while-frozen-commands: []
@@ -262,11 +262,11 @@ ghost-blocks-fix:
   # Whether or not setbacks for ghost blocks should be enabled.
   setback: true
   # Whether or not block change packets should be sent around the bottom of the player reupdating the blocks below them
-  update-blocks: true
+  update-blocks: false
   # How many ticks should they be in the air before being flagged as on a ghost block (default 3)
   ticks: 3
   # Whether or not the player will get sent a message when ghost blocks around them are updated
-  message-enabled: true
+  message-enabled: false
   # The message that will get sent to players when they're on a ghost block (if the above is enabled)
   message: '&cYou were walking on a ghost block. It has been updated!'
   # Whether or not staff should be sent a message when someone is setback for being on a ghost block
@@ -277,8 +277,9 @@ ghost-blocks-fix:
   # Whether or not the ghost block message should be printed to console
   print-to-console: true
   # The message that is printed to console if the above is true.
-  console-message: '&6&lVulcan&8 • %player% position was updated for being on a ghost
-    block! (%world%, %x%, %y%, %z%) &7[%ticks%]'
+  console-message: '%player% position was updated for being on a ghost block! (%world%,
+    %x%, %y%, %z%) &7[%ticks%]'
+
 
 # Message options - these are all pretty self explanatory.
 messages:
@@ -290,8 +291,7 @@ messages:
   profile-command-syntax: '%prefix% &7Proper Syntax: &c/vulcan profile (player)&7.'
   jday-command-syntax: '%prefix% &7Proper Syntax: &c/jday add (player) &8| &c/jday
     execute &8| &c/jday list &8| &c/jday remove (player)&7.'
-  reload-success: '%prefix% &aSuccessfully reloaded Vulcan! (You may have to run this
-    command twice to take effect)'
+  reload-success: '%prefix% &aSuccessfully reloaded Vulcan!'
   invalid-target: '%prefix% &cThe specified player could not be found!'
   kb-test-success: '%prefix% &aSuccessfully performed knockback test on %player%!'
   jday-no-pending-bans: '%prefix% &cThere are no pending bans!'
@@ -374,6 +374,7 @@ messages:
   removed-from-jday: '%prefix% &aSuccesfully removed %player% from Judgement Day!'
   jday-remove-syntax: '%prefix% &cProper Syntax: /jday remove (player)'
   punishlogs-syntax: '%prefix% &cProper Syntax: /punishlogs (player)'
+  sent-test-alert: '%prefix% &aSuccessfully executed a test alert!'
 
 # Command configuration options.
 commands:
@@ -398,12 +399,16 @@ commands:
   - '&c/vulcan rotate (player) &8- &7Randomly rotates a player''s yaw/pitch.'
   - '&c/vulcan shuffle (player) &8- &7Randomly shuffle a player''s hotbar slot.'
   - '&c/vulcan top &8- &7Display the players with highest violations for each category.'
+  - '&c/vulcan testalert &8- &7Tests Discord webhooks/integration.'
   - '&r'
-  - '&c/jday add (name) &8- &7Adds a player to Judgement Day.'
+  - '&c/jday add (player) &8- &7Adds a player to Judgement Day.'
   - '&c/jday execute &8- &7Executes a Judgement Day.'
   - ''
   - '&c/verbose &8- &7Turn on and off verbose notifications.'
   - '&c/alerts &8- &7Turn on and off cheat alerts.'
+  - ''
+  - '&c/logs (player) (page) &8- &7Read a player''s violations.'
+  - '&c/punishlogs (player) &8- &7Check a player''s punishments'
   - '&7&m---»--*-------------------------------------*--«---'
   ban:
     # The commands that will be executed when /vulcan ban (player) is executed
@@ -489,6 +494,7 @@ commands:
     list-format: ' &8- &7%name%'
   punishlogs:
     header-footer: '&7&m---»--*--&r&7[ Punishment Logs for &c%player% &7]&7&m--*--«---'
+
 punishment-statistics-broadcast:
   # Whether or not Vulcan should broadcast how many players it has punished.
   enabled: false
@@ -536,11 +542,11 @@ settings:
   # Whether or not the API should be enabled. If you want to hook into Vulcan and do anything fancy, then enable this, however
   # the majority of people will never use this and disabling it allows for less runnables and more performance as the events dont
   # need to be called at all (they are also forced to be called sync, so this is a win win performance gain)
-  enable-api: false
+  enable-api: true
   # Whether or not the update checker should be enabled
   update-checker: true
   # The delay in milliseconds (1000ms = 1 second)
-  punishment-delay: 200
+  punishment-delay: 10000
   # Whether or not Vulcan should automatically ignore Bedrock players using Floodgate's API.
   ignore-floodgate: true
   # This is highly highly recommended to keep false as it can be spoofed by the client, however, if you're using Geyser and
@@ -556,7 +562,7 @@ settings:
   # Whether or not we should ignore flags for players whose usernames start with a certain character/string of characters
   ignore-geyser-prefixes: false
   # The string to be ignored - all players names who start with a * will not be flagged (case sensitive if not symbols)
-  ignore-geyser-prefix: _
+  ignore-geyser-prefix: '_'
   # The max violation (violations above this won't be sent)
   max-alert-violation: 250
   # How long should people be exempt from checks when they were in /fly (default = 40 ticks, 2 seconds)
@@ -581,6 +587,8 @@ settings:
   hook-mythicmobs: true
   # Whether or not Vulcan should hook into GSit if it is available
   hook-gsit: true
+  # Whether or not Vulcan should hook with Brewery if available
+  hook-brewery: true
   # Whether or not Vulcan should ignore alerts for violations which are greater than the max violations threshold
   ignore-alerts-over-max-violations: false
   # The amount greater than the max violations that should be ignored (example, 3 would mean that if the max violations
@@ -590,12 +598,16 @@ settings:
   incompatability-manager: true
   # Whether or not Vulcan should send plugin messages
   plugin-messaging: true
+  # Whether or not Vulcan should setback players when they are lower than their last onGround position (this can lead to
+  # things such as anti-voids, so not particularly recommended if you have something like a SkyWars/BedWars server)
+  dont-setback-lower-positions: false
+
 hooks:
-  ######################################################################################################################
+  # #####################################################################################################################
   # Discord Configuration                                                                                              #
   # enable-hook: Enable/Disable discord support. You must have DiscordBotAPI installed.                                #
   # Requires https://www.spigotmc.org/resources/discordbotapi.86518/                                                   #
-  ######################################################################################################################
+  # #####################################################################################################################
   discord:
     enable-hook: false
     alerts-channel-id: '865524762436173835'
@@ -618,21 +630,31 @@ hooks:
       title: Vulcan Punishment
       description: '%player% was banned for  %check% (Type: %type%) (VL:%vl%)'
       image: https://crafatar.com/avatars/%uuid%
-  ######################################################################################################################
-  # Discord Webhook Configuration                                                                                      #
-  ######################################################################################################################
+# #####################################################################################################################
+# Discord Webhook Configuration                                                                                      #
+# #####################################################################################################################
 discord-webhook:
+  # The section for the Discord Webhook alerts
   alerts:
-    enabled: true
-    url: '[WEBHOOK URL]'
-    avatar: 'https://i.imgur.com/JPG1Kwk.png'
-    thumbnail: 'http://cravatar.eu/avatar/%name%/64.png'
+    # Whether or not Discord Webhook Alerts should be enabled
+    enabled: false
+    # Paste the URL to your webhook here. For how to create a webhook, please see https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+    url: insert-webhook-url-here
+    # The avatar for the webhook
+    avatar: https://i.imgur.com/JPG1Kwk.png
+    # Thumbnail for the webhook
+    thumbnail: http://cravatar.eu/avatar/%name%/64.png
+    # Colors for the webhook (use a website like https://www.rapidtables.com/web/color/RGB_Color.html to pick colors)
     color-r: 252
     color-g: 140
     color-b: 3
+    # Username of the webhook
     username: Vulcan
+    # Title of the webhook
     title: Vulcan Alert
+    # Description of the webhook
     description: '**%player%** failed %check% %dev%(Type %type%)%dev% [%vl%/%max-vl%]'
+    # Content will send text outside of the embed, so you can tag roles or people for example.
     content: ''
     information-field: true
     client-version-field: true
@@ -642,10 +664,11 @@ discord-webhook:
     location-field: true
     ping-tps-field: true
   punishments:
+    # Same settings and explanations as above
     enabled: false
-    url: insert-url-here
+    url: insert-webhook-url-here
     avatar: https://i.imgur.com/JPG1Kwk.png
-    thumbnail: http://cravatar.eu/avatar/%name%/64.png"
+    thumbnail: http://cravatar.eu/avatar/%name%/64.png
     color-r: 255
     color-g: 0
     color-b: 0
@@ -660,7 +683,7 @@ discord-webhook:
     ping-tps-field: false
     location-field: false
 
-########################################################################################################################
+# #######################################################################################################################
 # AbstractCheck Configuration. Almost all of these options are editable live in game via /vulcan gui
 # enabled: Whether or not the check is enabled or disabled
 # punishable: Whether or not the commands will be executed when the max-violations is reached
@@ -677,7 +700,7 @@ discord-webhook:
 #
 # buffer:
 # max: Buffer is how many times the player needs to 'fail' the check in order to actually alert. This is basically how
-#         sensitive the check is. I recommend keeping these as default, but if you want the anticheat to be a little less
+#         sensitive the check is. I recommend keeping these as default, but if you want the anticheat to be a little more
 #         sensitive or less sensitive you can play with them a little. Don't set them too low or too high or else there will be
 #         too many false flags or it just won't flag at all.
 # multiple: This is what the buffer gets multiplied by after an alert is sent. For example, if you set it to 1, then it wouldn't
@@ -703,7 +726,7 @@ discord-webhook:
 # minimum-vl-to-randomly-rotate: Minimum violations which the player needs to be at in order for this feature to work.
 # rotate-every: Interval at which this will be executed.
 # For any questions on configuration, please join our Discord or send me on a pm! https://discord.gg/SCNuwUG | frap#0002
-########################################################################################################################
+# #######################################################################################################################
 checks:
   combat:
     aim:
@@ -719,7 +742,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.75
@@ -744,7 +766,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -769,7 +790,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
@@ -794,7 +814,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.5
@@ -819,7 +838,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.75
@@ -844,7 +862,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 12
           multiple: 0.5
@@ -869,7 +886,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
@@ -894,7 +910,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 7
           multiple: 0.5
@@ -919,7 +934,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 7
           multiple: 0.5
@@ -944,7 +958,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -969,7 +982,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 10
           multiple: 0.45
@@ -993,7 +1005,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.4
@@ -1018,7 +1029,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
@@ -1043,7 +1053,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
@@ -1068,7 +1077,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.4
@@ -1093,7 +1101,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -1118,7 +1125,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 20
           multiple: 0.3
@@ -1143,7 +1149,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 20
           multiple: 0.25
@@ -1168,7 +1173,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         hotbar-shuffle:
           enabled: false
           minimum-vl-to-shuffle: 2
@@ -1189,7 +1193,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 20
           multiple: 0.25
@@ -1214,11 +1217,30 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 12
           multiple: 0.25
           decay: 0.125
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      y:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 4
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[ND] Kicked for cheating
         hotbar-shuffle:
           enabled: false
           minimum-vl-to-shuffle: 2
@@ -1240,7 +1262,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         hotbar-shuffle:
           enabled: false
           minimum-vl-to-shuffle: 2
@@ -1261,7 +1282,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         hotbar-shuffle:
           enabled: false
           minimum-vl-to-shuffle: 2
@@ -1282,11 +1302,30 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.5
           decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 4
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[ND] Kicked for cheating
         hotbar-shuffle:
           enabled: false
           minimum-vl-to-shuffle: 2
@@ -1299,7 +1338,7 @@ checks:
     # the violations you should be fine but it's all just probability / statistics.
     autoclicker:
       a:
-        enabled: false
+        enabled: true
         punishable: true
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1310,13 +1349,9 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-        # Don't set this below 22ish
         max-cps: 25
-        # Set this to 100000 or something really high to disable this
-        instant-punish-cps: 50
       b:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1327,13 +1362,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
           decay: 0.5
       c:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1344,13 +1378,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
           decay: 1
       d:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1361,13 +1394,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
           decay: 0.5
       e:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1378,13 +1410,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
           decay: 0.75
       f:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1395,13 +1426,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
           decay: 1.25
       g:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1412,13 +1442,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.25
           decay: 1.25
       h:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1429,13 +1458,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
           decay: 1
       i:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1446,13 +1474,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
           decay: 1.25
       j:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1463,13 +1490,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
           decay: 1.25
       k:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1480,13 +1506,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
           decay: 0.75
       l:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1497,13 +1522,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
           decay: 1
       m:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1514,13 +1538,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
           decay: 0.75
       n:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1531,13 +1554,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 25
           multiple: 0.15
           decay: 0.75
       o:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1548,13 +1570,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.25
           decay: 1.25
       p:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1565,12 +1586,11 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
       q:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1581,13 +1601,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 35
           multiple: 0.3
           decay: 2.0
       r:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1598,13 +1617,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 50
           multiple: 0.15
           decay: 10
       s:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1615,13 +1633,12 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 30
           multiple: 0.15
           decay: 0.825
       t:
-        enabled: false
+        enabled: true
         punishable: false
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -1632,7 +1649,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 25
           multiple: 0.15
@@ -1650,7 +1666,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -1668,7 +1683,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.25
@@ -1687,7 +1701,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -1713,7 +1726,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -1738,7 +1750,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -1764,7 +1775,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -1789,7 +1799,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.6
@@ -1814,7 +1823,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.5
@@ -1839,7 +1847,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       f:
         enabled: true
         punishable: true
@@ -1852,7 +1859,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 10
           multiple: 0.25
@@ -1869,7 +1875,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -1886,7 +1891,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       j:
         enabled: true
         punishable: true
@@ -1899,7 +1903,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -1916,7 +1919,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -1934,7 +1936,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
@@ -1952,7 +1953,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.25
@@ -1971,7 +1971,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
@@ -1988,7 +1987,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.35
@@ -2005,11 +2003,26 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.25
           decay: 0.175
+      d:
+        enabled: false
+        punishable: false
+        discord-alert-interval: 4
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[ND] Kicked for cheating
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.05
   movement:
     noslow:
       a:
@@ -2024,7 +2037,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2041,7 +2053,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 7
           multiple: 0.25
@@ -2058,7 +2069,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 7
           multiple: 0.25
@@ -2075,7 +2085,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 7
           multiple: 0.25
@@ -2092,7 +2101,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 7
           multiple: 0.25
@@ -2112,7 +2120,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2131,7 +2138,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2150,7 +2156,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -2169,11 +2174,10 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
-          max: 2
+          max: 3
           multiple: 0.25
-          decay: 0.25
+          decay: 0.05
       e:
         enabled: true
         punishable: true
@@ -2188,30 +2192,10 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
           decay: 0.05
-      f:
-        enabled: true
-        punishable: true
-        setback: false
-        min-vl-to-setback: 1
-        discord-alert-interval: 4
-        broadcast-punishment: false
-        max-violations: 20
-        alert-interval: 1
-        dont-alert-until: 1
-        maximum-ping: 100000
-        minimum-tps: 19.0
-        punishment-commands:
-        - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-        buffer:
-          max: 6
-          multiple: 0.25
-          decay: 0.125
       g:
         enabled: true
         punishable: true
@@ -2226,9 +2210,26 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
+          multiple: 0.25
+          decay: 0.15
+      h:
+        enabled: false
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 4
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[ND] Kicked for cheating
+        buffer:
+          max: 4
           multiple: 0.25
           decay: 0.15
     jump:
@@ -2246,7 +2247,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -2265,7 +2265,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -2284,7 +2283,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       b:
         enabled: true
         punishable: true
@@ -2298,7 +2296,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.25
@@ -2316,7 +2313,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.33
@@ -2334,7 +2330,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.25
@@ -2352,7 +2347,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.25
@@ -2371,7 +2365,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
@@ -2389,7 +2382,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
@@ -2407,7 +2399,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.25
@@ -2425,7 +2416,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -2443,7 +2433,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
@@ -2453,6 +2442,7 @@ checks:
       a:
         enabled: true
         punishable: true
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 15
@@ -2462,7 +2452,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -2471,6 +2460,7 @@ checks:
       b:
         enabled: true
         punishable: true
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 15
@@ -2480,7 +2470,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.25
@@ -2488,6 +2477,7 @@ checks:
       c:
         enabled: true
         punishable: true
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 15
@@ -2497,7 +2487,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -2505,6 +2494,7 @@ checks:
       f:
         enabled: true
         punishable: true
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 10
@@ -2514,7 +2504,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.25
@@ -2522,6 +2511,7 @@ checks:
       g:
         enabled: true
         punishable: false
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 25
@@ -2531,7 +2521,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2539,6 +2528,7 @@ checks:
       i:
         enabled: true
         punishable: true
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 15
@@ -2548,31 +2538,14 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
-          multiple: 0.25
-          decay: 0.1
-      j:
-        enabled: true
-        punishable: true
-        discord-alert-interval: 4
-        broadcast-punishment: false
-        max-violations: 5
-        alert-interval: 1
-        dont-alert-until: 1
-        maximum-ping: 100000
-        minimum-tps: 19.0
-        punishment-commands:
-        - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-        buffer:
-          max: 2
           multiple: 0.25
           decay: 0.1
       k:
         enabled: true
         punishable: true
+        setback: false
         discord-alert-interval: 4
         broadcast-punishment: false
         max-violations: 15
@@ -2582,7 +2555,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
@@ -2602,7 +2574,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.35
@@ -2621,7 +2592,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2641,7 +2611,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2661,7 +2630,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -2682,7 +2650,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
@@ -2702,7 +2669,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.35
@@ -2722,7 +2688,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -2741,7 +2706,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
@@ -2760,7 +2724,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 10
           multiple: 0.45
@@ -2779,7 +2742,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.45
@@ -2798,7 +2760,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 10
           multiple: 0.25
@@ -2818,7 +2779,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.65
@@ -2841,7 +2801,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -2860,7 +2819,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.75
@@ -2883,7 +2841,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.35
@@ -2906,7 +2863,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.4
@@ -2929,7 +2885,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
     sprint:
       a:
         enabled: true
@@ -2943,7 +2898,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.25
@@ -2963,7 +2917,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.5
@@ -2980,7 +2933,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.15
@@ -2999,24 +2951,9 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-    airplace:
-      a:
-        enabled: false
-        punishable: true
-        discord-alert-interval: 1
-        broadcast-punishment: false
-        max-violations: 10
-        alert-interval: 1
-        dont-alert-until: 1
-        maximum-ping: 100000
-        minimum-tps: 19.0
-        punishment-commands:
-        - kick %player% &c[Vulcan] Unfair Advantage
-        cancel: true
     fastplace:
       a:
-        enabled: false
+        enabled: true
         punishable: true
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -3027,11 +2964,10 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-blocks: 15
     fastbreak:
       a:
-        enabled: false
+        enabled: true
         punishable: true
         discord-alert-interval: 4
         broadcast-punishment: false
@@ -3042,7 +2978,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -3061,7 +2996,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
@@ -3079,7 +3013,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       b:
         enabled: true
         punishable: true
@@ -3092,7 +3025,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -3109,7 +3041,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -3126,7 +3057,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
@@ -3143,7 +3073,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
@@ -3160,7 +3089,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -3177,7 +3105,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.25
@@ -3194,7 +3121,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       j:
         enabled: true
         punishable: true
@@ -3207,7 +3133,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       k:
         enabled: true
         punishable: true
@@ -3220,7 +3145,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -3238,9 +3162,24 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
+          multiple: 0.5
+          decay: 0.25
+      n:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 4
+        broadcast-punishment: false
+        max-violations: 12
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[ND] Kicked for cheating
+        buffer:
+          max: 2
           multiple: 0.5
           decay: 0.25
     timer:
@@ -3262,13 +3201,13 @@ checks:
           decay: 1.85
         max-speed: 1.05
       d:
-        enabled: false
-        punishable: false
+        enabled: true
+        punishable: true
         discord-alert-interval: 4
         broadcast-punishment: false
-        max-violations: 40
+        max-violations: 35
         alert-interval: 2
-        dont-alert-until: 5
+        dont-alert-until: 8
         maximum-ping: 100000
         minimum-tps: 19.8
         punishment-commands:
@@ -3291,7 +3230,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       b:
         enabled: true
         punishable: false
@@ -3304,7 +3242,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
     baritone:
       a:
         enabled: true
@@ -3318,7 +3255,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 20
           multiple: 0.5
@@ -3335,7 +3271,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.5
@@ -3353,7 +3288,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       b:
         enabled: true
         punishable: true
@@ -3366,7 +3300,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -3383,7 +3316,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       d:
         enabled: true
         punishable: true
@@ -3396,24 +3328,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-      e:
-        enabled: true
-        punishable: true
-        discord-alert-interval: 4
-        broadcast-punishment: false
-        max-violations: 1
-        alert-interval: 1
-        dont-alert-until: 1
-        maximum-ping: 100000
-        minimum-tps: 19.0
-        punishment-commands:
-        - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-        buffer:
-          max: 2
-          multiple: 0.5
-          decay: 0.25
     ghosthand:
       a:
         enabled: true
@@ -3427,26 +3341,7 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         cancel: true
-    # This checks for when players do not reply to transaction packets. Recommended to just kick for this on 1 violation, since
-    # anyone who flags this will be automatically kicked by the server for keepalive timeout anyway if they don't reply to any
-    # packets after 30 seconds.
-    transaction:
-      a:
-        enabled: false
-        punishable: false
-        discord-alert-interval: 4
-        broadcast-punishment: false
-        max-violations: 3
-        alert-interval: 1
-        dont-alert-until: 1
-        maximum-ping: 100000
-        minimum-tps: 19.0
-        punishment-commands:
-        - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-        max-delay: 30000
     selfleash:
       a:
         enabled: true
@@ -3460,11 +3355,23 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.5
           decay: 0.25
+    airplace:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 4
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[ND] Kicked for cheating
     badpackets:
       a:
         enabled: true
@@ -3478,7 +3385,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.5
@@ -3495,7 +3401,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       c:
         enabled: true
         punishable: true
@@ -3508,7 +3413,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       d:
         enabled: true
         punishable: true
@@ -3521,7 +3425,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.25
@@ -3538,7 +3441,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       f:
         enabled: true
         punishable: true
@@ -3551,7 +3453,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       g:
         enabled: true
         punishable: true
@@ -3564,7 +3465,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       h:
         enabled: true
         punishable: true
@@ -3577,7 +3477,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       i:
         enabled: true
         punishable: true
@@ -3590,7 +3489,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       j:
         enabled: true
         punishable: true
@@ -3603,7 +3501,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       k:
         enabled: true
         punishable: true
@@ -3616,7 +3513,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -3633,7 +3529,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 5
           multiple: 0.33
@@ -3650,7 +3545,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 20
           multiple: 0.25
@@ -3667,7 +3561,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -3684,7 +3577,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -3701,7 +3593,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -3718,7 +3609,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -3735,7 +3625,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       t:
         enabled: true
         punishable: true
@@ -3748,7 +3637,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       u:
         enabled: true
         punishable: true
@@ -3761,7 +3649,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       v:
         enabled: true
         punishable: true
@@ -3774,7 +3661,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.5
@@ -3792,7 +3678,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.5
@@ -3809,7 +3694,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 6
           multiple: 0.5
@@ -3826,7 +3710,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
       z:
         enabled: true
         punishable: true
@@ -3851,7 +3734,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 12
           multiple: 0.25
@@ -3868,7 +3750,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 12
           multiple: 0.25
@@ -3885,7 +3766,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.25
@@ -3903,7 +3783,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -3920,7 +3799,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.25
@@ -3940,7 +3818,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -3957,7 +3834,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 8
           multiple: 0.25
@@ -3976,7 +3852,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -3995,7 +3870,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -4014,7 +3888,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 2
           multiple: 0.5
@@ -4033,7 +3906,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -4052,7 +3924,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 3
           multiple: 0.5
@@ -4071,7 +3942,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 1
           multiple: 0.5
@@ -4089,7 +3959,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
@@ -4106,7 +3975,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
@@ -4123,28 +3991,10 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         buffer:
           max: 4
           multiple: 0.5
           decay: 0.125
-      d:
-        enabled: true
-        punishable: true
-        discord-alert-interval: 4
-        broadcast-punishment: false
-        max-violations: 15
-        alert-interval: 1
-        dont-alert-until: 1
-        maximum-ping: 100000
-        minimum-tps: 19.0
-        punishment-commands:
-        - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
-        buffer:
-          max: 3
-          multiple: 0.5
-          decay: 0.05
     improbable:
       a:
         enabled: true
@@ -4158,7 +4008,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-combat-violations: 25
       b:
         enabled: true
@@ -4172,7 +4021,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-movement-violations: 30
       c:
         enabled: true
@@ -4186,7 +4034,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-player-violations: 30
       d:
         enabled: true
@@ -4200,7 +4047,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-autoclicker-violations: 30
       e:
         enabled: true
@@ -4214,7 +4060,6 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-total-violations: 50
       f:
         enabled: true
@@ -4228,5 +4073,4 @@ checks:
         minimum-tps: 19.0
         punishment-commands:
         - kick %player% &c[ND] Kicked for cheating
-        - vulcan reset %player%
         max-scaffold-violations: 25

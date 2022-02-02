@@ -3,11 +3,11 @@
 # with caution, and make sure you know what each option does before configuring.
 # For a reference for any variable inside this file, check out the Spigot wiki at
 # http://www.spigotmc.org/wiki/spigot-configuration/
-# 
+#
 # If you need help with the configuration or have any questions related to Spigot,
-# join us at the IRC or drop by our forums and leave a post.
-# 
-# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# join us at the Discord or drop by our forums and leave a post.
+#
+# Discord: https://www.spigotmc.org/go/discord
 # Forums: http://www.spigotmc.org/
 
 config-version: 12
@@ -15,7 +15,7 @@ settings:
   log-named-deaths: true
   save-user-cache-on-stop-only: true
   sample-count: 12
-  bungeecord: true
+  bungeecord: false
   player-shuffle: 0
   user-cache-size: 1000
   moved-wrongly-threshold: 0.0625
@@ -64,6 +64,9 @@ world-settings:
   worldeditregentempworld:
     verbose: false
   default:
+    seed-stronghold: default
+    below-zero-generation-in-existing-chunks: true
+    simulation-distance: default
     thunder-chance: 100000
     seed-bastion: -1
     seed-fortress: -1
@@ -87,7 +90,7 @@ world-settings:
     seed-slime: -1
     max-tnt-per-tick: 100
     mob-spawn-range: 2
-    view-distance: 2
+    view-distance: default
     enable-zombie-pigmen-portal-spawns: false
     item-despawn-rate: 3000
     arrow-despawn-rate: 200
@@ -101,6 +104,10 @@ world-settings:
       exp: 6.0
       item: 4.5
     growth:
+      twistingvines-modifier: 100
+      weepingvines-modifier: 100
+      cavevines-modifier: 100
+      glowberry-modifier: 100
       cactus-modifier: 100
       cane-modifier: 100
       melon-modifier: 100
@@ -118,6 +125,7 @@ world-settings:
       sweetberry-modifier: 100
       kelp-modifier: 100
     entity-activation-range:
+      ignore-spectators: false
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true

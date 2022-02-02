@@ -7,63 +7,63 @@
 #                                                     
 #   For a detailed explanation of all settings visit:         
 #       https://github.com/woutzah/ChatBrawl/wiki    
-# 
+#
 #   Need help? Join the Discord server: https://discord.gg/TvTUWvG 
 
 rewards:
   '1':
     chance: 25
     commands:
-    - eco give <player> 500
-    - broadcast &6<player> won a chat race and earned &c$500!
-    title: You won $500!
-    subtitle: Enjoy!
-    broadcast: ''
-  '2':
-    chance: 21
-    commands:
-    - eco give <player> 750
-    - broadcast &6<player> won a chat race and earned &c$750!
-    title: You won $750!
-    subtitle: Enjoy!
-    broadcast: ''
-  '3':
-    chance: 17
-    commands:
     - eco give <player> 1000
     - broadcast &6<player> won a chat race and earned &c$1000!
     title: You won $1000!
     subtitle: Enjoy!
     broadcast: ''
-  '4':
-    chance: 13
+  '2':
+    chance: 21
     commands:
     - eco give <player> 1500
     - broadcast &6<player> won a chat race and earned &c$1500!
     title: You won $1500!
     subtitle: Enjoy!
     broadcast: ''
+  '3':
+    chance: 17
+    commands:
+    - eco give <player> 2000
+    - broadcast &6<player> won a chat race and earned &c$2000!
+    title: You won $2000!
+    subtitle: Enjoy!
+    broadcast: ''
+  '4':
+    chance: 13
+    commands:
+    - eco give <player> 3000
+    - broadcast &6<player> won a chat race and earned &c$3000!
+    title: You won $3000!
+    subtitle: Enjoy!
+    broadcast: ''
   '5':
     chance: 12
     commands:
-    - eco give <player> 1750
-    - broadcast &6<player> won a chat race and earned &c$1750!
-    title: You won $1750!
+    - eco give <player> 4500
+    - broadcast &6<player> won a chat race and earned &c$4500!
+    title: You won $4500!
     subtitle: Enjoy!
     broadcast: ''
   '6':
     chance: 7
     commands:
-    - eco give <player> 2500
-    - broadcast &6<player> won a chat race and earned &c$2500!
-    title: You won $2500!
+    - eco give <player> 5000
+    - broadcast &6<player> won a chat race and earned &c$5000!
+    title: You won $5000!
     subtitle: Enjoy!
     broadcast: ''
   '7':
     chance: 5
     commands:
-    - eco give <player> 3750
-    - broadcast &6<player> won a chat race and earned &c$3750!
-    title: You won $3750!
+    - eco give <player> 7500
+    - broadcast &6<player> won a chat race and earned &c$7500!
+    title: You won $7500!
     subtitle: Enjoy!
     broadcast: ''

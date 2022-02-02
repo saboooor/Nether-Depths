@@ -1,10 +1,10 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://discord.gg/papermc
 # IRC: #paper @ irc.esper.net ( https://webchat.esper.net/?channels=paper ) 
 # Website: https://papermc.io/ 
@@ -12,15 +12,17 @@
 
 use-display-name-in-quit-message: false
 verbose: false
-config-version: 23
+config-version: 24
 settings:
+  time-command-affects-all-worlds: false
+  fix-target-selector-tag-completion: true
   log-player-ip-addresses: true
   lag-compensate-block-breaking: true
   send-full-pos-for-hard-colliding-entities: true
   log-named-entity-deaths: true
   fix-entity-position-desync: true
   load-permissions-yml-before-plugins: true
-  bungee-online-mode: true
+  bungee-online-mode: false
   suggest-player-names-when-null-tab-completions: true
   console-has-all-permissions: false
   region-file-cache-size: 256
@@ -34,9 +36,9 @@ settings:
   max-player-auto-save-per-tick: -1
   save-empty-scoreboard-teams: false
   velocity-support:
-    enabled: false
-    online-mode: false
-    secret: ''
+    enabled: true
+    online-mode: true
+    secret: urmomlol
   watchdog:
     early-warning-every: 5000
     early-warning-delay: 10000
@@ -49,6 +51,7 @@ settings:
     page-max: 2560
     total-multiplier: 0.98
   unsupported-settings:
+    perform-username-validation: true
     allow-headless-pistons: false
     allow-permanent-block-break-exploits: false
     allow-piston-duplication: false
@@ -123,9 +126,24 @@ timings:
   history-interval: 300
   history-length: 3600
   server-name: Nether Depths
-  url: https://timings.pl3x.net
+  url: https://timings.aikar.co/
 world-settings:
   default:
+    slime-spawn-height:
+      swamp-biome:
+        maximum: 70.0
+        minimum: 50.0
+      slime-chunk:
+        maximum: 40.0
+    wateranimal-spawn-height:
+      maximum: default
+      minimum: default
+    monster-spawn-max-light-level: -1
+    anticheat:
+      obfuscation:
+        items:
+          hide-itemmeta: false
+          hide-durability: false
     split-overstacked-loot: true
     map-item-frame-cursor-update-interval: 10
     allow-player-cramming-damage: false
@@ -229,8 +247,30 @@ world-settings:
       MinimumTicks: 100
       MaximumTicks: 600
     despawn-ranges:
-      soft: 28
-      hard: 48
+      axolotls:
+        soft: 32
+        hard: 128
+      monster:
+        soft: 32
+        hard: 128
+      creature:
+        soft: 32
+        hard: 128
+      ambient:
+        soft: 32
+        hard: 128
+      underground_water_creature:
+        soft: 32
+        hard: 128
+      water_creature:
+        soft: 32
+        hard: 128
+      water_ambient:
+        soft: 32
+        hard: 64
+      misc:
+        soft: 32
+        hard: 128
     frosted-ice:
       enabled: true
       delay:
@@ -252,6 +292,7 @@ world-settings:
         DIORITE: 600
         GRANITE: 600
     hopper:
+      ignore-occluding-blocks: true
       cooldown-when-full: true
       disable-move-event: true
     lightning-strike-distance-limit:
@@ -277,7 +318,7 @@ world-settings:
       replacement-blocks:
       - stone
     viewdistances:
-      no-tick-view-distance: 8
+      no-tick-view-distance: 16
     squid-spawn-height:
       maximum: 0.0
     generator-settings:
@@ -315,10 +356,12 @@ world-settings:
     unsupported-settings:
       fix-invulnerable-end-crystal-exploit: true
     spawn-limits:
-      monsters: -1
-      animals: -1
-      water-animals: -1
-      water-ambient: -1
+      axolotls: -1
+      monster: -1
+      creature: -1
+      underground_water_creature: -1
+      water_creature: -1
+      water_ambient: -1
       ambient: -1
     mob-effects:
       undead-immune-to-certain-effects: true
