@@ -48,5 +48,10 @@
       "sounds": [
         "records/just_the_two_of_us"
       ]
+    },
+    "music_disc.narcos": {
+      "sounds": [
+        "records/narcos"
+      ]
     }
 }
