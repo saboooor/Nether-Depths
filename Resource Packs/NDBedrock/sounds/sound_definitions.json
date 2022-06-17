@@ -1,0 +1,122 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+        "netherdepths:music_disc.mine_diamonds" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/mine_diamonds",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.all_star" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/all_star",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.soviet_anthem" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/soviet_anthem",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.10" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/10",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.aauughhh" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/aauughhh",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.sketchers" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/sketchers",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.el_sonidito" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/el_sonidito",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.chad" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/chad",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.amogus" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/amogus",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        }
+	}
+}

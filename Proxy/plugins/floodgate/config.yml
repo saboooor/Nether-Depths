@@ -6,14 +6,13 @@ key-file-name: key.pem
 # Floodgate prepends a prefix to bedrock usernames to avoid conflicts
 # However, certain conflicts can cause issues with some plugins so this prefix is configurable using the property below
 # It is recommended to use a prefix that does not contain alphanumerical to avoid the possibility of duplicate usernames.
-username-prefix: "_"
+username-prefix: _
 
 # Should spaces be replaced with '_' in bedrock usernames?
 replace-spaces: true
 
 # The default locale for Floodgate. By default, Floodgate uses the system locale
 # default-locale: en_US
-
 # Should the proxy send the bedrock player data to the servers it is connecting to?
 # This requires Floodgate to be installed on the servers.
 # You'll get kicked if you don't use the plugin. The default value is false because of it
@@ -63,5 +62,9 @@ player-link:
   # you have limited internet access.
   enable-global-linking: true
 
+metrics:
+  enabled: true
+  uuid: asgasg
+
 # Do not change this
-config-version: 2
+config-version: 3

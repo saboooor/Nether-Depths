@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "litexpansion/uu_transmutator_other",
+        "up": "litexpansion/uu_transmutator_top",
+        "north": "litexpansion/uu_transmutator_front",
+        "east": "litexpansion/uu_transmutator_side",
+        "south": "litexpansion/uu_transmutator_other",
+        "west": "litexpansion/uu_transmutator_side"
+    }
+}

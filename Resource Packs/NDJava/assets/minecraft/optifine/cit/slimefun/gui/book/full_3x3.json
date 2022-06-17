@@ -1,0 +1,11 @@
+{
+	"__comment": "By: RaulH22",
+    "parent": "item/generated",
+    "textures": {"layer0": "items/gray_stained_glass_pane"},
+	"display": {
+		"gui": {
+			"scale":  [ 3.3, 3.3, 3.3 ],
+			"translation":  [ 0, 0, 10 ]
+        }
+	}
+}

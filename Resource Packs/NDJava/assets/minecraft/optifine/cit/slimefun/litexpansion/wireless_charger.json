@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "litexpansion/wireless_charger_bottom",
+        "up": "litexpansion/wireless_charger_top",
+        "north": "litexpansion/wireless_charger_side",
+        "east": "litexpansion/wireless_charger_side",
+        "south": "litexpansion/wireless_charger_side",
+        "west": "litexpansion/wireless_charger_side"
+    }
+}

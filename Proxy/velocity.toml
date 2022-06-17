@@ -27,7 +27,11 @@ prevent-client-proxy-connections = false
 #                  Velocity's native forwarding. Only applicable for Minecraft 1.13 or higher.
 player-info-forwarding-mode = "MODERN"
 # If you are using modern or BungeeGuard IP forwarding, configure a unique secret here.
-forwarding-secret = ""
+forwarding-secret = "lol balls"
+
+# Nuno's weird setting for 1.19
+force-key-authentication = false
+
 # Announce whether or not your server supports Forge. If you run a modded server, we
 # suggest turning this on.
 # 
@@ -55,20 +59,14 @@ ping-passthrough = "DISABLED"
 [servers]
 	# Configure your servers here. Each key represents the server's name, and the value
 	# represents the IP address of the server to connect to.
-	Creative = ""
-	Hub = ""
-	Minigames = ""
-	Skyblock = ""
-	Survival = ""
+	Creative = "66.23.206.244:55243"
+	Survival = "66.23.206.244:59400"
 	# In what order we should try servers when a player logs in or is kicked from a server.
-	try = ["Hub", "Survival", "Creative", "Minigames", "Skyblock"]
+	try = ["Survival", "Creative"]
 
 [forced-hosts]
 	# Configure your forced hosts here.
     "creative.netherdepths.com" = ["Creative"]
-    "hub.netherdepths.com" = ["Hub"]
-    "minigames.netherdepths.com" = ["Minigames"]
-    "skyblock.netherdepths.com" = ["Skyblock"]
     "survival.netherdepths.com" = ["Survival"]
 
 [advanced]
@@ -77,7 +75,7 @@ ping-passthrough = "DISABLED"
 	compression-threshold = 64
 	# How much compression should be done (from 0-9). The default is -1, which uses the
 	# default level of 6.
-	compression-level = -1
+	compression-level = 9
 	# How fast (in milliseconds) are clients allowed to connect after the last connection? By
 	# default, this is three seconds. Disable this by setting this to 0.
 	login-ratelimit = 3000
@@ -89,7 +87,7 @@ ping-passthrough = "DISABLED"
 	# don't enable it.
 	haproxy-protocol = false
 	# Enables TCP fast open support on the proxy. Requires the proxy to run on Linux.
-	tcp-fast-open = false
+	tcp-fast-open = true
 	# Enables BungeeCord plugin messaging channel support on Velocity.
 	bungee-plugin-message-channel = true
 	# Shows ping requests to the proxy from clients.
@@ -112,4 +110,3 @@ ping-passthrough = "DISABLED"
 	# This is the map name that is reported to the query services.
 	map = "Velocity"
 	show-plugins = true
-

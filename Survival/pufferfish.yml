@@ -27,3 +27,14 @@ projectile:
   max-loads-per-tick: 10
   max-loads-per-projectile: 10
 inactive-goal-selector-throttle: true
+enable-suffocation-optimization: true
+# Settings for things that don't belong elsewhere
+misc:
+  disable-method-profiler: true
+# These values define a entity's maximum lifespan. If an
+# entity is in this list and it has survived for longer than
+# that number of ticks, then it will be removed. Setting a value to
+# -1 disables this feature.
+entity_timeouts:
+  SNOWBALL: -1
+  LLAMA_SPIT: -1

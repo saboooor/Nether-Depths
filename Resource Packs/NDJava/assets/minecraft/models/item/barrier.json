@@ -1,0 +1,15 @@
+{
+	"parent": "minecraft:item/barrier",
+	"author": "sab",
+	"overrides": [
+		{ "predicate": { "custom_model_data": 1 }, "model": "records/mine_diamonds"},
+		{ "predicate": { "custom_model_data": 2 }, "model": "records/10"},
+		{ "predicate": { "custom_model_data": 3 }, "model": "records/all_star"},
+		{ "predicate": { "custom_model_data": 4 }, "model": "records/soviet_anthem"},
+		{ "predicate": { "custom_model_data": 5 }, "model": "records/aauughhh"},
+		{ "predicate": { "custom_model_data": 6 }, "model": "records/sketchers"},
+		{ "predicate": { "custom_model_data": 7 }, "model": "records/el_sonidito"},
+		{ "predicate": { "custom_model_data": 8 }, "model": "records/chad"},
+		{ "predicate": { "custom_model_data": 9 }, "model": "records/amogus"}
+	]
+}

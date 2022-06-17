@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "litexpansion/rain_maker_bottom",
+        "up": "litexpansion/rain_maker_top",
+        "north": "litexpansion/rain_maker_side",
+        "east": "litexpansion/rain_maker_side",
+        "south": "litexpansion/rain_maker_side",
+        "west": "litexpansion/rain_maker_side"
+    }
+}

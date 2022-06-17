@@ -14,56 +14,56 @@ rewards:
   '1':
     chance: 25
     commands:
-    - eco give <player> 1000
-    - broadcast &6<player> won a chat race and earned &c$1000!
-    title: You won $1000!
+    - eco give <player> 50
+    - broadcast &6<player> won a chat race and earned &c$50!
+    title: You won $50!
     subtitle: Enjoy!
     broadcast: ''
   '2':
     chance: 21
     commands:
-    - eco give <player> 1500
-    - broadcast &6<player> won a chat race and earned &c$1500!
-    title: You won $1500!
+    - eco give <player> 100
+    - broadcast &6<player> won a chat race and earned &c$100!
+    title: You won $100!
     subtitle: Enjoy!
     broadcast: ''
   '3':
     chance: 17
     commands:
-    - eco give <player> 2000
-    - broadcast &6<player> won a chat race and earned &c$2000!
-    title: You won $2000!
+    - eco give <player> 150
+    - broadcast &6<player> won a chat race and earned &c$150!
+    title: You won $150!
     subtitle: Enjoy!
     broadcast: ''
   '4':
     chance: 13
     commands:
-    - eco give <player> 3000
-    - broadcast &6<player> won a chat race and earned &c$3000!
-    title: You won $3000!
+    - eco give <player> 200
+    - broadcast &6<player> won a chat race and earned &c$200!
+    title: You won $200!
     subtitle: Enjoy!
     broadcast: ''
   '5':
     chance: 12
     commands:
-    - eco give <player> 4500
-    - broadcast &6<player> won a chat race and earned &c$4500!
-    title: You won $4500!
+    - eco give <player> 250
+    - broadcast &6<player> won a chat race and earned &c$250!
+    title: You won $250!
     subtitle: Enjoy!
     broadcast: ''
   '6':
     chance: 7
     commands:
-    - eco give <player> 5000
-    - broadcast &6<player> won a chat race and earned &c$5000!
-    title: You won $5000!
+    - eco give <player> 300
+    - broadcast &6<player> won a chat race and earned &c$300!
+    title: You won $300!
     subtitle: Enjoy!
     broadcast: ''
   '7':
     chance: 5
     commands:
-    - eco give <player> 7500
-    - broadcast &6<player> won a chat race and earned &c$7500!
-    title: You won $7500!
+    - eco give <player> 350
+    - broadcast &6<player> won a chat race and earned &c$350!
+    title: You won $350!
     subtitle: Enjoy!
     broadcast: ''

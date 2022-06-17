@@ -64,30 +64,32 @@ world-settings:
   worldeditregentempworld:
     verbose: false
   default:
-    seed-stronghold: default
+    hopper-can-load-chunks: false
+    seed-nether: 'seed'
+    seed-stronghold: 'seed'
     below-zero-generation-in-existing-chunks: true
     simulation-distance: default
-    thunder-chance: 100000
-    seed-bastion: -1
-    seed-fortress: -1
-    seed-mansion: -1
-    seed-fossil: -1
-    seed-portal: -1
+    thunder-chance: 'seed'
+    seed-bastion: 'seed'
+    seed-fortress: 'seed'
+    seed-mansion: 'seed'
+    seed-fossil: 'seed'
+    seed-portal: 'seed'
     end-portal-sound-radius: 0
-    seed-endcity: -1
+    seed-endcity: 'seed'
     verbose: true
     hopper-amount: 10
     dragon-death-sound-radius: 0
-    seed-village: -1
-    seed-desert: -1
-    seed-igloo: -1
-    seed-jungle: -1
-    seed-swamp: -1
-    seed-monument: -1
-    seed-shipwreck: -1
-    seed-ocean: -1
-    seed-outpost: -1
-    seed-slime: -1
+    seed-village: 'seed'
+    seed-desert: 'seed'
+    seed-igloo: 'seed'
+    seed-jungle: 'seed'
+    seed-swamp: 'seed'
+    seed-monument: 'seed'
+    seed-shipwreck: 'seed'
+    seed-ocean: 'seed'
+    seed-outpost: 'seed'
+    seed-slime: 96376711
     max-tnt-per-tick: 100
     mob-spawn-range: 2
     view-distance: default
@@ -98,7 +100,7 @@ world-settings:
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100
     zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: true
+    nerf-spawner-mobs: false
     max-entity-collisions: 2
     merge-radius:
       exp: 6.0

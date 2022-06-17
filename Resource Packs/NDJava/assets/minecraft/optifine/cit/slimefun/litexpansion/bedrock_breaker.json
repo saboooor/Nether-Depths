@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "litexpansion/bedrock_breaker_bottom",
+        "up": "litexpansion/bedrock_breaker_top",
+        "north": "litexpansion/bedrock_breaker_front",
+        "east": "litexpansion/bedrock_breaker_side",
+        "south": "litexpansion/bedrock_breaker_back",
+        "west": "litexpansion/bedrock_breaker_side"
+    }
+}

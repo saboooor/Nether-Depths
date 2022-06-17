@@ -9,7 +9,7 @@
 # Docs: https://purpurmc.org/docs 
 
 verbose: false
-config-version: 27
+config-version: 29
 settings:
   food-properties: {}
   username-valid-characters: ^[a-zA-Z0-9_.]*$
@@ -17,11 +17,12 @@ settings:
   use-alternate-keepalive: true
   disable-give-dropping: false
   dont-send-useless-entity-packets: true
-  fix-item-position-desync: false
+  fix-item-position-desync: true
   tps-catchup: true
   lagging-threshold: 19.0
   allow-water-placement-in-the-end: true
   messages:
+    tpsbar-command-output: <green>Tpsbar toggled <onoff> for <target>
     death-message:
       stonecutter: <player> has sawed themself in half
       run-with-scissors: <player> slipped and fell on their shears
@@ -31,8 +32,8 @@ settings:
     uptime-command-output: <green>Server uptime is <uptime>
     unverified-username: default
     credits-command-output: §a%s has been shown the end credits
-    afk-broadcast-away: §e§o%s is now AFK
-    afk-broadcast-back: §e§o%s is no longer AFK
+    afk-broadcast-away: <yellow><italic>%s is now AFK
+    afk-broadcast-back: <yellow><italic>%s is no longer AFK
     afk-tab-list-prefix: '[AFK] '
     afk-tab-list-suffix: ''
     demo-command-output: §a%s has been shown the demo screen
@@ -56,7 +57,7 @@ settings:
     lightning_rod:
       range: 128
     bed:
-      fix-spigot-5988: false
+      fix-spigot-5988: true
     grindstone:
       ignored-enchants:
       - minecraft:binding_curse
@@ -66,64 +67,66 @@ settings:
       ignore-curses: true
   seed:
     feature:
-      bamboo: -1
-      basalt_columns: -1
-      basalt_pillar: -1
-      block_pile: -1
-      blue_ice: -1
-      bonus_chest: -1
-      chorus_plant: -1
-      coral_claw: -1
-      coral_mushroom: -1
-      coral_tree: -1
-      decorated: -1
-      delta_feature: -1
-      disk: -1
-      dripstone_cluster: -1
-      end_island: -1
-      flower: -1
-      forest_rock: -1
-      fossil: -1
-      glow_lichen: -1
-      glowstone_blob: -1
-      growing_plant: -1
-      huge_brown_mushroom: -1
-      huge_fungus: -1
-      huge_red_mushroom: -1
-      ice_patch: -1
-      ice_spike: -1
-      iceberg: -1
-      kelp: -1
-      lake: -1
-      large_dripstone: -1
-      nether_forest_vegetation: -1
-      netherrack_replace_blobs: -1
-      ore: -1
-      random_boolean_selector: -1
-      random_patch: -1
-      random_selector: -1
-      replace_single_block: -1
-      root_system: -1
-      scattered_ore: -1
-      sea_pickle: -1
-      seagrass: -1
-      simple_block: -1
-      simple_random_selector: -1
-      small_dripstone: -1
-      tree: -1
-      twisting_vines: -1
-      underwater_magma: -1
-      vegetation_patch: -1
-      waterlogged_vegetation_patch: -1
-      weeping_vines: -1
-      monster_room: -1
-      end_spike: -1
-      geode: -1
+      bamboo: 'seed'
+      basalt_columns: 'seed'
+      basalt_pillar: 'seed'
+      block_pile: 'seed'
+      blue_ice: 'seed'
+      bonus_chest: 'seed'
+      chorus_plant: 'seed'
+      coral_claw: 'seed'
+      coral_mushroom: 'seed'
+      coral_tree: 'seed'
+      decorated: 'seed'
+      delta_feature: 'seed'
+      disk: 'seed'
+      dripstone_cluster: 'seed'
+      end_island: 'seed'
+      flower: 'seed'
+      forest_rock: 'seed'
+      fossil: 'seed'
+      glow_lichen: 'seed'
+      glowstone_blob: 'seed'
+      growing_plant: 'seed'
+      huge_brown_mushroom: 'seed'
+      huge_fungus: 'seed'
+      huge_red_mushroom: 'seed'
+      ice_patch: 'seed'
+      ice_spike: 'seed'
+      iceberg: 'seed'
+      kelp: 'seed'
+      lake: 'seed'
+      large_dripstone: 'seed'
+      nether_forest_vegetation: 'seed'
+      netherrack_replace_blobs: 'seed'
+      ore: 'seed'
+      random_boolean_selector: 'seed'
+      random_patch: 'seed'
+      random_selector: 'seed'
+      replace_single_block: 'seed'
+      root_system: 'seed'
+      scattered_ore: 'seed'
+      sea_pickle: 'seed'
+      seagrass: 'seed'
+      simple_block: 'seed'
+      simple_random_selector: 'seed'
+      small_dripstone: 'seed'
+      tree: 'seed'
+      twisting_vines: 'seed'
+      underwater_magma: 'seed'
+      vegetation_patch: 'seed'
+      waterlogged_vegetation_patch: 'seed'
+      weeping_vines: 'seed'
+      monster_room: 'seed'
+      end_spike: 'seed'
+      geode: 'seed'
     structure:
-      buried_treasure: -1
-      mineshaft: -1
+      buried_treasure: 'seed'
+      mineshaft: 'seed'
   timings: {}
   enchantment:
+    clamp-levels: true
+    allow-unsafe-enchant-command: false
     allow-looting-on-shears: false
     allow-unsafe-enchants: false
     allow-infinity-on-crossbow: false
@@ -132,6 +135,8 @@ settings:
     enderman:
       short-height: false
   logger:
+    suppress-sent-expired-chat: false
+    suppress-setblock-in-far-chunk-errors: false
     suppress-unrecognized-recipe-errors: false
     suppress-init-legacy-material-errors: false
     suppress-ignored-advancement-warnings: false
@@ -184,6 +189,24 @@ settings:
 world-settings:
   default:
     mobs:
+      allay:
+        ridable: true
+        ridable-in-water: false
+        controllable: true
+      frog:
+        ridable: true
+        ridable-in-water: false
+        controllable: true
+        ridable-jump-height: 0.6499999761581421
+        breeding-delay-ticks: 6000
+      tadpole:
+        ridable: false
+        ridable-in-water: false
+        controllable: true
+      warden:
+        ridable: false
+        ridable-in-water: false
+        controllable: true
       pillager:
         controllable: true
         always-drop-exp: false
@@ -476,6 +499,7 @@ world-settings:
         attributes:
           max_health: 40.0
       horse:
+        stand-when-hurt: true
         always-drop-exp: false
         takes-damage-from-water: false
         tempted-by-gold: false
@@ -1043,6 +1067,7 @@ world-settings:
         attributes:
           max_health: 10.0
     gameplay-mechanics:
+      mob-last-hurt-by-player-time: 100
       rain-stops-after-sleep: true
       thunder-stops-after-sleep: true
       mobs-ignore-rails: false
@@ -1108,7 +1133,7 @@ world-settings:
         can-skip-night: true
         one-punch-in-creative: false
         sleep-ignore-nearby-mobs: false
-        fix-stuck-in-portal: false
+        fix-stuck-in-portal: true
         spawn-invulnerable-ticks: 60
         invulnerable-while-accepting-resource-pack: true
         teleport-if-outside-border: true
@@ -1138,20 +1163,6 @@ world-settings:
         normal-arrows: true
         spectral-arrows: false
         tipped-arrows: false
-      projectile-despawn-rates:
-        dragon_fireball: -1
-        egg: -1
-        ender_pearl: -1
-        experience_bottle: -1
-        firework_rocket: -1
-        fishing_bobber: -1
-        fireball: -1
-        llama_spit: -1
-        potion: -1
-        shulker_bullet: -1
-        small_fireball: -1
-        snowball: -1
-        wither_skull: -1
       projectile-damage:
         snowball: -1
       boat:
@@ -1230,6 +1241,8 @@ world-settings:
       no-random-tick: []
       no-tick: []
       anvil:
+        iron-ingots-used-for-repair: 0
+        obsidian-used-for-damage: 0
         allow-colors: true
       bamboo:
         max-height: 16
@@ -1272,12 +1285,13 @@ world-settings:
         allow-colors: true
         right-click-edit: false
       spawner:
-        fix-mc-50647: false
-        fix-mc-238526: false
+        fix-mc-50647: true
+        fix-mc-238526: true
         deactivate-by-redstone: false
       stonecutter:
         damage: 0.0
       turtle_egg:
+        feather-fall-distance-affects-trampling: false
         random-tick-crack-chance: 500
         bypass-mob-griefing: false
         break-from-exp-orbs: true
@@ -1365,6 +1379,8 @@ world-settings:
           damage-amount: 4.0
       cauldron:
         fill-chances:
+          dripstone-water: 0.17578125
+          dripstone-lava: 0.05859375
           rain: 0.05000000074505806
           powder-snow: 0.10000000149011612
       azalea:
@@ -1459,6 +1475,12 @@ world-settings:
             drops: {}
           minecraft:crimson_stem:
             into: minecraft:stripped_crimson_stem
+            drops: {}
+          minecraft:mangrove_log:
+            into: minecraft:stripped_mangrove_log
+            drops: {}
+          minecraft:mangrove_wood:
+            into: minecraft:stripped_mangrove_wood
             drops: {}
         waxables:
           minecraft:waxed_exposed_copper:

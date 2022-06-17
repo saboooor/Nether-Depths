@@ -1,0 +1,126 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "#post"
+	},
+	"elements": [
+		{
+			"name": "Left-hand post",
+			"from": [0, 5, 7],
+			"to": [2, 16, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 11], "texture": "#post"},
+				"east": {"uv": [7, 0, 9, 11], "texture": "#post"},
+				"south": {"uv": [0, 0, 2, 11], "texture": "#post"},
+				"west": {"uv": [7, 0, 9, 11], "texture": "#post", "cullface": "west"},
+				"up": {"uv": [0, 7, 2, 9], "texture": "#post"},
+				"down": {"uv": [0, 7, 2, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Right-hand post",
+			"from": [14, 5, 7],
+			"to": [16, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 0, 8]},
+			"faces": {
+				"north": {"uv": [14, 0, 16, 11], "texture": "#post"},
+				"east": {"uv": [7, 0, 9, 11], "texture": "#post", "cullface": "east"},
+				"south": {"uv": [14, 0, 16, 11], "texture": "#post"},
+				"west": {"uv": [7, 0, 9, 11], "texture": "#post"},
+				"up": {"uv": [14, 7, 16, 9], "texture": "#post"},
+				"down": {"uv": [14, 7, 16, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Inner vertical post of left-hand gate door",
+			"from": [6, 6, 7],
+			"to": [8, 15, 9],
+			"faces": {
+				"north": {"uv": [6, 1, 8, 10], "texture": "#post"},
+				"east": {"uv": [7, 1, 9, 10], "texture": "#post"},
+				"south": {"uv": [6, 1, 8, 10], "texture": "#post"},
+				"west": {"uv": [7, 1, 9, 10], "texture": "#post"},
+				"up": {"uv": [6, 7, 8, 9], "texture": "#post"},
+				"down": {"uv": [6, 7, 8, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Inner vertical post of right-hand gate door",
+			"from": [8, 6, 7],
+			"to": [10, 15, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 0, 8]},
+			"faces": {
+				"north": {"uv": [8, 1, 10, 10], "texture": "#post"},
+				"east": {"uv": [7, 1, 9, 10], "texture": "#post"},
+				"south": {"uv": [8, 1, 10, 10], "texture": "#post"},
+				"west": {"uv": [7, 1, 9, 10], "texture": "#post"},
+				"up": {"uv": [8, 7, 10, 9], "texture": "#post"},
+				"down": {"uv": [8, 7, 10, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Lower horizontal bar of left-hand gate door",
+			"from": [2, 6, 7],
+			"to": [6, 9, 9],
+			"faces": {
+				"north": {"uv": [11, 8, 15, 11], "texture": "#plank"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"south": {"uv": [4, 8, 8, 11], "texture": "#plank"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"up": {"uv": [2, 7, 6, 9], "texture": "#post"},
+				"down": {"uv": [2, 7, 6, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Upper horizontal bar of left-hand gate door",
+			"from": [2, 12, 7],
+			"to": [6, 15, 9],
+			"faces": {
+				"north": {"uv": [8, 0, 12, 3], "texture": "#plank"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"south": {"uv": [2, 0, 6, 3], "texture": "#plank"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"up": {"uv": [2, 7, 6, 9], "texture": "#post"},
+				"down": {"uv": [2, 7, 6, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Lower horizontal bar of right-hand gate door",
+			"from": [10, 6, 7],
+			"to": [14, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 0, 8]},
+			"faces": {
+				"north": {"uv": [3, 8, 7, 11], "texture": "#plank"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"south": {"uv": [12, 8, 16, 11], "texture": "#plank"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"up": {"uv": [10, 7, 14, 9], "texture": "#post"},
+				"down": {"uv": [10, 7, 14, 9], "texture": "#post"}
+			}
+		},
+		{
+			"name": "Upper horizontal bar of right-hand gate door",
+			"from": [10, 12, 7],
+			"to": [14, 15, 9],
+			"faces": {
+				"north": {"uv": [2, 0, 6, 3], "texture": "#plank"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"south": {"uv": [7, 0, 11, 3], "texture": "#plank"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#post"},
+				"up": {"uv": [10, 7, 14, 9], "texture": "#post"},
+				"down": {"uv": [10, 7, 14, 9], "texture": "#post"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [0, -1, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"translation": [0, -3, -6]
+		}
+	}
+}

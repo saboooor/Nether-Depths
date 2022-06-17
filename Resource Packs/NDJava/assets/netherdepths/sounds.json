@@ -1,0 +1,47 @@
+{
+    "music_disc.all_star": {
+      "sounds": [
+        "records/all_star"
+      ]
+    },
+    "music_disc.aauughhh": {
+      "sounds": [
+        "records/aauughhh"
+      ]
+    },
+    "music_disc.10": {
+      "sounds": [
+        "records/10"
+      ]
+    },
+    "music_disc.mine_diamonds": {
+      "sounds": [
+        "records/mine_diamonds"
+      ]
+    },
+    "music_disc.soviet_anthem": {
+      "sounds": [
+        "records/soviet_anthem"
+      ]
+    },
+    "music_disc.sketchers": {
+      "sounds": [
+        "records/sketchers"
+      ]
+    },
+    "music_disc.el_sonidito": {
+      "sounds": [
+        "records/el_sonidito"
+      ]
+    },
+    "music_disc.chad": {
+      "sounds": [
+        "records/chad"
+      ]
+    },
+    "music_disc.amogus": {
+      "sounds": [
+        "records/amogus"
+      ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+	"__comment": "By: RaulH22",
+	"textures": {
+		"particle": "./medicine",
+		"medicine": "./medicine"
+	},
+	"elements": [
+		{
+			"__comment": "Cube2",
+			"from": [ 4, 8, 3 ],
+			"to": [ 12, 9, 14 ],
+			"faces": {
+				"down": { "uv": [ 4, 14, 12, 3 ], "texture": "#medicine" },
+				"up": { "uv": [ 4, 3, 12, 14 ], "texture": "#medicine" },
+				"north": { "uv": [ 12, 3, 4, 4 ], "texture": "#medicine" },
+				"south": { "uv": [ 4, 13, 12, 14 ], "texture": "#medicine" },
+				"west": { "uv": [ 4, 3, 5, 14 ], "texture": "#medicine", "rotation": 270 },
+				"east": { "uv": [ 12, 14, 11, 3 ], "texture": "#medicine", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "Cube3",
+			"from": [ 5, 8, 2 ],
+			"to": [ 11, 9, 15 ],
+			"faces": {
+				"down": { "uv": [ 5, 15, 11, 2 ], "texture": "#medicine" },
+				"up": { "uv": [ 5, 2, 11, 15 ], "texture": "#medicine" },
+				"north": { "uv": [ 11, 2, 5, 3 ], "texture": "#medicine" },
+				"south": { "uv": [ 5, 14, 11, 15 ], "texture": "#medicine" },
+				"west": { "uv": [ 5, 2, 6, 15 ], "texture": "#medicine", "rotation": 270 },
+				"east": { "uv": [ 11, 15, 10, 2 ], "texture": "#medicine", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "Cube4",
+			"from": [ 6, 8, 1 ],
+			"to": [ 10, 9, 2 ],
+			"faces": {
+				"down": { "uv": [ 6, 2, 10, 1 ], "texture": "#medicine" },
+				"up": { "uv": [ 6, 1, 10, 2 ], "texture": "#medicine" },
+				"north": { "uv": [ 10, 1, 6, 2 ], "texture": "#medicine" },
+				"south": { "uv": [ 6, 1, 10, 2 ], "texture": "#medicine" },
+				"west": { "uv": [ 6, 1, 7, 2 ], "texture": "#medicine", "rotation": 270 },
+				"east": { "uv": [ 10, 2, 9, 1 ], "texture": "#medicine", "rotation": 270 }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 95, 0, 0 ],
+			"translation":  [ 0, 4, 0.5 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 95, 0, 0 ],
+			"translation":  [ 0, 4, 0.5 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 90, 0, 45 ],
+			"translation":  [ 3, 2.5, -5 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 90, 0, 45 ],
+			"translation":  [ 3, 2.5, -5 ]
+		},
+		"gui": {
+			"rotation":  [ 90, 0, 0 ]
+		},
+		"head": {
+			"rotation":  [ 90, 0, 0 ],
+			"translation":  [ 0, 15, 0 ]
+		},
+		"ground": {
+			"rotation":  [ 90, 0, 0 ],
+			"translation":  [ 0, 1.5, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"fixed": {
+			"rotation":  [ 90, 0, 0 ],
+			"translation":  [ 0, 0, -1 ]
+		}
+	}
+}

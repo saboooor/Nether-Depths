@@ -1,0 +1,10 @@
+{
+	"__comment": "By: RaulH22",
+    "parent": "item/generated",
+    "textures": {"layer0": "blocks/glass_pink"},
+	"display": {
+		"gui": {
+			"scale":  [ 1, 1, 1 ]
+        }
+	}
+}

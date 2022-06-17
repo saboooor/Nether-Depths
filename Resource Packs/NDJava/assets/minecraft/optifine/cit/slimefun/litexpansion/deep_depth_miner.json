@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "litexpansion/deep_depth_miner_bottom",
+        "up": "litexpansion/deep_depth_miner_top",
+        "north": "litexpansion/deep_depth_miner_front",
+        "east": "litexpansion/deep_depth_miner_side",
+        "south": "litexpansion/deep_depth_miner_side",
+        "west": "litexpansion/deep_depth_miner_side"
+    }
+}
