@@ -3,7 +3,7 @@
     "header": {
         "description": "Nether Depths Bedrock resource pack to extend functionality",
         "name": "NetherDepthsBedrock",
-        "uuid": "472925fa-ee0b-11ec-8ea0-0242ac120002",
+        "uuid": "171d6542-ee92-11ec-8ea0-0242ac120002",
         "version": [1, 0, 4],
         "min_engine_version": [ 1, 16, 0 ]
     },
@@ -11,7 +11,7 @@
         {
             "description": "NetherDepthsBedrock",
             "type": "resources",
-            "uuid": "4d0020e6-ee0b-11ec-8ea0-0242ac120002",
+            "uuid": "1bb486da-ee92-11ec-8ea0-0242ac120002",
             "version": [1, 0, 4]
         }
     ]
