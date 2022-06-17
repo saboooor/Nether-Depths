@@ -12,6 +12,8 @@
 		{ "predicate": { "custom_model_data": 8 }, "model": "records/chad"},
 		{ "predicate": { "custom_model_data": 9 }, "model": "records/amogus"},
 		{ "predicate": { "custom_model_data": 10 }, "model": "records/just_the_two_of_us"},
-		{ "predicate": { "custom_model_data": 11 }, "model": "records/narcos"}
+		{ "predicate": { "custom_model_data": 11 }, "model": "records/narcos"},
+		{ "predicate": { "custom_model_data": 12 }, "model": "records/coco"},
+		{ "predicate": { "custom_model_data": 13 }, "model": "records/gulp"}
 	]
 }

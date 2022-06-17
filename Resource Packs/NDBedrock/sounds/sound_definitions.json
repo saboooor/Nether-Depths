@@ -130,6 +130,45 @@
                   "volume" : 0.50
                }
             ]
+        },
+        "netherdepths:music_disc.narcos" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/narcos",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.coco" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/coco",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.gulp" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/gulp",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
         }
 	}
 }

@@ -53,5 +53,15 @@
       "sounds": [
         "records/narcos"
       ]
+    },
+    "music_disc.coco": {
+      "sounds": [
+        "records/coco"
+      ]
+    },
+    "music_disc.gulp": {
+      "sounds": [
+        "records/gulp"
+      ]
     }
 }
