@@ -10,6 +10,7 @@
 		{ "predicate": { "custom_model_data": 6 }, "model": "records/sketchers"},
 		{ "predicate": { "custom_model_data": 7 }, "model": "records/el_sonidito"},
 		{ "predicate": { "custom_model_data": 8 }, "model": "records/chad"},
-		{ "predicate": { "custom_model_data": 9 }, "model": "records/amogus"}
+		{ "predicate": { "custom_model_data": 9 }, "model": "records/amogus"},
+		{ "predicate": { "custom_model_data": 10 }, "model": "records/just_the_two_of_us"}
 	]
 }

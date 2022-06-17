@@ -43,5 +43,10 @@
       "sounds": [
         "records/amogus"
       ]
+    },
+    "music_disc.just_the_two_of_us": {
+      "sounds": [
+        "records/just_the_two_of_us"
+      ]
     }
 }
