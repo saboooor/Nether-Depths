@@ -60,6 +60,34 @@ BARRIER:
     sound: "netherdepths:music_disc.amogus"
     name: "Close Eyes"
   10:
-    duration: 238
+    duration: 237
     sound: "netherdepths:music_disc.just_the_two_of_us"
     name: "Just The Two Of Us"
+  11:
+    duration: 178
+    sound: "netherdepths:music_disc.narcos"
+    name: "Tuyo"
+  12:
+    duration: 240
+    sound: "netherdepths:music_disc.coco"
+    name: "Coco"
+  13:
+    duration: 15
+    sound: "netherdepths:music_disc.gulp"
+    name: "Gulp Gulp Gulp Gulp"
+  14:
+    duration: 173
+    sound: "netherdepths:music_disc.perry"
+    name: "Perry the Platypus Theme Song"
+  15:
+    duration: 264
+    sound: "netherdepths:music_disc.sadi_gali"
+    name: "Sadi Gali"
+  16:
+    duration: 300
+    sound: "netherdepths:music_disc.careless_whisper"
+    name: "Careless Whisper"
+  17:
+    duration: 219
+    sound: "netherdepths:music_disc.paris"
+    name: "Lads in Paris"
