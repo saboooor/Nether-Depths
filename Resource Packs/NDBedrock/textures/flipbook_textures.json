@@ -1,0 +1,32 @@
+[
+    {
+        "flipbook_texture": "textures/blocks/beacon",
+        "atlas_tile": "beacon",
+        "ticks_per_frame": 10
+    },
+    {
+        "flipbook_texture": "textures/blocks/furnace_front_on",
+        "atlas_tile": "furnace_front_on",
+        "ticks_per_frame": 4
+    },
+    {
+        "flipbook_texture": "textures/blocks/glowstone",
+        "atlas_tile": "glowstone",
+        "ticks_per_frame": 15
+    },
+    {
+        "flipbook_texture": "textures/blocks/glowstone",
+        "atlas_tile": "glowstone",
+        "ticks_per_frame": 15
+    },
+    {
+        "flipbook_texture": "textures/blocks/jack_o_lantern",
+        "atlas_tile": "jack_o_lantern",
+        "ticks_per_frame": 8
+    },
+    {
+        "flipbook_texture": "textures/blocks/redstone_lamp_on",
+        "atlas_tile": "redstone_lamp_on",
+        "ticks_per_frame": 15
+    }
+]
