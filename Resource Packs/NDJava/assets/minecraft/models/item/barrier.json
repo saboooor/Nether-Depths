@@ -14,6 +14,10 @@
 		{ "predicate": { "custom_model_data": 10 }, "model": "records/just_the_two_of_us"},
 		{ "predicate": { "custom_model_data": 11 }, "model": "records/narcos"},
 		{ "predicate": { "custom_model_data": 12 }, "model": "records/coco"},
-		{ "predicate": { "custom_model_data": 13 }, "model": "records/gulp"}
+		{ "predicate": { "custom_model_data": 13 }, "model": "records/gulp"},
+		{ "predicate": { "custom_model_data": 14 }, "model": "records/perry"},
+		{ "predicate": { "custom_model_data": 15 }, "model": "records/sadi_gali"},
+		{ "predicate": { "custom_model_data": 16 }, "model": "records/careless_whisper"},
+		{ "predicate": { "custom_model_data": 17 }, "model": "records/paris"}
 	]
 }
