@@ -83,5 +83,10 @@
       "sounds": [
         "records/paris"
       ]
+    },
+    "music_disc.funky": {
+      "sounds": [
+        "records/funky"
+      ]
     }
 }

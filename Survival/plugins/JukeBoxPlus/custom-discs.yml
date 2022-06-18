@@ -91,3 +91,7 @@ BARRIER:
     duration: 219
     sound: "netherdepths:music_disc.paris"
     name: "Lads in Paris"
+  18:
+    duration: 237
+    sound: "netherdepths:music_disc.funky"
+    name: "Funky Town"

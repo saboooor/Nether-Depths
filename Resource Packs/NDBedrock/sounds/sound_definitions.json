@@ -221,6 +221,19 @@
                   "volume" : 0.50
                }
             ]
+        },
+        "netherdepths:music_disc.funky" : {
+            "__use_legacy_max_distance" : "true",
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/funky",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
         }
 	}
 }
