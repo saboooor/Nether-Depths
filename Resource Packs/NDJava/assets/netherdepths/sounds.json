@@ -88,5 +88,10 @@
       "sounds": [
         "records/funky"
       ]
+    },
+    "music_disc.gangstas_paradise": {
+      "sounds": [
+        "records/gangstas_paradise"
+      ]
     }
 }
