@@ -1,0 +1,5 @@
+ReloadMessage: '&aChatPreview has been reloaded!'
+ChatPreviewFormat: '%vault_prefix%%essentials_nickname% &8›&r {Message}'
+CommandPreviewFormats:
+  /minecraft:me: '* %player_name% {Message}'
+  /tps: '%server_tps%'
