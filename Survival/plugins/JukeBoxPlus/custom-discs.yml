@@ -95,3 +95,7 @@ BARRIER:
     duration: 237
     sound: "netherdepths:music_disc.funky"
     name: "Funky Town"
+  19:
+    duration: 241
+    sound: "netherdepths:music_disc.gangstas_paradise"
+    name: "Gangsta's Paradise"
