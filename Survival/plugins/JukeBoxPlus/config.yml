@@ -43,13 +43,13 @@ disc-name: "§b{NAME}"
 disc-lore: "§6Duration: {DURATION}"
 
 # Default radius for new jukeboxes (vanilla = 64)
-default-jukebox-radius: 64
+default-jukebox-radius: 8
 
 # Maximum allowed radius that a jukebox can have
-max-jukebox-radius: 256
+max-jukebox-radius: 512
 
 # Interval used when changing the radius of a jukebox
-radius-change-interval: 16
+radius-change-interval: 8
 
 # When using the bossbar for messages, you can change the duration for those messages here
 # 20 ticks = 1 second
