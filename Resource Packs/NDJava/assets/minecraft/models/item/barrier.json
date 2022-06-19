@@ -1,6 +1,9 @@
 {
-	"parent": "minecraft:block/barrier",
+	"parent": "minecraft:item/generated",
 	"author": "sab",
+	"textures": {
+	  "layer0": "minecraft:item/barrier"
+	},
 	"overrides": [
 		{ "predicate": { "custom_model_data": 1 }, "model": "records/mine_diamonds"},
 		{ "predicate": { "custom_model_data": 2 }, "model": "records/10"},
