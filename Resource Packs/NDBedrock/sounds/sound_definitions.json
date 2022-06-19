@@ -2,7 +2,6 @@
 	"format_version": "1.14.0",
 	"sound_definitions": {
         "netherdepths:music_disc.mine_diamonds" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -15,7 +14,6 @@
             ]
         },
         "netherdepths:music_disc.all_star" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -28,7 +26,6 @@
             ]
         },
         "netherdepths:music_disc.soviet_anthem" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -41,7 +38,6 @@
             ]
         },
         "netherdepths:music_disc.10" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -54,7 +50,6 @@
             ]
         },
         "netherdepths:music_disc.aauughhh" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -67,7 +62,6 @@
             ]
         },
         "netherdepths:music_disc.sketchers" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -80,7 +74,6 @@
             ]
         },
         "netherdepths:music_disc.el_sonidito" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -93,7 +86,6 @@
             ]
         },
         "netherdepths:music_disc.chad" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -106,7 +98,6 @@
             ]
         },
         "netherdepths:music_disc.amogus" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -119,7 +110,6 @@
             ]
         },
         "netherdepths:music_disc.just_the_two_of_us" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -132,7 +122,6 @@
             ]
         },
         "netherdepths:music_disc.narcos" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -145,7 +134,6 @@
             ]
         },
         "netherdepths:music_disc.coco" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -158,7 +146,6 @@
             ]
         },
         "netherdepths:music_disc.gulp" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -171,7 +158,6 @@
             ]
         },
         "netherdepths:music_disc.sadi_gali" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -184,7 +170,6 @@
             ]
         },
         "netherdepths:music_disc.perry" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -197,7 +182,6 @@
             ]
         },
         "netherdepths:music_disc.careless_whisper" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -210,7 +194,6 @@
             ]
         },
         "netherdepths:music_disc.paris" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -223,7 +206,6 @@
             ]
         },
         "netherdepths:music_disc.funky" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -236,7 +218,6 @@
             ]
         },
         "netherdepths:music_disc.gangstas_paradise" : {
-            "__use_legacy_max_distance" : "true",
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
