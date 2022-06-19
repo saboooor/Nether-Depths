@@ -372,6 +372,114 @@ questions:
     - 5
     - 6
     - 7
+  '28':
+    question: What's the capital of Pakistan?
+    answer:
+    - Islamabad
+    - islamabad
+    - ISLAMABAD
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '29':
+    question: What's the capital of China?
+    answer:
+    - Beijing
+    - beijing
+    - BEIJING
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '30':
+    question: What's the capital of Japan?
+    answer:
+    - Tokyo
+    - tokyo
+    - TOKYO
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '31':
+    question: What's the capital of South Korea?
+    answer:
+    - Seoul
+    - seoul
+    - SEOUL
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '32':
+    question: How much is log(100)?
+    answer:
+    - 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '33':
+    question: How much is log(1000)?
+    answer:
+    - 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '34':
+    question: How much is cos(100) rounded to the nearest hundredth?
+    answer:
+    - 0.86
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '35':
+    question: Who's the richest man in the world?
+    answer:
+    - Elon Musk
+    - Elon musk
+    - elon Musk
+    - elon musk
+    - ELON MUSK
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
 enable-firework: true
 enable-actionbar: false
 broadcast:

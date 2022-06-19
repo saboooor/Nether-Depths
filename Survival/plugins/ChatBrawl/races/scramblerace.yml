@@ -518,6 +518,171 @@ words:
     - 5
     - 6
     - 7
+  '47':
+    word: Discord
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '48':
+    word: Minecraft
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '49':
+    word: Cocaine
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '50':
+    word: Weed
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '51':
+    word: Marijuana
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '52':
+    word: Cannabis
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '53':
+    word: Crack
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '54':
+    word: Alcohol
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '55':
+    word: Diamonds
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '56':
+    word: Tequila
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '57':
+    word: Stinky
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '58':
+    word: Sus
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '59':
+    word: Amongus
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '60':
+    word: Opium
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '61':
+    word: Heroine
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
 enable-firework: true
 enable-actionbar: false
 broadcast:

@@ -214,6 +214,36 @@ words:
     - 5
     - 6
     - 7
+  '21':
+    word: Hi
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '22':
+    word: I poop my pants o no
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '23':
+    word: doobeedoobeedooba
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
 enable-firework: true
 enable-actionbar: false
 broadcast:
