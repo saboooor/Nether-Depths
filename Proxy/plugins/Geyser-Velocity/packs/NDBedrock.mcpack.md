@@ -1,1 +1,0 @@
-# The resource pack is in /Resource Packs/NDBedrock

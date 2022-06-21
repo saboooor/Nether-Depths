@@ -99,3 +99,7 @@ BARRIER:
     duration: 241
     sound: "netherdepths:music_disc.gangstas_paradise"
     name: "Gangsta's Paradise"
+  20:
+    duration: 246
+    sound: "netherdepths:music_disc.bustin"
+    name: "Bustin"
