@@ -93,5 +93,10 @@
       "sounds": [
         "records/gangstas_paradise"
       ]
+    },
+    "music_disc.bustin": {
+      "sounds": [
+        "records/bustin"
+      ]
     }
 }
