@@ -1,0 +1,18 @@
+{
+	"num_mip_levels": 0,
+	"padding": 0,
+	"resource_pack_name": "vanilla",
+	"texture_data": {
+		"dirt": {
+			"textures": {
+				"variations": [
+					{ "path": "textures/blocks/dirt/0" },
+					{ "path": "textures/blocks/dirt/1" },
+					{ "path": "textures/blocks/dirt/2" },
+					{ "path": "textures/blocks/dirt/3" }
+				]
+			}
+		}
+	},
+	"texture_name": "atlas.terrain"
+}
