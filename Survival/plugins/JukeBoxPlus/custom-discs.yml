@@ -109,5 +109,5 @@ BARRIER:
     name: "Katyusha"
   22:
     duration: 182
-    sound: "netherdepths:music_disc.no_step_back"
-    name: "No Step Back"
+    sound: "netherdepths:music_disc.bravery_of_the_minority"
+    name: "Bravery of the Minority"
