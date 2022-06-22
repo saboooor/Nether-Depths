@@ -24,6 +24,8 @@
 		{ "predicate": { "custom_model_data": 17 }, "model": "records/paris"},
 		{ "predicate": { "custom_model_data": 18 }, "model": "records/funky"},
 		{ "predicate": { "custom_model_data": 19 }, "model": "records/gangstas_paradise"},
-		{ "predicate": { "custom_model_data": 20 }, "model": "records/bustin"}
+		{ "predicate": { "custom_model_data": 20 }, "model": "records/bustin"},
+		{ "predicate": { "custom_model_data": 21 }, "model": "records/katyusha"},
+		{ "predicate": { "custom_model_data": 22 }, "model": "records/no_step_back"}
 	]
 }
