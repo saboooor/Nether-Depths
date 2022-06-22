@@ -103,5 +103,10 @@
       "sounds": [
         "records/katyusha"
       ]
+    },
+    "music_disc.no_step_back": {
+      "sounds": [
+        "records/no_step_back"
+      ]
     }
 }
