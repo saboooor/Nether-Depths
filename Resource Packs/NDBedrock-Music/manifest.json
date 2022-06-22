@@ -3,7 +3,7 @@
     "header": {
         "description": "Nether Depths Bedrock resource pack to add custom music disc support",
         "name": "NetherDepthsBedrockMusic",
-        "uuid": "970de8b2-f1b2-11ec-8ea0-0242ac120002",
+        "uuid": "cdfe6294-f27e-11ec-b939-0242ac120002",
         "version": [1, 0, 4],
         "min_engine_version": [ 1, 16, 0 ]
     },
@@ -11,7 +11,7 @@
         {
             "description": "NetherDepthsBedrockMusic",
             "type": "resources",
-            "uuid": "96f1893e-f1b1-11ec-8ea0-0242ac120002",
+            "uuid": "cdfe6000-f27e-11ec-b939-0242ac120002",
             "version": [1, 0, 4]
         }
     ]

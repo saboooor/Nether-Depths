@@ -98,5 +98,15 @@
       "sounds": [
         "records/bustin"
       ]
+    },
+    "music_disc.katyusha": {
+      "sounds": [
+        "records/katyusha"
+      ]
+    },
+    "music_disc.bravery_of_the_minority": {
+      "sounds": [
+        "records/bravery_of_the_minority"
+      ]
     }
 }

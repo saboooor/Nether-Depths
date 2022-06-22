@@ -103,3 +103,11 @@ BARRIER:
     duration: 246
     sound: "netherdepths:music_disc.bustin"
     name: "Bustin"
+  21:
+    duration: 239
+    sound: "netherdepths:music_disc.katyusha"
+    name: "Katyusha"
+  22:
+    duration: 182
+    sound: "netherdepths:music_disc.bravery_of_the_minority"
+    name: "Bravery of the Minority"

@@ -240,6 +240,30 @@
                   "volume" : 0.50
                }
             ]
+        },
+        "netherdepths:music_disc.katyusha" : {
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/katyusha",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
+        },
+        "netherdepths:music_disc.bravery_of_the_minority" : {
+            "category" : "record",
+            "max_distance" : 64.0,
+            "sounds" : [
+               {
+                  "load_on_low_memory" : true,
+                  "name" : "sounds/music/game/records/bravery_of_the_minority",
+                  "stream" : true,
+                  "volume" : 0.50
+               }
+            ]
         }
 	}
 }
