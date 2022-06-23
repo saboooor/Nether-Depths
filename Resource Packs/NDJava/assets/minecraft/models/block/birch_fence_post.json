@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "side": "minecraft:block/stripped_birch_log",
+	"top": "minecraft:block/stripped_birch_log_top"
+  }
+}

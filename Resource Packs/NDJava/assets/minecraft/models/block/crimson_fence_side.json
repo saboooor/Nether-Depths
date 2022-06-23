@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "side": "minecraft:block/crimson_planks",
+	"top": "minecraft:block/stripped_crimson_stem"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "stripped_log_top" : {
+       "textures" : [
+          "textures/blocks/stripped_oak_log_top",
+          "textures/blocks/stripped_spruce_log_top",
+          "textures/blocks/stripped_birch_log_top",
+          "textures/blocks/stripped_jungle_log_top",
+          "textures/blocks/stripped_acacia_log_top",
+          "textures/blocks/stripped_dark_oak_log_top"
+       ]
+    },
+    "stripped_log_side" : {
+       "textures" : [
+        "textures/blocks/stripped_oak_log",
+        "textures/blocks/stripped_spruce_log",
+        "textures/blocks/stripped_birch_log",
+        "textures/blocks/stripped_jungle_log",
+        "textures/blocks/stripped_acacia_log",
+        "textures/blocks/stripped_dark_oak_log"
+       ]
+    }
+  }
+}

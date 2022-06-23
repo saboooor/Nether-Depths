@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "post": "minecraft:block/stripped_jungle_log",
+	"plank": "minecraft:block/jungle_planks"
+  }
+}

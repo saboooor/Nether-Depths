@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall_open",
+  "textures": {
+    "post": "minecraft:block/stripped_acacia_log",
+	"plank": "minecraft:block/acacia_planks"
+  }
+}
