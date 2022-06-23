@@ -100,7 +100,7 @@
                             <p class="title">Output</p>
                             <p class="subtitle">This is what you put in the chat. Click on it to copy.</p>
                             <div class="content">
-                                <pre class="textarea" id="outputText" placeholder="Output will appear here" onclick="navigator.clipboard.writeText('play.netherdepths.com').then(() => alert('Copied text successfully!')).catch(() => alert('Failed to copy text!'))"></pre>
+                                <pre class="textarea" id="outputText" placeholder="Output will appear here" onclick="navigator.clipboard.writeText(this.innerText).then(() => alert('Copied text successfully!')).catch(() => alert('Failed to copy text!'))"></pre>
                             </div>
                             <p id="error">This is more than 256 characters and may not fit in the chat box.</p>
                         </div>
@@ -109,9 +109,7 @@
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <div class="tile is-child box">
-                            <div class="title">
-                                <div id="coloredNick" class="minecraft"></div>
-                            </div>
+                            <div id="coloredNick" class="title minecraft"></div>
                         </div>
                     </div>
                 </div>
