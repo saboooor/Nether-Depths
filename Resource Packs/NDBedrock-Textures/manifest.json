@@ -3,7 +3,7 @@
     "header": {
         "description": "Nether Depths Bedrock texture pack for Java parity",
         "name": "NetherDepthsBedrockTextures",
-        "uuid": "b4860c44-f1ee-11ec-b939-0242ac120002",
+        "uuid": "b9ced72a-f84d-11ec-b939-0242ac120002",
         "version": [ 2, 0, 0 ],
         "min_engine_version": [ 1, 16, 0 ]
     },
@@ -11,7 +11,7 @@
         {
             "description": "NetherDepthsBedrockTextures",
             "type": "resources",
-            "uuid": "b4860ece-f1ee-11ec-b939-0242ac120002",
+            "uuid": "b9ced9aa-f84d-11ec-b939-0242ac120002",
             "version": [1, 0, 4]
         }
     ]
