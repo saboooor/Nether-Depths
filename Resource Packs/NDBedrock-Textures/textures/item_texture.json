@@ -1,0 +1,11 @@
+{
+  "resource_pack_name": "NetherDepthsBedrockTextures",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "perry": {
+        "textures": [
+            "textures/items/perry"
+        ]
+    }
+  }
+}
