@@ -108,5 +108,10 @@
       "sounds": [
         "records/bravery_of_the_minority"
       ]
+    },
+    "music_disc.one_kiss": {
+      "sounds": [
+        "records/one_kiss"
+      ]
     }
 }
