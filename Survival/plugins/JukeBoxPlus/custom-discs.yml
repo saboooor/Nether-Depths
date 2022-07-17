@@ -111,3 +111,7 @@ BARRIER:
     duration: 182
     sound: "netherdepths:music_disc.bravery_of_the_minority"
     name: "Bravery of the Minority"
+  23:
+    duration: 223
+    sound: "netherdepths:music_disc.one_kiss"
+    name: "One Kiss"
