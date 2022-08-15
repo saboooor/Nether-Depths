@@ -9,7 +9,7 @@
 # Docs: https://purpurmc.org/docs 
 
 verbose: false
-config-version: 29
+config-version: 30
 settings:
   food-properties: {}
   username-valid-characters: ^[a-zA-Z0-9_.]*$
@@ -31,14 +31,14 @@ settings:
     sleeping-players-percent: default
     uptime-command-output: <green>Server uptime is <uptime>
     unverified-username: default
-    credits-command-output: §a%s has been shown the end credits
+    credits-command-output: <green>%s has been shown the end credits
     afk-broadcast-away: <yellow><italic>%s is now AFK
     afk-broadcast-back: <yellow><italic>%s is no longer AFK
     afk-tab-list-prefix: '[AFK] '
     afk-tab-list-suffix: ''
-    demo-command-output: §a%s has been shown the demo screen
-    ping-command-output: §a%s's ping is %sms
-    cannot-ride-mob: §cYou cannot mount that mob
+    demo-command-output: <green>%s has been shown the demo screen
+    ping-command-output: <green>%s's ping is %sms
+    cannot-ride-mob: <red>You cannot mount that mob
   blocks:
     disable-chorus-plant-updates: false
     disable-note-block-updates: false
@@ -128,9 +128,13 @@ settings:
     clamp-levels: true
     allow-unsafe-enchant-command: false
     allow-looting-on-shears: false
-    allow-unsafe-enchants: false
     allow-infinity-on-crossbow: false
     allow-infinity-and-mending-together: true
+    anvil:
+      allow-unsafe-enchants: false
+      allow-inapplicable-enchants: true
+      allow-incompatible-enchants: true
+      allow-higher-enchants-levels: true
   entity:
     enderman:
       short-height: false
@@ -184,10 +188,14 @@ settings:
     death:
       only-broadcast-to-affected-player: false
   network:
+    kick-for-out-of-order-chat: false
     max-joins-per-second: false
     upnp-port-forwarding: false
 world-settings:
   default:
+    settings:
+      entity:
+        shared-random: true
     mobs:
       allay:
         ridable: true
@@ -195,7 +203,7 @@ world-settings:
         controllable: true
       frog:
         ridable: true
-        ridable-in-water: false
+        ridable-in-water: true
         controllable: true
         ridable-jump-height: 0.6499999761581421
         breeding-delay-ticks: 6000
@@ -540,11 +548,11 @@ world-settings:
         attributes:
           max_health: 32.0
       iron_golem:
-        healing-calms-anger: false
+        healing-calms-anger: true
         controllable: true
         always-drop-exp: false
         takes-damage-from-water: false
-        poppy-calms-anger: false
+        poppy-calms-anger: true
         ridable: false
         ridable-in-water: false
         can-swim: false
@@ -767,6 +775,7 @@ world-settings:
         attributes:
           max_health: 8.0
       skeleton:
+        feed-wither-roses: 0
         controllable: true
         always-drop-exp: false
         head-visibility-percent: 0.5
@@ -1067,6 +1076,8 @@ world-settings:
         attributes:
           max_health: 10.0
     gameplay-mechanics:
+      arrow:
+        movement-resets-despawn-counter: true
       mob-last-hurt-by-player-time: 100
       rain-stops-after-sleep: true
       thunder-stops-after-sleep: true
@@ -1238,6 +1249,12 @@ world-settings:
         force: false
         head-chance: 0.25
     blocks:
+      coral:
+        die-outside-water: true
+      sculk_shrieker:
+        can-summon-default: false
+      enchantment-table:
+        lapis-persists: false
       no-random-tick: []
       no-tick: []
       anvil:

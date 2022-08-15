@@ -178,6 +178,16 @@ random-item-loss-drop: false
 # That means that enchanted items will always be stored in the AngelChest regardless of random item loss chance.
 random-item-loss-ignores-enchanted-items: false
 
+# When set to higher than 0, players dying outside of PvP will get a cooldown before the next AngelChest can be spawned (in seconds)
+# This is separate from the "pvp-cooldown".
+## PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
+cooldown: 0
+
+# When set to higher than 0, players dying in PvP will get a cooldown before the next AngelChest can be spawned (in seconds)
+# This is separate from the (non-pvp) "cooldown".
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
+pvp-cooldown: 0
+
 # When set to true, players will receive a message telling them where the AngelChest
 # is located, including clickable links to teleport, fetch or unlock the chest if
 # the player has permission for those commands.
@@ -345,9 +355,12 @@ check-interval: 4
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 death-maps: true
 
+# When set to true, death Maps created by AngelChest will never be put into any
+# AngelChests on the next death. This avoids filling up inventories when dying several times in a row.
+dispose-death-maps: true
+
 # You can change the marker type to be used. See here for a list of valid marker types in the latest MC version:
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/map/MapCursor.Type.html
-# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 death-map-marker: RED_X
 
 death-map-name: AngelChest
@@ -366,11 +379,13 @@ death-map-lore: "X: {x}\nY: {y}\nZ: {z}"
 drop-heads: false
 
 # When set to true, heads are only dropped when a player dies in PvP
-# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 only-drop-heads-in-pvp: true
 
+# Time in seconds since the last PVP hit until a player is not considered to be in PVP anymore
+# If set to 0, only the last hit is considered
+only-drop-heads-in-pvp-cooldown: 10
+
 # When set to true, heads are dropped next to the AngelChest instead of being put inside
-# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 dont-store-heads-in-angelchest: true
 
 #########################
@@ -956,11 +971,13 @@ message-angelchest-disabled-others: "&c{player} is no longer protected by Angels
 message-angelchest-enabled-others: "&a{player} is now protected by Angels."
 message-has-no-item: "&cYou need at least one {item}&r&c to do this."
 message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
+message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 
 # Debug mode - you probably do not want this.
 debug: false
 verbose: false
 
 # NEVER CHANGE THE VALUES BELOW!
-plugin-version: 9.0.2
-config-version: 202206122146
+plugin-version: 9.6.0
+config-version: 202208031615

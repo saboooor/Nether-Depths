@@ -77,8 +77,8 @@ restart-songs-to-new-players: true
 # At the bottom of each head's page, copy the string at Other -> Value
 button-loop-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM4ZGVmNjdhMTI2MjJlYWQxZGVjZDNkODkzNjQyNTdiNTMxODk2ZDg3ZTQ2OTgxMzEzMWNhMjM1YjVjNyJ9fX0="
 button-loop-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzZGQ0NTc5ZWRjMmE2ZjIwMzJmOTViMWMxODk4MTI5MWI2YzdjMTFlYjM0YjZhOGVkMzZhZmJmYmNlZmZmYiJ9fX0="
-button-shuffle-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1Y2IxODVjNjQxY2JlNzRlNzBiY2U2ZTZhMWVkOTBhMTgwZWMxYTQyMDM0ZDVjNGFlZDU3YWY1NjBmYzgzYSJ9fX0=="
-button-shuffle-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1MTE1M2ExNTE5MzU3YjYyNDFhYjFkZGNhZTgzMWRmZjA4MDA3OWMwYjI5NjA3OTdjNzAyZGQ5MjI2NjgzNSJ9fX0=="
+button-shuffle-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1Y2IxODVjNjQxY2JlNzRlNzBiY2U2ZTZhMWVkOTBhMTgwZWMxYTQyMDM0ZDVjNGFlZDU3YWY1NjBmYzgzYSJ9fX0="
+button-shuffle-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1MTE1M2ExNTE5MzU3YjYyNDFhYjFkZGNhZTgzMWRmZjA4MDA3OWMwYjI5NjA3OTdjNzAyZGQ5MjI2NjgzNSJ9fX0="
 button-autostart-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc5NmRlNjAxYjUxYjk4Y2VhNWI4OTk5NDRiMWE0ODcxODQ4NDAxNzRkODQ4ZjhjNTdmZTBiNDRjODQ5Y2U0MCJ9fX0="
 button-autostart-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjVhODRlNjM5NGJhZjhiZDc5NWZlNzQ3ZWZjNTgyY2RlOTQxNGZjY2YyZjFjODYwOGYxYmUxOGMwZTA3OTEzOCJ9fX0="
 button-stop: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBkMzI3NTJkYzRiNWIxMjgyOTE4NmJjZjlkM2RjNDhiYmYxN2U1ODhhZGZhNDRiODkyNTFkYzVhYjAyY2JkZiJ9fX0="
@@ -117,116 +117,8 @@ message-now-playing: "&aNow playing {NAME}."
 message-stop: "&6Stop"
 message-radius: "&6Radius"
 message-choose-record-first: "Choose a record first."
-
-##### Azerbaijan Turkish
-#message-added-disc: "{NAME} adlı disk musiqi qutusuna əlavə edildi."
-#message-already-added: "Bu musiqi qutusunun içində onsuzda {NAME} adlı disk var."
-#message-enabled: "&aAktifləşdirildi"
-#message-disabled: "&cDeaktifləşdirildi"
-#message-loop: "&6Təkrarla"
-#message-shuffle: "&6Qarışdır"
-#message-autostart: "&6Avtomatik çal"
-#message-now-playing: "&aHal-hazırda {NAME} çalınır."
-#message-stop: "&6Stop"
-#message-radius: "&6Radius"
-#message-choose-record-first: "Choose a record first."
-
-##### Hungarian
-#message-added-disc: "{NAME} lemez hozzáadva a Zenedobozhoz."
-#message-already-added: "Ez a Zenedoboz már tartalmazza a(z) {NAME} lemezt."
-#message-enabled: "&aEngedélyezve"
-#message-disabled: "&cLetiltva"
-#message-loop: "&6Ismétlés"
-#message-shuffle: "&6Véletlenszerű"
-#message-autostart: "&6Autokezdés"
-#message-now-playing: "&aNow playing {NAME}."
-#message-stop: "&6Stop"
-#message-radius: "&6Radius"
-#message-choose-record-first: "Choose a record first."
-
-##### Polish
-#message-added-disc: "Dodano {NAME} do szafy grającej"
-#message-already-added: "Ta szafa grająca już zawiera {NAME}."
-#message-enabled: "&aWłączony"
-#message-disabled: "&cWyłączony"
-#message-loop: "&6pętla"
-#message-shuffle: "&6Mieszanie"
-#message-autostart: "&6Autostart"
-#message-now-playing: "&aTeraz Gra {NAME}."
-#message-stop: "&6Stop"
-#message-radius: "&6Zasięg"
-#message-choose-record-first: "Najpierw wybierz płytę."
-
-##### Russian
-#message-added-disc: "{NAME} добавлена в Проигрыватель"
-#message-already-added: "В этом Проигрывателе уже есть {NAME}."
-#message-enabled: "&aВключен"
-#message-disabled: "&cОтключен"
-#message-loop: "&6Зациклить"
-#message-shuffle: "&6Перемешать"
-#message-autostart: "&6Автозапуск"
-#message-now-playing: "&aСейчас играет {NAME}."
-#message-stop: "&6Стоп"
-#message-radius: "&6Радиус"
-#message-choose-record-first: "Сначала выберите пластинку."
-
-##### Simplified Chinese
-#message-added-disc: "{NAME} 光盘已添加到这个唱片机"
-#message-already-added: "此唱片機已經拥有 {NAME} 的光盘"
-#message-enabled: "&a启动"
-#message-disabled: "&c禁用"
-#message-loop: "&6单曲循环"
-#message-shuffle: "&6随机播放"
-#message-autostart: "&6自动播放"
-#message-now-playing: "&a正在播放 {NAME}"
-#message-stop: "&6Stop"
-#message-radius: "&6Radius"
-#message-choose-record-first: "Choose a record first."
-
-##### Traditional Chinese
-#message-added-disc: "{NAME} 光盤已添加到這個唱片機"
-#message-already-added: "此唱片機已經擁有 {NAME} 的光盤"
-#message-enabled: "&a啟動"
-#message-disabled: "&c禁用"
-#message-loop: "&6單曲循環"
-#message-shuffle: "&6隨機播放"
-#message-autostart: "&6自動播放"
-#message-now-playing: "&a正在播放 {NAME}"
-#message-stop: "&6Stop"
-#message-radius: "&6Radius"
-#message-choose-record-first: "Choose a record first."
-
-##### Swedish
-#message-added-disc: "Lade till {NAME} i denna Jukebox"
-#message-already-added: "Denna Jukebox innehåller redan {NAME}."
-#message-enabled: "&aAktiverad"
-#message-disabled: "&cavaktiverad"
-#message-loop: "&6Repetera"
-#message-shuffle: "&6Mixa"
-#message-autostart: "&6Autostart"
-#message-now-playing: "&aNu spelar {NAME}."
-#message-stop: "&6Sluta"
-#message-radius: "&6Radius"
-#message-choose-record-first: "Välj en skiva först."
-
-##### Turkish
-#message-added-disc: "{NAME} isimli disk müzik kutusuna eklendi."
-#message-already-added: "Bu müzik kutusu zaten {NAME} isimli diski içeriyor."
-#message-enabled: "&aAktifleştirildi"
-#message-disabled: "&cDeaktifleştirildi"
-#message-loop: "&6Tekrarla"
-#message-shuffle: "&6Karıştır"
-#message-autostart: "&6Otomatik oynat"
-#message-now-playing: "&aŞimdi {NAME} çalıyor."
-#message-stop: "&6Stop"
-#message-radius: "&6Radius"
-#message-choose-record-first: "Choose a record first."
-
-###############
-#### Done! ####
-###############
 debug: false
 
 ### Do not change
-config-version: 202206081208
-plugin-version: 3.3.0
+config-version: 202206221711
+plugin-version: 3.3.1

@@ -38,3 +38,5 @@ misc:
 entity_timeouts:
   SNOWBALL: -1
   LLAMA_SPIT: -1
+enable-async-entity-tracker: true
+enable-async-pathfinding: true

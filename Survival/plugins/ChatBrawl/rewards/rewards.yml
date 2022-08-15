@@ -15,7 +15,7 @@ rewards:
     chance: 25
     commands:
     - eco give <player> 50
-    - broadcast &6<player> won a chat race and earned &c$50!
+    - skript:broadcast &6<player> won a chat race and earned &c$50!
     title: You won $50!
     subtitle: Enjoy!
     broadcast: ''
@@ -23,7 +23,7 @@ rewards:
     chance: 21
     commands:
     - eco give <player> 100
-    - broadcast &6<player> won a chat race and earned &c$100!
+    - skript:broadcast &6<player> won a chat race and earned &c$100!
     title: You won $100!
     subtitle: Enjoy!
     broadcast: ''
@@ -31,7 +31,7 @@ rewards:
     chance: 17
     commands:
     - eco give <player> 150
-    - broadcast &6<player> won a chat race and earned &c$150!
+    - skript:broadcast &6<player> won a chat race and earned &c$150!
     title: You won $150!
     subtitle: Enjoy!
     broadcast: ''
@@ -39,7 +39,7 @@ rewards:
     chance: 13
     commands:
     - eco give <player> 200
-    - broadcast &6<player> won a chat race and earned &c$200!
+    - skript:broadcast &6<player> won a chat race and earned &c$200!
     title: You won $200!
     subtitle: Enjoy!
     broadcast: ''
@@ -47,7 +47,7 @@ rewards:
     chance: 12
     commands:
     - eco give <player> 250
-    - broadcast &6<player> won a chat race and earned &c$250!
+    - skript:broadcast &6<player> won a chat race and earned &c$250!
     title: You won $250!
     subtitle: Enjoy!
     broadcast: ''
@@ -55,7 +55,7 @@ rewards:
     chance: 7
     commands:
     - eco give <player> 300
-    - broadcast &6<player> won a chat race and earned &c$300!
+    - skript:broadcast &6<player> won a chat race and earned &c$300!
     title: You won $300!
     subtitle: Enjoy!
     broadcast: ''
@@ -63,7 +63,7 @@ rewards:
     chance: 5
     commands:
     - eco give <player> 350
-    - broadcast &6<player> won a chat race and earned &c$350!
+    - skript:broadcast &6<player> won a chat race and earned &c$350!
     title: You won $350!
     subtitle: Enjoy!
     broadcast: ''
