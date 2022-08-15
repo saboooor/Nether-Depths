@@ -163,7 +163,7 @@ above-bedrock-nether-building: true
 # Force clients to load all resource packs if there are any.
 # If set to false, it allows the user to connect to the server even if they don't
 # want to download the resource packs.
-force-resource-packs: true
+force-resource-packs: false
 
 # Allows Xbox achievements to be unlocked.
 # THIS DISABLES ALL COMMANDS FROM SUCCESSFULLY RUNNING FOR BEDROCK IN-GAME, as otherwise Bedrock thinks you are cheating.
