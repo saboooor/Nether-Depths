@@ -45,3 +45,7 @@ ticks-per:
   ambient-spawns: 400
   autosave: 12000
 aliases: now-in-commands.yml
+
+worlds:
+  world: # Replace <world_name> with the world name you want to use.
+    generator: shh_lets_not_leak_this_:)

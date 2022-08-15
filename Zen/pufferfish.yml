@@ -31,6 +31,7 @@ enable-suffocation-optimization: true
 # Settings for things that don't belong elsewhere
 misc:
   disable-method-profiler: true
+  disable-out-of-order-chat: false
 # These values define a entity's maximum lifespan. If an
 # entity is in this list and it has survived for longer than
 # that number of ticks, then it will be removed. Setting a value to
