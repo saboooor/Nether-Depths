@@ -1,0 +1,501 @@
+#    _____ _           _   ____                     _ 
+#   / ____| |         | | |  _ \                   | |
+#  | |    | |__   __ _| |_| |_) |_ __ __ ___      _| |
+#  | |    | '_ \ / _` | __|  _ <| '__/ _` \ \ /\ / / |
+#  | |____| | | | (_| | |_| |_) | | | (_| |\ V  V /| |
+#   \_____|_| |_|\__,_|\__|____/|_|  \__,_| \_/\_/ |_|
+#                                                     
+#   For a detailed explanation of all settings visit:         
+#       https://github.com/woutzah/ChatBrawl/wiki    
+#
+#   Need help? Join the Discord server: https://discord.gg/TvTUWvG 
+
+enabled: true
+chance: 12
+duration: 600
+questions:
+  '1':
+    question: What's the capital of France?
+    answer:
+    - paris
+    - Paris
+    - PARIS
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '2':
+    question: What's the capital of Canada?
+    answer:
+    - ottawa
+    - Ottawa
+    - OTTAWA
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '3':
+    question: What's the capital of The United States?
+    answer:
+    - washington
+    - Washington
+    - washington dc
+    - Washington DC
+    - Washington D.C
+    - Washington, DC
+    - Washington, D.C
+    - Washington D.C.
+    - Washington, D.C.
+    - washington, dc
+    - washington, d.c
+    - washington, d.c.
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '4':
+    question: How much is 20 + 20 × 2?
+    answer:
+    - 60
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '5':
+    question: How much is 20 × 20 + 2?
+    answer:
+    - 402
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '6':
+    question: How much is 20² × 2?
+    answer:
+    - 800
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '7':
+    question: How much is 20 × 2 + 2?
+    answer:
+    - 42
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '8':
+    question: How much is 10 + 20 × 5?
+    answer:
+    - 110
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '9':
+    question: How much is 10 × 30 + 2?
+    answer:
+    - 302
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '10':
+    question: How much is 20² × 5?
+    answer:
+    - 2000
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '11':
+    question: How much is 30 × 2 + 2?
+    answer:
+    - 62
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '12':
+    question: What's the capital of El Salvador?
+    answer:
+    - San Salvador
+    - san salvador
+    - San salvador
+    - san Salvador
+    - SAN SALVADOR
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '13':
+    question: What's the capital of The United Kingdom?
+    answer:
+    - London
+    - london
+    - LONDON
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '14':
+    question: How much is 29 x 12 + 23?
+    answer:
+    - 371
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '15':
+    question: How much is 29² x 13 ÷ 2 x 4?
+    answer:
+    - 21866
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '16':
+    question: How much is 4² x 8 ÷ 10 x 200?
+    answer:
+    - 2560
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '17':
+    question: How much is 29 x 12 + 23?
+    answer:
+    - 371
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '18':
+    question: How much is 29² x 13 ÷ 2 x 4?
+    answer:
+    - 21866
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '19':
+    question: How much is 4 + 8?
+    answer:
+    - 12
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '20':
+    question: How much is 13 + 2?
+    answer:
+    - 15
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '21':
+    question: How much is 13 + 2 x 10²?
+    answer:
+    - 213
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '22':
+    question: How much is ( 13 + 2 ) x 10²?
+    answer:
+    - 1500
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '23':
+    question: What's the capital of Russia?
+    answer:
+    - Moscow
+    - moscow
+    - MOSCOW
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '24':
+    question: What does "www" stand for?
+    answer:
+    - World Wide Web
+    - world wide web
+    - World wide Web
+    - World Wide web
+    - world Wide Web
+    - world Wide web
+    - world wide Web
+    - WORLD WIDE WEB
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '25':
+    question: Which Minecraft edition sucks the most? Bedrock or Java?
+    answer:
+    - Bedrock
+    - bedrock
+    - BEDROCK
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '26':
+    question: How many blocks does Redstone travel for?
+    answer:
+    - 15
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '27':
+    question: What's the capital of Sweden?
+    answer:
+    - Stockholm
+    - stockholm
+    - STOCKHOLM
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '28':
+    question: What's the capital of Pakistan?
+    answer:
+    - Islamabad
+    - islamabad
+    - ISLAMABAD
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '29':
+    question: What's the capital of China?
+    answer:
+    - Beijing
+    - beijing
+    - BEIJING
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '30':
+    question: What's the capital of Japan?
+    answer:
+    - Tokyo
+    - tokyo
+    - TOKYO
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '31':
+    question: What's the capital of South Korea?
+    answer:
+    - Seoul
+    - seoul
+    - SEOUL
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '32':
+    question: How much is log(100)?
+    answer:
+    - 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '33':
+    question: How much is log(1000)?
+    answer:
+    - 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '34':
+    question: How much is cos(100) rounded to the nearest hundredth?
+    answer:
+    - 0.86
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '35':
+    question: Who's the richest man in the world?
+    answer:
+    - Elon Musk
+    - Elon musk
+    - elon Musk
+    - elon musk
+    - ELON MUSK
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+enable-firework: true
+enable-actionbar: false
+broadcast:
+  center-messages: false
+  enable-start: true
+  enable-end: true
+sound:
+  enabled: true
+  begin-race: BLOCK_ANVIL_PLACE
+  end-race: BLOCK_NOTE_BLOCK_PLING
+language:
+  actionbar: ''
+  start:
+  - '&6Answer the following question as fast as possible!\n'
+  - '&7&l>  &b<question>'
+  ended: '&7The &6Quiz Race &7ended without a winner! The answer was &b<answer>'
+  winner:
+  - ''
+  winner-personal: ''

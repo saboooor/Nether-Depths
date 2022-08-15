@@ -1,0 +1,124 @@
+###############################
+#         JukeBoxPlus         #
+###############################
+#         by mfnalex          #
+#  https://www.jeff-media.de  #
+###############################
+
+# Permissions:
+# jukebox.use       - Whether a user can interact with Jukeboxes
+# jukebox.reload    - Allows to use /jukebox to reload the config
+# jukebox.radius    - Allows to change a Jukeboxes' radius
+# jukebox.shuffle   - Allows to set a Jukebox to shuffle
+# jukebox.loop      - Allows to set a Jukebox to loop
+# jukebox.autostart - Allows to set a Jukebox to autostart
+# jukebox.modeldata - Allows to use /jukebox modeldata (see custom-discs.yml)
+
+# Right-Click Jukebox:
+#   - When holding a disc: Add disc to Jukebox
+#   - Otherwise: Open Jukebox GUI
+
+# Left-Click Jukebox:
+#   - When on loop: restart song
+#   - When on shuffle: random next song
+#   - When on normal: next song
+
+
+
+# When set to true, you can change the music disc's name in the Jukebox GUI.
+# Since Minecraft automatically adds the "default" song name, this is only
+# useful if you changed the song names in the discs.yml, so this defaults to false
+change-disc-name: true
+
+# When you set "change-disc-name" to true, you can define the discs' names here
+# Available placeholders:
+# {NAME}     - Song name as defined in discs.yml
+disc-name: "§b{NAME}"
+
+# You can change the lore of each disc regardless of whether you use "change-disc-name"
+# Available placeholders:
+# {NAME}     - Song name as defined in discs.yml
+# {DURATION} - Duration as defined in discs.yml
+# \n         - New line
+disc-lore: "§6Duration: {DURATION}"
+
+# Default radius for new jukeboxes (vanilla = 64)
+default-jukebox-radius: 8
+
+# Maximum allowed radius that a jukebox can have
+max-jukebox-radius: 512
+
+# Interval used when changing the radius of a jukebox
+radius-change-interval: 8
+
+# When using the bossbar for messages, you can change the duration for those messages here
+# 20 ticks = 1 second
+ticks-per-bossbar-message: 80
+
+# When enabled, playing Jukeboxes will show particles
+enable-particles: true
+particle-type: NOTE
+particle-count: 5
+particle-height: 1.5
+particle-offset: 0.2
+particle-speed: 2
+particle-delay: 5
+
+# When set to true, players who teleport into a world or freshly join the server
+# will be sent the music from already running Jukeboxes. This however means that
+# they will hear the song out-of-sync to players who already were in the world
+# when the song started playing. If this annoys you, you can set this option to
+# false, however that means that new players will have to wait until the song
+# restarts before they can hear it.
+restart-songs-to-new-players: true
+
+# You can use base64 strings to customize the Loop, Shuffle and Stop button.
+# You can for example use this website: https://minecraft-heads.com/custom-heads
+# At the bottom of each head's page, copy the string at Other -> Value
+button-loop-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM4ZGVmNjdhMTI2MjJlYWQxZGVjZDNkODkzNjQyNTdiNTMxODk2ZDg3ZTQ2OTgxMzEzMWNhMjM1YjVjNyJ9fX0="
+button-loop-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzZGQ0NTc5ZWRjMmE2ZjIwMzJmOTViMWMxODk4MTI5MWI2YzdjMTFlYjM0YjZhOGVkMzZhZmJmYmNlZmZmYiJ9fX0="
+button-shuffle-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1Y2IxODVjNjQxY2JlNzRlNzBiY2U2ZTZhMWVkOTBhMTgwZWMxYTQyMDM0ZDVjNGFlZDU3YWY1NjBmYzgzYSJ9fX0="
+button-shuffle-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1MTE1M2ExNTE5MzU3YjYyNDFhYjFkZGNhZTgzMWRmZjA4MDA3OWMwYjI5NjA3OTdjNzAyZGQ5MjI2NjgzNSJ9fX0="
+button-autostart-disabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc5NmRlNjAxYjUxYjk4Y2VhNWI4OTk5NDRiMWE0ODcxODQ4NDAxNzRkODQ4ZjhjNTdmZTBiNDRjODQ5Y2U0MCJ9fX0="
+button-autostart-enabled: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjVhODRlNjM5NGJhZjhiZDc5NWZlNzQ3ZWZjNTgyY2RlOTQxNGZjY2YyZjFjODYwOGYxYmUxOGMwZTA3OTEzOCJ9fX0="
+button-stop: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBkMzI3NTJkYzRiNWIxMjgyOTE4NmJjZjlkM2RjNDhiYmYxN2U1ODhhZGZhNDRiODkyNTFkYzVhYjAyY2JkZiJ9fX0="
+button-radius-plus: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzIzMzJiNzcwYTQ4NzQ2OTg4NjI4NTVkYTViM2ZlNDdmMTlhYjI5MWRmNzY2YjYwODNiNWY5YTBjM2M2ODQ3ZSJ9fX0="
+button-radius-minus: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJjYmRjOWQ0YzU5MGVhYzI4NWE0NTQ0ZjJiMWUwNjhiZDI3ZmQ1MjE3M2FjOGQ3Njc5MDEzODIzY2JhYjk1YSJ9fX0="
+
+gui-title: "§4§l[§c§lJukeboxPlus§4§l]"
+
+########################
+#### Update Checker ####
+########################
+
+# Should we check for updates?
+# When enabled, a message is printed in the console if a new version has
+# been found, and OPs will be notified when they join the server.
+# When set to true, we will check for updates on startup and every X hours
+# When set to on-startup, we will only check on startup
+# When set to false, don't check for updates
+check-for-updates: true
+
+# When check-for-updates is true, AngelChest will check every X hours
+check-for-updates-interval: 4
+
+##################
+#### Messages ####
+##################
+
+message-added-disc: "Added {NAME} to this Jukebox"
+message-already-added: "This Jukebox already contains {NAME}."
+message-enabled: "&aEnabled"
+message-disabled: "&cDisabled"
+message-loop: "&6Loop"
+message-shuffle: "&6Shuffle"
+message-autostart: "&6Autostart"
+message-now-playing: "&aNow playing {NAME}."
+message-stop: "&6Stop"
+message-radius: "&6Radius"
+message-choose-record-first: "Choose a record first."
+debug: false
+
+### Do not change
+config-version: 202206221711
+plugin-version: 3.3.1

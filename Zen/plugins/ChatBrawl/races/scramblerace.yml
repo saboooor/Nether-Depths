@@ -1,0 +1,705 @@
+#    _____ _           _   ____                     _ 
+#   / ____| |         | | |  _ \                   | |
+#  | |    | |__   __ _| |_| |_) |_ __ __ ___      _| |
+#  | |    | '_ \ / _` | __|  _ <| '__/ _` \ \ /\ / / |
+#  | |____| | | | (_| | |_| |_) | | | (_| |\ V  V /| |
+#   \_____|_| |_|\__,_|\__|____/|_|  \__,_| \_/\_/ |_|
+#                                                     
+#   For a detailed explanation of all settings visit:         
+#       https://github.com/woutzah/ChatBrawl/wiki    
+#
+#   Need help? Join the Discord server: https://discord.gg/TvTUWvG 
+
+enabled: true
+chance: 12
+duration: 600
+words:
+  '1':
+    word: Strawberry
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '2':
+    word: Car
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '3':
+    word: Hello
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '4':
+    word: Mechanic
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '5':
+    word: Potion
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '6':
+    word: Redstone
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '7':
+    word: Pickaxe
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '8':
+    word: Enderman
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '9':
+    word: Ghast
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '10':
+    word: Hoglin
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '11':
+    word: Bastion
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '12':
+    word: Warden
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '13':
+    word: Axolotl
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '14':
+    word: Goat
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '15':
+    word: Amethyst
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '16':
+    word: Spine
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '17':
+    word: Subtext
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  '18':
+    word: Air
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '19':
+    word: Dumb
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '20':
+    word: Fact
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '21':
+    word: Cell
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '22':
+    word: Data
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '23':
+    word: Glasses
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '24':
+    word: Pain
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '25':
+    word: Accessible
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '26':
+    word: Application
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '27':
+    word: Continuously
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '28':
+    word: Destruction
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '29':
+    word: Disadvantage
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '30':
+    word: Encyclopedia
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '31':
+    word: Generalize
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '32':
+    word: Havoc
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '33':
+    word: Hostile
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '34':
+    word: Indefinitely
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '35':
+    word: Inventory
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '36':
+    word: Miniature
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '37':
+    word: Modification
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '38':
+    word: Nether
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '39':
+    word: Obsidian
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '40':
+    word: Output
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '41':
+    word: Prestigious
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '42':
+    word: Projectile
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '43':
+    word: Provocative
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '44':
+    word: Subsequently
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '45':
+    word: Surrounded
+    difficulty: 2
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '46':
+    word: Hornet
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '47':
+    word: Discord
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '48':
+    word: Minecraft
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '49':
+    word: Cocaine
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '50':
+    word: Weed
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '51':
+    word: Marijuana
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '52':
+    word: Cannabis
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '53':
+    word: Crack
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '54':
+    word: Alcohol
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '55':
+    word: Diamonds
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '56':
+    word: Tequila
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '57':
+    word: Stinky
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '58':
+    word: Sus
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '59':
+    word: Amongus
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '60':
+    word: Opium
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  '61':
+    word: Heroine
+    difficulty: 3
+    rewards:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+enable-firework: true
+enable-actionbar: false
+broadcast:
+  center-messages: false
+  enable-start: true
+  enable-end: true
+sound:
+  enabled: true
+  begin-race: BLOCK_ANVIL_PLACE
+  end-race: BLOCK_NOTE_BLOCK_PLING
+language:
+  actionbar: ''
+  start:
+  - '&6Unscramble the following word as fast as possible!\n'
+  - '  &7&l>  &b<word>'
+  ended:
+  - '&7The &6Scramble Race &7ended without a winner! The word was &b<answer>'
+  winner:
+  - ''
+  winner-personal: ''
