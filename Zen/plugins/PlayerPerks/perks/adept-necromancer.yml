@@ -11,7 +11,7 @@ material: ZOMBIE_HEAD
 cost: 8
 
 # Default: -1
-cooldown: -1
+CustomModelID: -1
 
 # Default: []
 blacklisted-perks: []

@@ -11,7 +11,7 @@ material: CLOCK
 cost: -7
 
 # Default: -1
-cooldown: -1
+CustomModelID: -1
 
 # Default: []
 blacklisted-perks: []

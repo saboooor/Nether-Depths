@@ -11,7 +11,7 @@ material: ANVIL
 cost: 4
 
 # Default: -1
-cooldown: -1
+CustomModelID: -1
 
 # Default: []
 blacklisted-perks: []
