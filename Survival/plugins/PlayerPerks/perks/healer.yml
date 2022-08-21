@@ -1,0 +1,20 @@
+# Default: Healer
+name: Healer
+
+# Default: Player can use an item in their inv to get health effect for some time before a cooldown
+description: Player can use an item in their inv to get health effect for some time before a cooldown
+
+# Default: RED_DYE
+material: RED_DYE
+
+# Default: 4
+cost: 4
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

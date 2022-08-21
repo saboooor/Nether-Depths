@@ -1,0 +1,20 @@
+# Default: Xp Boost Enchanting
+name: Xp Boost Enchanting
+
+# Default: Boosts aurelium Enchanting xp
+description: Boosts aurelium Enchanting xp
+
+# Default: ENCHANTING_TABLE
+material: ENCHANTING_TABLE
+
+# Default: 4
+cost: 4
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

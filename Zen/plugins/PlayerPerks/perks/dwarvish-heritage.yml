@@ -1,0 +1,20 @@
+# Default: Dwarvish Heritage
+name: Dwarvish Heritage
+
+# Default: Player moves slower but mines faster the deeper underground they are
+description: Player moves slower but mines faster the deeper underground they are
+
+# Default: GOLD_INGOT
+material: GOLD_INGOT
+
+# Default: 6
+cost: 6
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

@@ -1,0 +1,20 @@
+# Default: Photophobia
+name: Photophobia
+
+# Default: Player is blinded in sunlight
+description: Player is blinded in sunlight
+
+# Default: BLACK_CONCRETE
+material: BLACK_CONCRETE
+
+# Default: -8
+cost: -8
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

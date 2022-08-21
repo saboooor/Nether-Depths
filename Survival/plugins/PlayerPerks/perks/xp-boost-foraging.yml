@@ -1,0 +1,20 @@
+# Default: Xp Boost Foraging
+name: Xp Boost Foraging
+
+# Default: Boosts aurelium Foraging xp
+description: Boosts aurelium Foraging xp
+
+# Default: STONE_AXE
+material: STONE_AXE
+
+# Default: 4
+cost: 4
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

@@ -1,0 +1,20 @@
+# Default: Pescetarian
+name: Pescetarian
+
+# Default: Player can breathe underwater
+description: Player can breathe underwater
+
+# Default: COD
+material: COD
+
+# Default: -6
+cost: -6
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

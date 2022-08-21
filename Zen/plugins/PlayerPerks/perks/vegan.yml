@@ -1,0 +1,20 @@
+# Default: Vegan
+name: Vegan
+
+# Default: Player can no longer eat anything that comes from an animal
+description: Player can no longer eat anything that comes from an animal
+
+# Default: GOLDEN_CARROT
+material: GOLDEN_CARROT
+
+# Default: -9
+cost: -9
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

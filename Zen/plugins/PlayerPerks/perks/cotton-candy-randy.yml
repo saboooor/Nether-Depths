@@ -1,0 +1,20 @@
+# Default: Cotton Candy Randy
+name: Cotton Candy Randy
+
+# Default: Player takes damage when in water and when it rains
+description: Player takes damage when in water and when it rains
+
+# Default: PINK_WOOL
+material: PINK_WOOL
+
+# Default: -8
+cost: -8
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

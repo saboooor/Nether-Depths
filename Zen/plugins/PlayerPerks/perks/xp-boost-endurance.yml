@@ -1,0 +1,20 @@
+# Default: Xp Boost Endurance
+name: Xp Boost Endurance
+
+# Default: Boosts aurelium Endurance xp
+description: Boosts aurelium Endurance xp
+
+# Default: GOLDEN_APPLE
+material: GOLDEN_APPLE
+
+# Default: 4
+cost: 4
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true

@@ -1,0 +1,20 @@
+# Default: Xp Nerf Foraging
+name: Xp Nerf Foraging
+
+# Default: Nerfs aurelium Foraging xp
+description: Nerfs aurelium Foraging xp
+
+# Default: STONE_AXE
+material: STONE_AXE
+
+# Default: -4
+cost: -4
+
+# Default: -1
+cooldown: -1
+
+# Default: []
+blacklisted-perks: []
+
+# Default: true
+enabled: true
