@@ -11,7 +11,7 @@ material: ROTTEN_FLESH
 cost: -5
 
 # Default: -1
-cooldown: -1
+CustomModelID: -1
 
 # Default: [no-sprint-hunger]
 blacklisted-perks:

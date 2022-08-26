@@ -11,7 +11,7 @@ material: COOKED_BEEF
 cost: 4
 
 # Default: -1
-cooldown: -1
+CustomModelID: -1
 
 # Default: [more-sprint-hunger]
 blacklisted-perks:
