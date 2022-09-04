@@ -1,3 +1,5 @@
+feather.replace();
+
 document.addEventListener('DOMContentLoaded', () => {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -16,4 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-feather.replace()
+function blur() {
+    const scrollTop = Math.ceil(document.getElementsByTagName('html')[0].scrollTop);
+    const blurVal = scrollTop > 300 ? 50 : Math.round(scrollTop / 6);
+    document.getElementsByClassName("backdrop")[0].style.filter = `blur(${blurVal}px)`
+};

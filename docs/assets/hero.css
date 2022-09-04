@@ -1,7 +1,0 @@
-@media (prefers-color-scheme: dark) {
-    .hero {
-        background-image: url('./images/hero.png');
-        background-position: center;
-        background-size: cover;
-    }
-}

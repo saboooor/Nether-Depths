@@ -5,12 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nether Depths</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-        <link rel="stylesheet" type="text/css" href="./assets/hero.css" />
+        <link rel="stylesheet" href="./assets/style.css">
         <link rel="shortcut icon" href="https://github.com/saboooor/Nether-Depths/blob/main/Branding/nd.png?raw=true" type="image/x-icon">
     </head>
-    <body class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
-        <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+    <body>
+        <nav class="navbar is-black is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="./">
                     <img src="https://github.com/saboooor/Nether-Depths/blob/main/Branding/netherdepths.png?raw=true">
@@ -25,7 +24,7 @@
 
             <div id="navbar" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="https://www.guilded.gg/Nether-Depths/groups/PD7EgGXz/channels/47e25ce7-0b40-4029-a724-227381f51b8e/announcements">
+                    <a class="navbar-item" href="https://www.guilded.gg/netherdepths/groups/PD7EgGXz/channels/47e25ce7-0b40-4029-a724-227381f51b8e/announcements">
                         <i data-feather="bell" style="margin-right:10px"></i>
                         Announcements
                     </a>
@@ -52,7 +51,7 @@
                         </a>
 
                         <div class="navbar-dropdown">
-                            <a class="navbar-item is-active">
+                            <a class="navbar-item" href="./plan">
                                 <i data-feather="bar-chart" style="margin-right:10px"></i>
                                 Analytics
                             </a>
@@ -82,8 +81,14 @@
                 </div>
             </div>
         </nav>
-        <section class="section is-fullheight-with-navbar">
-            <iframe src="https://plan.netherdepths.com" style="width: 100%; height: calc(100vh - 220px); border-radius: 10px"></iframe>
+        <div class="backdrop" style="filter: blur(50px);"></div>
+
+        <section class="hero is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <iframe src="https://plan.netherdepths.com" style="width: 100%; height: calc(100vh - 220px); border-radius: 10px"></iframe>
+                </div>
+            </div>
         </section>
     </body>
 </html>

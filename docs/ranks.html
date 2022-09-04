@@ -5,12 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nether Depths</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-        <link rel="stylesheet" type="text/css" href="./assets/hero.css" />
+        <link rel="stylesheet" href="./assets/style.css">
         <link rel="shortcut icon" href="https://github.com/saboooor/Nether-Depths/blob/main/Branding/nd.png?raw=true" type="image/x-icon">
     </head>
-    <body class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
-        <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+    <body>
+        <nav class="navbar is-black is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="./">
                     <img src="https://github.com/saboooor/Nether-Depths/blob/main/Branding/netherdepths.png?raw=true">
@@ -25,7 +24,7 @@
 
             <div id="navbar" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="https://www.guilded.gg/Nether-Depths/groups/PD7EgGXz/channels/47e25ce7-0b40-4029-a724-227381f51b8e/announcements">
+                    <a class="navbar-item" href="https://www.guilded.gg/netherdepths/groups/PD7EgGXz/channels/47e25ce7-0b40-4029-a724-227381f51b8e/announcements">
                         <i data-feather="bell" style="margin-right:10px"></i>
                         Announcements
                     </a>
@@ -37,7 +36,7 @@
                         <i data-feather="trending-up" style="margin-right:10px"></i>
                         Vote
                     </a>
-                    <a class="navbar-item is-active">
+                    <a class="navbar-item" href="./ranks">
                         <i data-feather="bar-chart-2" style="margin-right:10px"></i>
                         Ranks
                     </a>
@@ -82,8 +81,11 @@
                 </div>
             </div>
         </nav>
-        <section class="hero is-medium">
-            <div class="hero-body" style="backdrop-filter: blur(50px);">
+        <div class="backdrop" style="filter: blur(50px);"></div>
+
+        <section class="hero is-black">
+            <div class="hero-body">
+                <br><br><br><br>
                 <div class="container has-text-centered">
                     <p class="title">
                         Ranks
@@ -98,7 +100,7 @@
             <div class="container has-text-centered">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Player</p>
                             <p class="subtitle">(Starter Rank)</p>
                             <figure class="image is-4by3">
@@ -113,7 +115,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Skeleton</p>
                             <p class="subtitle">(6 Votes)</p>
                             <figure class="image is-4by3">
@@ -128,7 +130,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Enderman</p>
                             <p class="subtitle">(12 Votes)</p>
                             <figure class="image is-4by3">
@@ -143,7 +145,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Blaze</p>
                             <p class="subtitle">(24 Votes)</p>
                             <figure class="image is-4by3">
@@ -160,7 +162,7 @@
                 </div>
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Strider</p>
                             <p class="subtitle">(48 Votes)</p>
                             <figure class="image is-4by3">
@@ -175,7 +177,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Hoglin</p>
                             <p class="subtitle">(84 Votes)</p>
                             <figure class="image is-4by3">
@@ -190,7 +192,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Axolotl</p>
                             <p class="subtitle">(148 Votes)</p>
                             <figure class="image is-4by3">
@@ -205,7 +207,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Warden</p>
                             <p class="subtitle">(260 Votes)</p>
                             <figure class="image is-4by3">
@@ -222,7 +224,7 @@
                 </div>
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Glow Squid</p>
                             <p class="subtitle">(456 Votes)</p>
                             <figure class="image is-4by3">
@@ -237,7 +239,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Ocelot</p>
                             <p class="subtitle">(796 Votes)</p>
                             <figure class="image is-4by3">
@@ -250,7 +252,7 @@
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">Allay</p>
                             <p class="subtitle">(1394 Votes)</p>
                             <figure class="image is-4by3">
@@ -265,7 +267,7 @@
                 </div>
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">VIP</p>
                             <p class="subtitle">($3.49/mo OR $8.89/quarter)</p>
                             <figure class="image is-4by3">
@@ -273,13 +275,13 @@
                             </figure>
                             <div class="content has-text-left">
                                 <p class="subtitle">Perks</p>
-                                <p>Too much to describe in this tiny little box!</p>
+                                <p>Too much to describe in this tiny little notification!</p>
                                 <a href="https://netherdepths.tebex.io/category/ranks">Click here instead!</a>
                             </div>
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">MVP</p>
                             <p class="subtitle">($5.49/mo OR $14.89/quarter)</p>
                             <figure class="image is-4by3">
@@ -287,13 +289,13 @@
                             </figure>
                             <div class="content has-text-left">
                                 <p class="subtitle">Perks</p>
-                                <p>Too much to describe in this tiny little box!</p>
+                                <p>Too much to describe in this tiny little notification!</p>
                                 <a href="https://netherdepths.tebex.io/category/ranks">Click here instead!</a>
                             </div>
                         </div>
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child box">
+                        <div class="tile is-child notification">
                             <p class="title">GOAT</p>
                             <p class="subtitle">($7.69/mo OR $20.49/quarter)</p>
                             <figure class="image is-4by3">
@@ -301,7 +303,7 @@
                             </figure>
                             <div class="content has-text-left">
                                 <p class="subtitle">Perks</p>
-                                <p>Too much to describe in this tiny little box!</p>
+                                <p>Too much to describe in this tiny little notification!</p>
                                 <a href="https://netherdepths.tebex.io/category/ranks">Click here instead!</a>
                             </div>
                         </div>
