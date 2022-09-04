@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function blur() {
+    const backDrop = document.getElementsByClassName("backdrop")[0];
     const scrollTop = Math.ceil(document.getElementsByTagName('html')[0].scrollTop);
-    const blurVal = scrollTop > 300 ? 50 : Math.round(scrollTop / 6);
-    document.getElementsByClassName("backdrop")[0].style.filter = `blur(${blurVal}px)`
+    if (scrollTop > 300) return backDrop.style.filter = `blur(50px)`;
+    const blurVal = Math.round(scrollTop / 6);
+    backDrop.style.filter = `blur(${blurVal}px)`
 }
