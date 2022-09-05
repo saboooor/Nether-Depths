@@ -28,18 +28,6 @@ html {
   position: fixed;
 }
 
-.notification {
-  border-radius: 10px;
-  background-color: #0A0A0AAA;
-  color: #fff
-}
-
-.navbar.is-black {
-  background-color: #0A0A0A80;
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
-}
-
 .blurred {
   filter: blur(50px);
   -webkit-filter: blur(50px);
@@ -50,7 +38,52 @@ html {
   -webkit-backdrop-filter: blur(10px);
 }
 
+.navbar.is-black, .navbar-dropdown {
+  background-color: #0A0A0A80;
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+}
+
+@media (orientation: portrait) {
+  .navbar-menu {
+    background-color: #0A0A0A80;
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+  }
+}
+
+.navbar-item, .navbar-link {
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar-divider {
+  background-color: #FFFFFF10
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 200px);
+  border-radius: 10px;
+}
+
+.notification {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background-color: #0A0A0AAA;
+  color: #fff;
+}
+
 .feather {
   margin-right: 10px;
   vertical-align: middle;
+}
+
+a, button {
+  transition: 300ms;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  a, button { transition: 0ms; }
 }
