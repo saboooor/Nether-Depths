@@ -40,8 +40,6 @@ html {
 .radial-blur {
   width: 100%;
   height: 100%;
-  -webkit-mask: -webkit-radial-gradient( center, closest-side, black 10%, transparent 50%);
-  mask: -webkit-radial-gradient( center, closest-side, black 10%, transparent 50%);
   -webkit-mask: radial-gradient( closest-side at center, black 10%, transparent 50%);
   mask: radial-gradient( closest-side at center, black 10%, transparent 80%);
   backdrop-filter: blur(50px);
@@ -55,16 +53,20 @@ html {
 }
 
 .navbar.is-black, .navbar-dropdown {
-  background-color: #0A0A0A80;
+  background-color: #0A0A0A66;
   backdrop-filter: blur(20px) saturate(150%);
   -webkit-backdrop-filter: blur(20px) saturate(150%);
+  filter: drop-shadow(0 0 2rem black);
+  -webkit-filter: drop-shadow(0 0 2rem black);
 }
 
 @media (orientation: portrait) {
   .navbar-menu {
-    background-color: #0A0A0A80;
+    background-color: #0A0A0A66;
     backdrop-filter: blur(20px) saturate(150%);
     -webkit-backdrop-filter: blur(20px) saturate(150%);
+    filter: drop-shadow(0 0 2rem black);
+    -webkit-filter: drop-shadow(0 0 2rem black);
   }
 }
 
@@ -81,13 +83,16 @@ iframe {
   width: 100%;
   height: calc(100vh - 200px);
   border-radius: 10px;
+  filter: drop-shadow(0 0 2rem black);
+  -webkit-filter: drop-shadow(0 0 2rem black);
 }
 
 .notification {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  background-color: #0A0A0AAA;
+  background-color: #0A0A0A66;
   color: #fff;
+  filter: drop-shadow(0 0 2rem black);
+  -webkit-filter: drop-shadow(0 0 2rem black);
 }
 
 .feather {
