@@ -18,10 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const backDrop = document.getElementsByClassName("backdrop")[0];
+
+const random = Math.floor(Math.random() * (8 - 0 + 1) + 0);
+backDrop.classList.add(`hero-${random}`);
+
 function blur() {
-    const backDrop = document.getElementsByClassName("backdrop")[0];
     const scrollTop = Math.ceil(document.getElementsByTagName('html')[0].scrollTop);
-    if (scrollTop > 300) return backDrop.style.filter = `blur(50px)`;
-    const blurVal = Math.round(scrollTop / 6);
+    let blurVal = 50;
+    if (scrollTop < 300) blurVal = Math.round(scrollTop / 6);
+    blurVal = String(blurVal).padStart(2, '0');
     backDrop.style.filter = `blur(${blurVal}px)`
+    backDrop.style.transform = `scale(1.${blurVal})`
 }
