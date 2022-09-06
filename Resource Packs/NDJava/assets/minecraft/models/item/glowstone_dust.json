@@ -1,12 +1,16 @@
 {
-	"parent": "item/generated",
-	"author": "RaulH22",
-	"textures": {
-		"layer0": "item/glowstone_dust"
-	},
-	
-	"overrides": [
-		{ "predicate": { "custom_model_data": 2200001}, "model": "item/raulh22/slimefun/slimefun/gui/slimefun_guide"},
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/glowstone_dust"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1450401
+      },
+      "model": "incendium:item/powder"
+    },
+    { "predicate": { "custom_model_data": 2200001}, "model": "item/raulh22/slimefun/slimefun/gui/slimefun_guide"},
 		{ "predicate": { "custom_model_data": 2200002}, "model": "item/raulh22/slimefun/slimefun/gui/background"},
 		{ "predicate": { "custom_model_data": 2200003}, "model": "item/raulh22/slimefun/slimefun/gui/back"},
 		{ "predicate": { "custom_model_data": 2200004}, "model": "item/raulh22/slimefun/slimefun/gui/menu"},
@@ -606,6 +610,5 @@
 		{ "predicate": { "custom_model_data": 2200598}, "model": "item/raulh22/slimefun/slimefun/none"},
 		{ "predicate": { "custom_model_data": 2200599}, "model": "item/raulh22/slimefun/slimefun/none"},
 		{ "predicate": { "custom_model_data": 2200600}, "model": "item/raulh22/slimefun/slimefun/none"}
-
-	]
+  ]
 }

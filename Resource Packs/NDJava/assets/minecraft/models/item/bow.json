@@ -1,6 +1,5 @@
 {
     "parent": "item/generated",
-	"author": "RaulH22",
     "textures": {
         "layer0": "item/bow"
     },
@@ -26,7 +25,8 @@
             "scale": [ 0.68, 0.68, 0.68 ]
         }
     },
-	"overrides": [
+    "overrides": [
+	
         {
             "predicate": {
                 "pulling": 1
@@ -47,7 +47,129 @@
             },
             "model": "item/bow_pulling_2"
         },
-		{ "predicate": { "custom_model_data": 2200001}, "model": "item/raulh22/slimefun/slimefun/gui/slimefun_guide"},
+        {
+            "predicate": {
+                "custom_model_data": 1450104
+            },
+            "model": "incendium:item/trailblazer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1450104,
+                "pulling": 1
+            },
+            "model": "incendium:item/trailblazer/pulling_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1450104,
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "incendium:item/trailblazer/pulling_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1450104,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/trailblazer/pulling_2"
+        },
+		{
+            "predicate": {
+                "custom_model_data": 1450105
+            },
+            "model": "incendium:item/ragnarok"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1450105,
+                "pulling": 1
+            },
+            "model": "incendium:item/ragnarok/pulling_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1450105,
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "incendium:item/ragnarok/pulling_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1450105,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/ragnarok/pulling_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1451104,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/trailblazer/pulling_3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1451105,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/ragnarok/pulling_3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1452104,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/trailblazer/pulling_4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1452105,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/ragnarok/pulling_4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1453104,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/trailblazer/pulling_5"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1453105,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/ragnarok/pulling_5"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1454104,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/trailblazer/pulling_6"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1454105,
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "incendium:item/ragnarok/pulling_6"
+        },
+        { "predicate": { "custom_model_data": 2200001}, "model": "item/raulh22/slimefun/slimefun/gui/slimefun_guide"},
 		{ "predicate": { "custom_model_data": 2200002}, "model": "item/raulh22/slimefun/slimefun/gui/background"},
 		{ "predicate": { "custom_model_data": 2200003}, "model": "item/raulh22/slimefun/slimefun/gui/back"},
 		{ "predicate": { "custom_model_data": 2200004}, "model": "item/raulh22/slimefun/slimefun/gui/menu"},
@@ -647,6 +769,5 @@
 		{ "predicate": { "custom_model_data": 2200598}, "model": "item/raulh22/slimefun/slimefun/none"},
 		{ "predicate": { "custom_model_data": 2200599}, "model": "item/raulh22/slimefun/slimefun/none"},
 		{ "predicate": { "custom_model_data": 2200600}, "model": "item/raulh22/slimefun/slimefun/none"}
-
-	]
+    ]
 }
