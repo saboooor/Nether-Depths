@@ -62,16 +62,16 @@ function toggleEffects(disable) {
     if (disable) {
         // Set noblur cookie
         const d = new Date();
-        d.setTime(d.getTime() + (30*24*60*60*1000));
+        d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
         document.cookie = `noblur=true; expires=${d.toUTCString()};`;
         
         // Set effectEnabled to false
         effectEnabled = false;
         
         // Set css properties to 0
-        root.style.setProperty('--blur', 'blur(0)');
-        root.style.setProperty('--light-blur', 'blur(0)');
-        root.style.setProperty('--shadow', 'drop-shadow(0 0 0 black)');
+        root.style.setProperty('--blur', 'null');
+        root.style.setProperty('--light-blur', 'null');
+        root.style.setProperty('--shadow', 'null');
         root.style.setProperty('--background-color', '#0A0A0A');
     }
     else {
@@ -125,3 +125,40 @@ notificationList.innerHTML = `
         <label for="toggleEffects">Reduce Effects</label>
     </div>
 `
+
+function draggable(element, setup = {}) {
+    // document mousemove
+    const mousemove = function(e) {
+        element.style.left = ( e.clientX - element.dragStartX ) + 'px';
+        element.style.top  = ( e.clientY - element.dragStartY ) + 'px';
+    }.bind(element);
+
+    // document mouseup
+    const mouseup = function(e) {
+        document.removeEventListener('mousemove', mousemove);
+        document.removeEventListener('mouseup', mouseup);
+    }.bind(element);
+
+    // element mousedown
+    const handle = setup.handle ?? element;
+    handle.addEventListener('mousedown', function(e) {
+        element.dragStartX = e.offsetX;
+        element.dragStartY = e.offsetY;
+        document.addEventListener('mousemove', mousemove);
+        document.addEventListener('mouseup', mouseup);
+    }.bind(element));
+
+    handle.addEventListener('touchmove', function(e) {
+        // grab the location of touch
+        const touchLocation = e.targetTouches[0];
+        element.style.left = ( touchLocation.clientX - element.offsetWidth / 2 ) + 'px';
+        element.style.top  = ( touchLocation.clientY - e.target.offsetHeight / 2 ) + 'px';
+    }.bind(element));
+
+    handle.addEventListener('touchend', function(e) {
+      const x = parseInt(element.style.left);
+      const y = parseInt(element.style.top);
+    }.bind(element));
+}
+
+draggable(document.querySelector(".window"), { handle: document.querySelector('.titlebar') })
