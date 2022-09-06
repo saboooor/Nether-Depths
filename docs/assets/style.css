@@ -21,7 +21,7 @@ html {
 
 .backdrop {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -37,36 +37,57 @@ html {
 .hero-7 { background-image: url('./images/hero/7.webp'); }
 .hero-8 { background-image: url('./images/hero/8.webp'); }
 
+:root {
+  --blur: blur(50px);
+  --light-blur: blur(20px);
+  --shadow: drop-shadow(0 0 2rem black);
+  --background-color: #0A0A0A66;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --blur: blur(0);
+    --light-blur: blur(0);
+    --shadow: drop-shadow(0 0 0 black);
+    --background-color: #0A0A0A;
+  }
+}
+
 .radial-blur {
   width: 100%;
   height: 100%;
   -webkit-mask: radial-gradient( closest-side at center, black 10%, transparent 50%);
   mask: radial-gradient( closest-side at center, black 10%, transparent 80%);
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
   position: absolute;
 }
 
 .blurred {
-  filter: blur(50px);
-  -webkit-filter: blur(50px);
+  filter: var(--blur);
+  -webkit-filter: var(--blur);
 }
 
 .navbar.is-black, .navbar-dropdown {
-  background-color: #0A0A0A66;
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
-  filter: drop-shadow(0 0 2rem black);
-  -webkit-filter: drop-shadow(0 0 2rem black);
+  background-color: var(--background-color);
+  backdrop-filter: var(--light-blur) saturate(150%);
+  -webkit-backdrop-filter: var(--light-blur) saturate(150%);
+  filter: var(--shadow);
+  -webkit-filter: var(--shadow);
 }
 
 @media (orientation: portrait) {
   .navbar-menu {
-    background-color: #0A0A0A66;
-    backdrop-filter: blur(20px) saturate(150%);
-    -webkit-backdrop-filter: blur(20px) saturate(150%);
-    filter: drop-shadow(0 0 2rem black);
-    -webkit-filter: drop-shadow(0 0 2rem black);
+    background-color: var(--background-color);
+    backdrop-filter: var(--light-blur) saturate(150%);
+    -webkit-backdrop-filter: var(--light-blur) saturate(150%);
+    filter: var(--shadow);
+    -webkit-filter: var(--shadow);
+  }
+  #notifications > .notification {
+    margin: 0;
+    padding: 16px;
+    font-size: 12px;
   }
 }
 
@@ -83,17 +104,22 @@ iframe {
   width: 100%;
   height: calc(100vh - 200px);
   border-radius: 10px;
-  filter: drop-shadow(0 0 2rem black);
-  -webkit-filter: drop-shadow(0 0 2rem black);
+  filter: var(--shadow);
+  -webkit-filter: var(--shadow);
 }
 
-.notification {
+.notification, #ip {
   border-radius: 10px;
-  background-color: #0A0A0A66;
+  background-color: var(--background-color);
   color: #fff;
-  filter: drop-shadow(0 0 2rem black);
-  -webkit-filter: drop-shadow(0 0 2rem black);
 }
+
+#notifications > .notification, #ip {
+  backdrop-filter: var(--light-blur) saturate(150%);
+  -webkit-backdrop-filter: var(--light-blur) saturate(150%);
+}
+
+#ip { padding: 10px; }
 
 .feather {
   margin-right: 10px;

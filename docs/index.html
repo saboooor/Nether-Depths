@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nether Depths</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-switch">
         <link rel="stylesheet" href="./assets/style.css">
         <link rel="shortcut icon" href="https://github.com/saboooor/Nether-Depths/blob/main/Branding/nd.png?raw=true" type="image/x-icon">
     </head>
@@ -83,6 +84,8 @@
         </nav>
         <div class="backdrop"></div>
 
+        <div id="notifications" style="position: fixed; bottom: 0; right: 0; z-index: 1;"></div>
+
         <div class="radial-blur"></div>
         <section class="hero is-black is-fullheight">
             <div class="hero-body">
@@ -93,13 +96,16 @@
                     <p class="subtitle">
                         Surpass the limits of The Nether
                     </p>
-                    <a onclick="navigator.clipboard.writeText('play.netherdepths.com').then(() => alert('Copied IP!')).catch(() => alert('Failed to copy IP!'))">
-                        <img src="https://api.loohpjames.com/serverbanner.png?ip=play.netherdepths.com;backgroundurl=transparent;width=612">
+                    <a onclick="copy('play.netherdepths.com')">
+                        <img src="https://api.loohpjames.com/serverbanner.png?ip=play.netherdepths.com;backgroundurl=transparent;width=612" id="ip">
+                        <br>
+                        <span class="menu-label" style="color: #FFFFFFAA" id="copy-response">Click to copy IP</span>
                     </a>
                     <br><br>
-                    <a class="button is-info is-rounded" href="./discord">Join The Discord!</a>
-                    <a class="button is-warning is-rounded" href="https://guilded.gg/netherdepths">Join Guilded!</a>
-                    <a class="button is-danger is-rounded" href="./rules">Get Started <i data-feather="arrow-right"></i></a>
+                    <a class="button is-info is-rounded" style="margin: 5px" href="./discord">Join The Discord!</a>
+                    <a class="button is-warning is-rounded" style="margin: 5px" href="https://guilded.gg/netherdepths">Join Guilded!</a>
+                    <br>
+                    <a class="button is-danger is-rounded" style="margin: 5px" href="./rules">Get Started <i data-feather="arrow-right"></i></a>
                 </div>
             </div>
         </section>
