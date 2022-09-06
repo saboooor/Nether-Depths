@@ -76,7 +76,7 @@ html {
   -webkit-filter: var(--shadow);
 }
 
-@media (orientation: portrait) {
+@media screen and (max-width: 1023px) {
   .navbar-menu {
     background-color: var(--background-color);
     backdrop-filter: var(--light-blur) saturate(150%);
