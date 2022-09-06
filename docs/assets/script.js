@@ -9,7 +9,7 @@ backDrop.classList.add(`hero-${random}`);
 function blur() {
     if (!effectEnabled) {
         return backDrop.style.filter = ``;
-    };
+    }
     const scrollTop = Math.ceil(document.getElementsByTagName('html')[0].scrollTop);
     let blurVal = 50;
     if (scrollTop < 300) blurVal = Math.round(scrollTop / 6);
