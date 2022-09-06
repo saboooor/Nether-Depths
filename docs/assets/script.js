@@ -119,9 +119,9 @@ notificationList.innerHTML = `
         <p><strong style="color: white">The Zen server has released!</strong></p>
         <p>Join with zen.netherdepths.com!</p>
     </div>
-    <div class="notification" style="margin: 0 10px 10px 0;">
+    <div class="notification" style="margin: 0 10px 10px 0; user-select: none; -webkit-user-select: none;">
         <a class="delete" onclick="hide(event)"></a>
         <input id="toggleEffects" type="checkbox" name="toggleEffects" class="switch is-outlined is-danger"${cookieJSON.noblur ? ' checked' : ' '} onclick="toggleEffects(event.srcElement.checked)">
-        <label for="toggleEffects" style="user-select: none;">Reduce Effects</label>
+        <label for="toggleEffects">Reduce Effects</label>
     </div>
 `
