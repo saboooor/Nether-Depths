@@ -22,14 +22,14 @@ function hide(event) {
     event.srcElement.parentElement.style.display = 'none';
 }
 
-function copy(text) {
-    navigator.clipboard.writeText(text)
-        .then(() => {
-            copyResponse.innerText = `Copied ${text} successfully!`;
-        })
-        .catch((err) => {
-            copyResponse.innerText = `Failed to copy ${text}\n${err}`;
-        })
+async function copy(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        copyResponse.innerText = `Copied ${text} successfully!`;
+    }
+    catch (err) {
+        copyResponse.innerText = `Failed to copy ${text}\n${err}`;
+    }
 }
 
 function toggleEffects(event) {
