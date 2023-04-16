@@ -1,1 +1,0 @@
-# The resource pack is at https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/
