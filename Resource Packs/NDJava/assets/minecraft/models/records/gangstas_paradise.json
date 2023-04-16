@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "nunopenim",
     "textures": {
-        "layer0": "records/gangstas_paradise"
+        "layer0": "item/nd_gangstas_paradise"
     },
 	"display": {
 		"thirdperson_righthand": {

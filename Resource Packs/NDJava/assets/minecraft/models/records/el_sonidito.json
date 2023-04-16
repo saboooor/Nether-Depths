@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "sab",
     "textures": {
-        "layer0": "records/el_sonidito"
+        "layer0": "item/nd_el_sonidito"
     },
 	"display": {
 		"thirdperson_righthand": {

@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "sab",
     "textures": {
-        "layer0": "records/sadi_gali"
+        "layer0": "item/nd_sadi_gali"
     },
 	"display": {
 		"thirdperson_righthand": {

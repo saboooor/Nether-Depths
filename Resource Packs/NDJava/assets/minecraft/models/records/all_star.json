@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "sab",
     "textures": {
-        "layer0": "records/all_star"
+        "layer0": "item/nd_all_star"
     },
 	"display": {
 		"thirdperson_righthand": {

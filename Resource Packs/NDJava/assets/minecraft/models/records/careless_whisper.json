@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "sab",
     "textures": {
-        "layer0": "records/careless_whisper"
+        "layer0": "item/nd_careless_whisper"
     },
 	"display": {
 		"thirdperson_righthand": {

@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "greg",
     "textures": {
-        "layer0": "records/one_kiss"
+        "layer0": "item/nd_one_kiss"
     },
 	"display": {
 		"thirdperson_righthand": {

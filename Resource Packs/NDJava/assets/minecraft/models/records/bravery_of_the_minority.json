@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "nunopenim",
     "textures": {
-        "layer0": "records/soviet_anthem"
+        "layer0": "item/nd_soviet_anthem"
     },
 	"display": {
 		"thirdperson_righthand": {

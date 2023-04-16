@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "nunopenim",
     "textures": {
-        "layer0": "records/bustin"
+        "layer0": "item/nd_bustin"
     },
 	"display": {
 		"thirdperson_righthand": {

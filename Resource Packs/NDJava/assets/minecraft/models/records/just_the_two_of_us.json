@@ -2,7 +2,7 @@
     "parent": "item/handheld",
 	"author": "sab",
     "textures": {
-        "layer0": "records/just_the_two_of_us"
+        "layer0": "item/nd_just_the_two_of_us"
     },
 	"display": {
 		"thirdperson_righthand": {
