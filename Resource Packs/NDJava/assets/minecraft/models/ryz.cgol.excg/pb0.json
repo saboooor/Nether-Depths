@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "ryz.cgol.textures/exposed_copper_golem",
-		"particle": "ryz.cgol.textures/exposed_copper_golem"
+		"0": "item/exposed_copper_golem",
+		"particle": "item/exposed_copper_golem"
 	},
 	"elements": [
 		{

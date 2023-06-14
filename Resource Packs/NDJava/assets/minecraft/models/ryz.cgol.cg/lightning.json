@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "ryz.cgol.textures/lightning_copper_golem",
-		"particle": "ryz.cgol.textures/lightning_copper_golem"
+		"0": "item/lightning_copper_golem",
+		"particle": "item/lightning_copper_golem"
 	},
 	"elements": [
 		{
