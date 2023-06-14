@@ -108,10 +108,10 @@ BARRIER:
     sound: "netherdepths:music_disc.katyusha"
     name: "Katyusha"
   22:
-    duration: 182
-    sound: "netherdepths:music_disc.bravery_of_the_minority"
-    name: "Bravery of the Minority"
+    duration: 256
+    sound: "netherdepths:music_disc.universal_collapse"
+    name: "Universal Collapse"
   23:
-    duration: 223
+    duration: 214
     sound: "netherdepths:music_disc.one_kiss"
     name: "One Kiss"

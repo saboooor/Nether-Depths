@@ -1,7 +1,7 @@
 {
 	"format_version": "1.14.0",
 	"sound_definitions": {
-        "netherdepths:music_disc.mine_diamonds" : {
+         "netherdepths:music_disc.mine_diamonds" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -12,8 +12,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.all_star" : {
+         },
+         "netherdepths:music_disc.all_star" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -24,8 +24,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.soviet_anthem" : {
+         },
+         "netherdepths:music_disc.soviet_anthem" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -36,8 +36,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.10" : {
+         },
+         "netherdepths:music_disc.10" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -48,8 +48,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.aauughhh" : {
+         },
+         "netherdepths:music_disc.aauughhh" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -60,8 +60,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.sketchers" : {
+         },
+         "netherdepths:music_disc.sketchers" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -72,8 +72,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.el_sonidito" : {
+         },
+         "netherdepths:music_disc.el_sonidito" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -84,8 +84,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.chad" : {
+         },
+         "netherdepths:music_disc.chad" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -96,8 +96,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.amogus" : {
+         },
+         "netherdepths:music_disc.amogus" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -108,8 +108,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.just_the_two_of_us" : {
+         },
+         "netherdepths:music_disc.just_the_two_of_us" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -120,8 +120,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.narcos" : {
+         },
+         "netherdepths:music_disc.narcos" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -132,8 +132,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.coco" : {
+         },
+         "netherdepths:music_disc.coco" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -144,8 +144,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.gulp" : {
+         },
+         "netherdepths:music_disc.gulp" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -156,8 +156,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.sadi_gali" : {
+         },
+         "netherdepths:music_disc.sadi_gali" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -168,8 +168,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.perry" : {
+         },
+         "netherdepths:music_disc.perry" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -180,8 +180,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.careless_whisper" : {
+         },
+         "netherdepths:music_disc.careless_whisper" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -192,8 +192,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.paris" : {
+         },
+         "netherdepths:music_disc.paris" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -204,8 +204,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.funky" : {
+         },
+         "netherdepths:music_disc.funky" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -216,8 +216,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.gangstas_paradise" : {
+         },
+         "netherdepths:music_disc.gangstas_paradise" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -228,8 +228,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.bustin" : {
+         },
+         "netherdepths:music_disc.bustin" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -240,8 +240,8 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.katyusha" : {
+         },
+         "netherdepths:music_disc.katyusha" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
@@ -252,20 +252,20 @@
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.bravery_of_the_minority" : {
+         },
+         "netherdepths:music_disc.universal_collapse" : {
             "category" : "record",
             "max_distance" : 64.0,
             "sounds" : [
                {
                   "load_on_low_memory" : true,
-                  "name" : "sounds/music/game/records/bravery_of_the_minority",
+                  "name" : "sounds/music/game/records/universal_collapse",
                   "stream" : true,
                   "volume" : 0.50
                }
             ]
-        },
-        "netherdepths:music_disc.one_kiss" : {
+         },
+         "netherdepths:music_disc.one_kiss" : {
          "category" : "record",
          "max_distance" : 64.0,
          "sounds" : [
