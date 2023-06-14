@@ -40,24 +40,66 @@
 #Vanilla Entities
 Entities:
   # Below is an example of how this section is setup. You can use any death-type like in PlayerDeathMessages.yml
+  # Below is an example of how this section is setup. You can use any death-type like in PlayerDeathMessages.yml
   wolf:
     Tamed:
     - '%killer% killed %owner%''s %entity%'
     Projectile-Arrow:
-    - '%killer% 360''d Y Y''d a poor little doggy using %weapon%'
+    - '%killer% shot a poor little wolf using %weapon%'
     Weapon:
-    - '%killer% murdered a dog using %weapon%'
+    - '%killer% murdered a wolf using %weapon%'
     Melee:
-    - '%killer% killed a random dog'
+    - '%killer% killed a wolf'
     Void:
-    - '%killer% pushed a random dog into the void'
+    - '%killer% pushed a wolf into the void'
     TNT:
-    - '%killer% blew up a dog!'
+    - '%killer% blew up a wolf!'
     Respawn-Anchor:
-    - '%killer% blew up a dog using a respawn-anchor'
+    - '%killer% blew up a wolf using a respawn-anchor'
+  cat:
+    Tamed:
+    - '%killer% killed %owner%''s %entity%'
+    Projectile-Arrow:
+    - '%killer% shot a poor little cat using %weapon%'
+    Weapon:
+    - '%killer% murdered a cat using %weapon%'
+    Melee:
+    - '%killer% killed a cat'
+    Void:
+    - '%killer% pushed a cat into the void'
+    TNT:
+    - '%killer% blew up a cat!'
+    Respawn-Anchor:
+    - '%killer% blew up a cat using a respawn-anchor'
+  fox:
+    Projectile-Arrow:
+    - '%killer% shot a poor little fox using %weapon%'
+    Weapon:
+    - '%killer% murdered a fox using %weapon%'
+    Melee:
+    - '%killer% killed a fox'
+    Void:
+    - '%killer% pushed a fox into the void'
+    TNT:
+    - '%killer% blew up a fox!'
+    Respawn-Anchor:
+    - '%killer% blew up a fox using a respawn-anchor'
+  axolotl:
+    Projectile-Arrow:
+    - '%killer% shot a poor little axolotl using %weapon%'
+    Weapon:
+    - '%killer% murdered an axolotl using %weapon%'
+    Melee:
+    - '%killer% killed an axolotl'
+    Void:
+    - '%killer% pushed an axolotl into the void'
+    TNT:
+    - '%killer% blew up an axolotl!'
+    Respawn-Anchor:
+    - '%killer% blew up an axolotl using a respawn-anchor'
   enderdragon:
     Projectile-Arrow:
-    - '%killer% 360''d Y Y''d the &6&lEnder Dragon &cusing %weapon%'
+    - '%killer% shot the &6&lEnder Dragon &cusing %weapon%!'
     Melee:
     - The Ender Dragon was taken down by %killer%!
 

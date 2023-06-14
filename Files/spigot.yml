@@ -64,12 +64,15 @@ world-settings:
   worldeditregentempworld:
     verbose: false
   default:
+    seed-ancientcity: 'seed'
+    seed-buriedtreasure: 'seed'
+    seed-mineshaft: 'seed'
     hopper-can-load-chunks: false
     seed-nether: 'seed'
     seed-stronghold: 'seed'
     below-zero-generation-in-existing-chunks: true
     simulation-distance: default
-    thunder-chance: 'seed'
+    thunder-chance: 100000
     seed-bastion: 'seed'
     seed-fortress: 'seed'
     seed-mansion: 'seed'
@@ -89,7 +92,7 @@ world-settings:
     seed-shipwreck: 'seed'
     seed-ocean: 'seed'
     seed-outpost: 'seed'
-    seed-slime: 96376711
+    seed-slime: 47223751
     max-tnt-per-tick: 100
     mob-spawn-range: 2
     view-distance: default
@@ -106,6 +109,8 @@ world-settings:
       exp: 6.0
       item: 4.5
     growth:
+      pitcherplant-modifier: 100
+      torchflower-modifier: 100
       twistingvines-modifier: 100
       weepingvines-modifier: 100
       cavevines-modifier: 100
@@ -153,6 +158,7 @@ world-settings:
         flying-monsters-every: 200
         flying-monsters-for: 60
     entity-tracking-range:
+      display: 128
       players: 48
       animals: 48
       monsters: 48

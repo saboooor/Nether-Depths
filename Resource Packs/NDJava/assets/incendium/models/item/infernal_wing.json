@@ -1,6 +1,0 @@
-{
-    "parent": "item/elytra",
-    "textures": {
-        "layer0": "incendium:item/infernal_wing"
-    }
-}

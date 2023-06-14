@@ -1,0 +1,23 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/item_frame"
+	},
+	"overrides": [
+		{"predicate":{"custom_model_data":1374001},"model":"ryz.cgol.cb/0"},
+		{"predicate":{"custom_model_data":1374002},"model":"ryz.cgol.cb/inventory"},
+		{"predicate":{"custom_model_data":1374003},"model":"ryz.cgol.cb/pressed"},
+
+		{"predicate":{"custom_model_data":1374004},"model":"ryz.cgol.excb/0"},
+		{"predicate":{"custom_model_data":1374005},"model":"ryz.cgol.excb/inventory"},
+		{"predicate":{"custom_model_data":1374006},"model":"ryz.cgol.excb/pressed"},
+
+		{"predicate":{"custom_model_data":1374007},"model":"ryz.cgol.wecb/0"},
+		{"predicate":{"custom_model_data":1374008},"model":"ryz.cgol.wecb/inventory"},
+		{"predicate":{"custom_model_data":1374009},"model":"ryz.cgol.wecb/pressed"},
+
+		{"predicate":{"custom_model_data":1374010},"model":"ryz.cgol.oxcb/0"},
+		{"predicate":{"custom_model_data":1374011},"model":"ryz.cgol.oxcb/inventory"},
+		{"predicate":{"custom_model_data":1374012},"model":"ryz.cgol.oxcb/pressed"}
+	]
+}

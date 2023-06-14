@@ -16,10 +16,8 @@ dab:
   activation-dist-mod: 8
   blacklisted-entities: []
 inactive-goal-selector-disable: true
-# Configures Flare, the built-in profiler
 flare:
   url: https://flare.airplane.gg
-# Options for connecting to Pufferfish/Airplane's online utilities
 web-services:
   token: ''
 # Optimizes projectile settings
@@ -41,3 +39,4 @@ entity_timeouts:
   LLAMA_SPIT: -1
 enable-async-entity-tracker: true
 enable-async-pathfinding: true
+allow-end-crystal-respawn: true

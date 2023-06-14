@@ -1,13 +1,15 @@
-#############################
-#####   AngelChestPlus  #####
-#############################
+#########################
+#####   AngelChest  #####
+#########################
 
 # written by mfnalex / JEFF Media GbR
 
+# Support: https://discord.jeff-media.com
+
 ##### WARNING! #####
 # This file contains UTF8 symbols! You MUST use a proper text editor like Notepad++ to edit this file!
-# If you use some kind of "online editor", your file will break and reset to the default values!
-# If this (❤️️) doesn't look like a heart, you MUST use another text editor, because your's doesn't support UTF-8!
+# If you use some kind of "online editor", your file is likely to break and reset to the default values!
+# If this [♥] doesn't look like a heart, you MUST use another text editor, because yours doesn't support UTF-8!
 ##### WARNING! #####
 
 #############################
@@ -19,7 +21,6 @@
 # angelchest.use             Spawns AngelChest on death instead of dropping the items
 # angelchest.protect         The AngelChest is locked for other players
 # angelchest.protect.ignore  Players can open other player's locked AngelChests
-# angelchest.unlock          Allows the player to unlock their protected chests using /acunlock
 # angelchest.fetch           Allows the player to teleport their chests to them
 # angelchest.tp              The player can teleport to their AngelChests
 # angelchest.preview         Allows the player to preview their AngelChests' contents in /acgui
@@ -28,6 +29,12 @@
 # angelchest.reload          Allows reloading the config using /acreload
 # angelchest.debug           Allows to use the debug command /acdebug
 # angelchest.version         Allows to use the version command /acversion
+
+# The following permissions are given to everyone by default:
+#
+# angelchest.list            Allows to use the list command /aclist (also requires angelchest.use)
+# angelchest.gui             Allows to use the GUI command /acgui (also requires angelchest.use)
+# angelchest.unlock          Allows the player to unlock their protected chests using /acunlock
 
 #############################
 #####     Commands      #####
@@ -56,15 +63,21 @@
 #                            Enables/disables AngelChest for this player.
 #                            Also requires permission angelchest.others when changing other player's settings.
 #
+# /acgraveyard               Permission: angelchest.admin
+#                            Manage graveyard settings
+#
+# /acadmin                   Permission: angelchest.admin
+#                            Admin commands
+#
+# /acversion                 Permission: angelchest.version
+#                            Prints plugin version, whether you have the Plus version and what server software
+#                            you are using.
+#
 # /acreload                  Permission: angelchest.reload
 #                            Reloads the config
 #
 # /acdebug                   Permission: angelchest.debug
 #                            Main debug command. Enter /acdebug for more information
-#
-# /acversion                 Permission: angelchest.version
-#                            Prints plugin version, whether you have the Plus version and what server software
-#                            you are using.
 
 # Note: You can add new command aliases, see "Command Settings" at about line 800 in this config.yml
 
@@ -429,7 +442,7 @@ fallback-to-deathlocation: true
 ####     Economy     ####
 #########################
 
-# You can setup a certain price for some actions. This will only work if you
+# You can set up a certain price for some actions. This will only work if you
 # use Vault and a supported economy plugin.
 # If you need more options to adjust the prices for certain actions, please
 # leave a message in the SpigotMC discussion or open an issue at GitHub.
@@ -444,10 +457,23 @@ fallback-to-deathlocation: true
 # See items.yml file for more information
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 
+#####
+
+# How much does it cost to teleport yourself to one of your AngelChests?
+# If you want to use an item, simply use "price-teleport: item-name" (see items.yml) (Premium version only)
+price-teleport: 0
+
+# How much does it cost to teleport your AngelChests to you?
+# I suggest you make this cheaper than "price-teleport" because teleporting to
+# your death location is probably more useful than just getting your stuff back.
+# If you want to use an item, simply use "price-fetch: item-name" (see items.yml) (Premium version only)
+price-fetch: 0
+
 # How much does it cost to spawn the AngelChest? The amount will automatically
 # be taken from the player on death if they have enough money, otherwise
 # the chest will not spawn and the items drop normally
 # If you want to use an item, simply use "price: item-name" (see items.yml)
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 price: 0
 
 # You can refund the price when a player does not to open their AngelChest
@@ -460,22 +486,19 @@ refund-expired-chests: false
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 price-open: 0
 
-# How much does it cost to teleport yourself to one of your AngelChests?
-# If you want to use an item, simply use "price-teleport: item-name" (see items.yml) (Premium version only)
-price-teleport: 0
-
-# How much does it cost to teleport your AngelChests to you?
-# I suggest you make this cheaper than "price-teleport" because teleporting to
-# your death location is probably more useful than just getting your stuff back.
-# If you want to use an item, simply use "price-fetch: item-name" (see items.yml) (Premium version only)
-price-fetch: 0
-
 # When set to true, players must confirm teleporting to or fetching a chest if you set a price for those actions
 # by entering the same command again or by clicking on a text message in the chat
 confirm: true
 
 # When set to true, no player will be able to place ANY custom AngelChest items.
 prevent-placing-custom-items: true
+
+# The format used to display prices in chat messages or GUIs.
+# Must be valid format for Java's String#format() method.
+# Only change this if you know what you are doing!
+# The default is %,.2f which means two decimal places and a comma as thousands separator.
+# If you want to use dots as thousands separator, use %.,2f
+price-format: "%,.2f"
 
 #################################
 #### Max. TP/Fetch distance #####
@@ -615,6 +638,10 @@ only-spawn-chests-if-player-may-build: false
 # AngelChest can hook into certain 3rd party plugins to improve the chest
 # generation. None of those plugins is required, and you do NOT have to
 # disable the integration if a certain plugin is not installed.
+
+# Some plugins add additional drops to the death of a player. AngelChest can detect
+# those. If you experience any duplication issues, try disabling this setting.
+detect-additional-drops: true
 
 # Some plugins offer a telekinesis enchant that prevent getting AngelChests spawned
 # when a player with telekinesis kills another player.
@@ -974,10 +1001,14 @@ message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't hav
 message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 
+#########################
+#####     Done!     #####
+#########################
+
 # Debug mode - you probably do not want this.
 debug: false
 verbose: false
 
 # NEVER CHANGE THE VALUES BELOW!
-plugin-version: 9.6.0
-config-version: 202208031615
+plugin-version: 9.14.2
+config-version: 202306131614

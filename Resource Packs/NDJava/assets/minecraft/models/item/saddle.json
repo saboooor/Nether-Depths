@@ -1,0 +1,24 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/saddle"
+	},
+	"overrides": [
+		{"predicate":{"custom_model_data":1374001},"model":"ryz.cgol.cg/0"},
+		{"predicate":{"custom_model_data":1374002},"model":"ryz.cgol.cg/head0"},
+		{"predicate":{"custom_model_data":1374003},"model":"ryz.cgol.cg/dead"},
+		{"predicate":{"custom_model_data":1374004},"model":"ryz.cgol.cg/walk0"},
+		{"predicate":{"custom_model_data":1374005},"model":"ryz.cgol.cg/walk1"},
+		{"predicate":{"custom_model_data":1374006},"model":"ryz.cgol.cg/pb0"},
+		{"predicate":{"custom_model_data":1374007},"model":"ryz.cgol.cg/pb1"},
+		{"predicate":{"custom_model_data":1374008},"model":"ryz.cgol.cg/pb2"},
+		{"predicate":{"custom_model_data":1374009},"model":"ryz.cgol.cg/pb3"},
+		{"predicate":{"custom_model_data":1374010},"model":"ryz.cgol.cg/pb4"},
+
+		{"predicate":{"custom_model_data":1374011},"model":"ryz.cgol.cg/lightning"},
+
+		{"predicate":{"custom_model_data":1374020},"model":"ryz.cgol.cb/0"},
+		{"predicate":{"custom_model_data":1374021},"model":"ryz.cgol.cb/inv"},
+		{"predicate":{"custom_model_data":1374022},"model":"ryz.cgol.cb/pressed"}
+	]
+}

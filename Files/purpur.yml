@@ -9,8 +9,48 @@
 # Docs: https://purpurmc.org/docs 
 
 verbose: false
-config-version: 30
+config-version: 32
 settings:
+  fix-network-serialized-items-in-creative: false
+  clamp-attributes: true
+  limit-armor: true
+  blast-resistance-overrides: {}
+  block-fall-multipliers:
+    minecraft:orange_bed:
+      distance: 0.5
+    minecraft:green_bed:
+      distance: 0.5
+    minecraft:blue_bed:
+      distance: 0.5
+    minecraft:cyan_bed:
+      distance: 0.5
+    minecraft:gray_bed:
+      distance: 0.5
+    minecraft:white_bed:
+      distance: 0.5
+    minecraft:hay_block:
+      damage: 0.2
+    minecraft:red_bed:
+      distance: 0.5
+    minecraft:pink_bed:
+      distance: 0.5
+    minecraft:light_blue_bed:
+      distance: 0.5
+    minecraft:purple_bed:
+      distance: 0.5
+    minecraft:magenta_bed:
+      distance: 0.5
+    minecraft:light_gray_bed:
+      distance: 0.5
+    minecraft:brown_bed:
+      distance: 0.5
+    minecraft:lime_bed:
+      distance: 0.5
+    minecraft:yellow_bed:
+      distance: 0.5
+    minecraft:black_bed:
+      distance: 0.5
+  fix-projectile-looting-transfer: false
   food-properties: {}
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   server-mod-name: 1.12.2 -
@@ -22,6 +62,9 @@ settings:
   lagging-threshold: 19.0
   allow-water-placement-in-the-end: true
   messages:
+    afk-broadcast-use-display-name: false
+    ram-command-output: '<green>Ram Usage: <used>/<xmx> (<percent>)'
+    rambar-command-output: <green>Rambar toggled <onoff> for <target>
     tpsbar-command-output: <green>Tpsbar toggled <onoff> for <target>
     death-message:
       stonecutter: <player> has sawed themself in half
@@ -40,6 +83,14 @@ settings:
     ping-command-output: <green>%s's ping is %sms
     cannot-ride-mob: <red>You cannot mount that mob
   blocks:
+    cave_vines:
+      max-growth-age: 25
+    kelp:
+      max-growth-age: 25
+    twisting_vines:
+      max-growth-age: 25
+    weeping_vines:
+      max-growth-age: 25
     disable-chorus-plant-updates: false
     disable-note-block-updates: false
     disable-mushroom-updates: false
@@ -72,7 +123,7 @@ settings:
       basalt_pillar: 'seed'
       block_pile: 'seed'
       blue_ice: 'seed'
-      bonus_chest: 'seed'
+      bonus_chest: default
       chorus_plant: 'seed'
       coral_claw: 'seed'
       coral_mushroom: 'seed'
@@ -139,6 +190,7 @@ settings:
     enderman:
       short-height: false
   logger:
+    suppress-library-loader: false
     suppress-sent-expired-chat: false
     suppress-setblock-in-far-chunk-errors: false
     suppress-unrecognized-recipe-errors: false
@@ -146,6 +198,18 @@ settings:
     suppress-ignored-advancement-warnings: false
     hex-color-support-in-console: true
   command:
+    rambar:
+      title: <gray>Ram<yellow>:</yellow> <used>/<xmx> (<percent>)
+      overlay: NOTCHED_20
+      progress-color:
+        good: GREEN
+        medium: YELLOW
+        low: RED
+      text-color:
+        good: <gradient:#55ff55:#00aa00><text></gradient>
+        medium: <gradient:#ffff55:#ffaa00><text></gradient>
+        low: <gradient:#ff5555:#aa0000><text></gradient>
+      tick-interval: 20
     fill:
       max-area: 32768
     hide-hidden-players-from-entity-selector: false
@@ -197,7 +261,28 @@ world-settings:
       entity:
         shared-random: true
     mobs:
+      sniffer:
+        attributes:
+          max_health: 14.0
+        ridable: true
+        ridable-in-water: false
+        controllable: true
+        breeding-delay-ticks: 6000
+      camel:
+        ridable-in-water: false
+        attributes:
+          max_health:
+            min: 32.0
+            max: 32.0
+          jump_strength:
+            min: 0.42
+            max: 0.42
+          movement_speed:
+            min: 0.09
+            max: 0.09
+        breeding-delay-ticks: 6000
       allay:
+        respect-nbt: []
         ridable: true
         ridable-in-water: false
         controllable: true
@@ -272,6 +357,13 @@ world-settings:
         ridable-in-water: false
         ridable-max-y: 256.0
         attributes:
+          follow_range: 16.0
+          knockback_resistance: 0.0
+          movement_speed: 0.6
+          flying_speed: 0.6
+          armor: 0.0
+          armor_toughness: 0.0
+          attack_knockback: 0.0
           max_health: 6.0
       bee:
         controllable: true
@@ -348,6 +440,7 @@ world-settings:
           damage: 2.0
           chance: 0.0
       creeper:
+        encircle-target: false
         controllable: true
         always-drop-exp: false
         head-visibility-percent: 0.5
@@ -666,6 +759,7 @@ world-settings:
         attributes:
           max_health: 10.0
       piglin:
+        head-visibility-percent: 0.5
         controllable: true
         always-drop-exp: false
         takes-damage-from-water: false
@@ -775,6 +869,7 @@ world-settings:
         attributes:
           max_health: 8.0
       skeleton:
+        bow-accuracy: 14 - difficulty * 4
         feed-wither-roses: 0
         controllable: true
         always-drop-exp: false
@@ -1059,6 +1154,7 @@ world-settings:
         attributes:
           max_health: 14.0
       glow_squid:
+        rainglow-mode: rainbow
         controllable: true
         always-drop-exp: false
         takes-damage-from-water: false
@@ -1076,6 +1172,9 @@ world-settings:
         attributes:
           max_health: 10.0
     gameplay-mechanics:
+      mending-multiplier: 1.0
+      clamp-explosion-radius: true
+      milk-clears-beneficial-effects: true
       arrow:
         movement-resets-despawn-counter: true
       mob-last-hurt-by-player-time: 100
@@ -1115,6 +1214,8 @@ world-settings:
           explosion: []
           fire: []
         shears:
+          ignore-in-water: false
+          ignore-in-lava: false
           damage-if-sprinting: false
           sprinting-damage: 1.0
         ender-pearl:
@@ -1134,6 +1235,10 @@ world-settings:
             candles: false
             campfires: false
       player:
+        portal-wait-time: 80
+        creative-portal-wait-time: 1
+        teleport-on-nether-ceiling-damage: false
+        burp-delay: 10
         exp-pickup-delay-ticks: 2
         allow-void-trading: false
         shift-right-click-repairs-mending-points: 0
@@ -1180,6 +1285,7 @@ world-settings:
         eject-players-on-land: false
         do-fall-damage: true
       mob-spawning:
+        ignore-creative-players: true
         village-cats: default
         raid-patrols: default
         phantoms: default
@@ -1249,6 +1355,10 @@ world-settings:
         force: false
         head-chance: 0.25
     blocks:
+      sugar_cane:
+        affected-by-bonemeal: false
+      nether_wart:
+        affected-by-bonemeal: false
       coral:
         die-outside-water: true
       sculk_shrieker:
@@ -1258,6 +1368,7 @@ world-settings:
       no-random-tick: []
       no-tick: []
       anvil:
+        use-mini-message: true
         iron-ingots-used-for-repair: 0
         obsidian-used-for-damage: 0
         allow-colors: true
@@ -1269,7 +1380,7 @@ world-settings:
         explode: true
         explosion-power: 5.0
         explosion-fire: false
-        explosion-effect: DESTROY
+        explosion-effect: BLOCK
       chest:
         open-with-solid-block-on-top: false
       dispenser:
@@ -1297,7 +1408,7 @@ world-settings:
         explode: true
         explosion-power: 5.0
         explosion-fire: true
-        explosion-effect: DESTROY
+        explosion-effect: BLOCK
       sign:
         allow-colors: true
         right-click-edit: false
@@ -1321,16 +1432,17 @@ world-settings:
         growth-modifier: 0.1
         max-growth-age: 25
       end-crystal:
+        cramming-amount: 0
         baseless:
           explode: true
           explosion-power: 6.0
           explosion-fire: false
-          explosion-effect: DESTROY
+          explosion-effect: BLOCK
         base:
           explode: true
           explosion-power: 6.0
           explosion-fire: false
-          explosion-effect: DESTROY
+          explosion-effect: BLOCK
       blue_ice:
         allow-mob-spawns: true
         allow-snow-formation: true
@@ -1359,6 +1471,7 @@ world-settings:
       shulker_box:
         allow-oversized-stacks: false
       beacon:
+        allow-effects-with-tinted-glass: true
         effect-range:
           level-1: 20
           level-2: 30
@@ -1383,6 +1496,7 @@ world-settings:
       observer:
         disable-clock: false
       cactus:
+        affected-by-bonemeal: false
         breaks-from-solid-neighbors: true
       conduit:
         effect-distance: 16
@@ -1410,6 +1524,7 @@ world-settings:
       campfire:
         lit-when-placed: true
     ridable-settings:
+      use-dismounts-underwater-tag: true
       babies-are-ridable: true
       untamed-tamables-are-ridable: false
       use-night-vision: false
@@ -1498,6 +1613,78 @@ world-settings:
             drops: {}
           minecraft:mangrove_wood:
             into: minecraft:stripped_mangrove_wood
+            drops: {}
+          minecraft:cherry_log:
+            into: minecraft:stripped_cherry_log
+            drops: {}
+          minecraft:cherry_wood:
+            into: minecraft:stripped_cherry_wood
+            drops: {}
+          minecraft:bamboo_block:
+            into: minecraft:stripped_bamboo_block
+            drops: {}
+          minecraft:stripped_warped_hyphae:
+            into: minecraft:warped_hyphae
+            drops: {}
+          minecraft:stripped_crimson_hyphae:
+            into: minecraft:crimson_hyphae
+            drops: {}
+          minecraft:stripped_spruce_wood:
+            into: minecraft:spruce_wood
+            drops: {}
+          minecraft:stripped_oak_wood:
+            into: minecraft:oak_wood
+            drops: {}
+          minecraft:stripped_dark_oak_log:
+            into: minecraft:dark_oak_log
+            drops: {}
+          minecraft:stripped_acacia_wood:
+            into: minecraft:acacia_wood
+            drops: {}
+          minecraft:stripped_jungle_wood:
+            into: minecraft:jungle_wood
+            drops: {}
+          minecraft:stripped_birch_log:
+            into: minecraft:birch_log
+            drops: {}
+          minecraft:stripped_birch_wood:
+            into: minecraft:birch_wood
+            drops: {}
+          minecraft:stripped_acacia_log:
+            into: minecraft:acacia_log
+            drops: {}
+          minecraft:stripped_dark_oak_wood:
+            into: minecraft:dark_oak_wood
+            drops: {}
+          minecraft:stripped_jungle_log:
+            into: minecraft:jungle_log
+            drops: {}
+          minecraft:stripped_oak_log:
+            into: minecraft:oak_log
+            drops: {}
+          minecraft:stripped_spruce_log:
+            into: minecraft:spruce_log
+            drops: {}
+          minecraft:stripped_warped_stem:
+            into: minecraft:warped_stem
+            drops: {}
+          minecraft:stripped_crimson_stem:
+            into: minecraft:crimson_stem
+            drops: {}
+          minecraft:stripped_mangrove_log:
+            into: minecraft:mangrove_log
+            drops: {}
+          minecraft:stripped_mangrove_wood:
+            into: minecraft:mangrove_wood
+            drops: {}
+          minecraft:stripped_cherry_log:
+            into: minecraft:cherry_log
+            drops: {}
+          minecraft:stripped_cherry_wood:
+            into: minecraft:cherry_wood
+            drops: {}
+          minecraft:stripped_bamboo_block:
+            into: minecraft:bamboo_block
             drops: {}
         waxables:
           minecraft:waxed_exposed_copper:

@@ -1,0 +1,17 @@
+{
+    "irtaryz/copper/golem/press_buttons" : {
+	   "sounds":[
+	       "ryz.cgol.sounds/press_buttons"
+	   ]
+    },
+	"irtaryz/copper/golem/rotate_head" : {
+		"sounds":[
+			"ryz.cgol.sounds/rotate_head"
+		]
+	 },
+	 "irtaryz/copper/golem/spawn" : {
+		"sounds":[
+			"ryz.cgol.sounds/spawn"
+		]
+	 }
+}

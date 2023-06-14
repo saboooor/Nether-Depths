@@ -99,7 +99,7 @@ gui-title: "§4§l[§c§lJukeboxPlus§4§l]"
 # When set to false, don't check for updates
 check-for-updates: true
 
-# When check-for-updates is true, AngelChest will check every X hours
+# When check-for-updates is true, JukeboxPlus will check every X hours
 check-for-updates-interval: 4
 
 ##################
@@ -117,8 +117,12 @@ message-now-playing: "&aNow playing {NAME}."
 message-stop: "&6Stop"
 message-radius: "&6Radius"
 message-choose-record-first: "Choose a record first."
+
+###############
+#### Done! ####
+###############
 debug: false
 
 ### Do not change
-config-version: 202206221711
-plugin-version: 3.3.1
+config-version: 202306131529
+plugin-version: 3.4.3
